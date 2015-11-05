@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2015, 6:14:37 AM
+    Author     : cuonghero
+*/
+
+.form_contact{
+    background:#fff none repeat scroll 0 0;
+    margin-top: 10px;
+    margin-left: -5px; 
+    margin-right: -15px;
+}
+.custom_btn_send_message{
+       font-size: 14px !important;
+    padding: 10px !important;
+}
