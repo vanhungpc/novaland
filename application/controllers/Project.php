@@ -206,6 +206,27 @@ class Project extends CI_Controller {
 			redirect("admin/login");
 		}
 	}
+	public function detail_project($_id_project) {
+		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
+		$header = $this->load->view('main/header', array(
+			'logo' => 'img/header/logo_novaland.png',
+			'showTitle' => true,
+			'logoWidth' => '126px',
+			'logoHeight' => '95px',
+
+		), TRUE);
+		$data = $this->project->getAllCounty();
+		$data_news = $this->project->getAllNews();
+		$data_project = $this->project->getAllProject();
+		$data_slider = $this->project->getSliderProject();
+
+		$header = $this->load->view('main/header', array(), TRUE);
+		$content = $this->load->view('main/project_detail', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
+		$footer = $this->load->view('main/footer', array(), TRUE);
+		$this->load->view('main/layout', array('head' => $head, 'header' => $header,
+			'content' => $content,
+			'footer' => $footer));
+	}
 
 }
 

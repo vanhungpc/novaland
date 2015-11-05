@@ -26,7 +26,7 @@
 		  		<?php foreach ($data_slider as $value) {?>
 	# code...
 	<div class="slide-item col-ms-12">
-			      <a href="thesunavenue/chuong-trinh-ban-hang.html" title="The Sun Avenue">
+			      <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 			      </a>
 			      <div class="container-s">
@@ -98,7 +98,7 @@
 							        <label class="nav-toggle nav-header"><span><i class="fa fa-angle-double-right"></i>&nbsp;<?php echo $value['name_county']?></span></label>
 							            <ul class="nav nav-list nav-left-ml menu_left">
 							            	<?php foreach ($value['arr_project'] as $key => $values) {?>
-							                <li><a href="#"><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
+							                <li><a href="<?php echo site_url('project/detail_project/' . $values['_id_project']);?>" ><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
 							            	<?php }
 	?>
 							            </ul>
@@ -153,7 +153,9 @@
 							<div class="info-employer row">
 								<div class="row ">
 									<div class="col-sm-12 col-md-12 text-center">
+										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 										<img class="card-img" src="<?php echo base_url()?>assets/uploads/phoicanh_464x251.jpg" alt="HTML Dog">
+										</a>
 									</div>
 
 								</div>
