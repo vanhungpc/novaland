@@ -154,7 +154,7 @@
 								<div class="row ">
 									<div class="col-sm-12 col-md-12 text-center">
 										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
-										<img class="card-img" src="<?php echo base_url()?>assets/uploads/phoicanh_464x251.jpg" alt="HTML Dog">
+										<img class="card-img" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 										</a>
 									</div>
 

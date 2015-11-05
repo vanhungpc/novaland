@@ -81,14 +81,22 @@
 
 					<div class="card">
 							<div class="info-employer row">
-								<div class="row ">
+								<div class="row">
+									<div class="col-sm-12 col-sm-12 padding-row">
+										<h5 class="color-h5">Saigon Pavillon Apartment for rent in District 3, Fully furnished, $1400</h5>
+										<ul>
+											<li>
+												<span>277ngyen van cu</span>
+											</li>
+											<li>
+												<span>2000$</span>
+											</li>
+										</ul>
+									</div>
 
 
 								</div>
-
 							</div>
-
-
 						</div>
 				</div>
 
