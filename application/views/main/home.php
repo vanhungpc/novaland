@@ -162,9 +162,11 @@
 								<div class="row">
 									<div class="col-sm-12  col-md-12 text-left">
 									 	<ul class="liststyle">
+										<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 										<li>
 											<b><?php echo $value->name_project?></b>
 										</li>
+										</a>
 										<li>
 											<span><?php echo $value->address?> </span>
 										</li>
