@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="form">
-                                        <form id="form0" action="<?php echo site_url("home/contactSubmit") ?>" method="post" enctype="multipart/form-data">
+                                        <form id="form0" action="<?php echo site_url("home/contact") ?>" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Your name:</p>
