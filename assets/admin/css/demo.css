@@ -1,0 +1,22 @@
+
+
+
+
+.map-wrapper
+{
+  float:left;  
+  margin: 0 10px 0 10px;
+}
+
+#map {
+  border: 1px solid #DDD; 
+  width:auto;
+  height: 300px;
+  margin: 10px 0 10px 0;
+  -webkit-box-shadow: #AAA 0px 0px 15px;
+}
+
+#legend {
+  font-size: 12px;
+  font-style: italic;
+}
