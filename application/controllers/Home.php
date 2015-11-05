@@ -46,7 +46,7 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
+		$content = $this->load->view('main/about', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header,
 			'content' => $content,
@@ -181,7 +181,7 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
+		$content = $this->load->view('main/contact', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header,
 			'content' => $content,
