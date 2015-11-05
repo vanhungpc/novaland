@@ -6,6 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
+                		$CI = &get_instance();
+		$CI->load->library('session');
 		$this->load->helper('url');
 		$this->load->model('admin/Modelproject', 'project');
 	}
@@ -167,6 +169,19 @@ class Home extends CI_Controller {
 
 	}
 	function contact() {
+            if(isset($_POST['submit'])){
+            $your_name = $this->input->post("name");
+            $phone = $this->input->post("phone");
+            $email = $this->input->post("email");
+            $subject = $this->input->post("subject");
+            $content = $this->input->post("content");           
+            // send mail
+            $headers = "From: phancuong0209@gmail.com";//. "\r\n" .
+           // "CC: somebodyelse@example.com";
+             mail($email,$subject,$content,$headers);
+              $this->session->set_flashdata('success_msg', 'Your product has been added successfully!'); 
+             
+            }
 		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
@@ -188,4 +203,5 @@ class Home extends CI_Controller {
 			'footer' => $footer));
 
 	}
+
 }
