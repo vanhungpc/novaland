@@ -64,4 +64,4 @@ $route['house'] = 'home/house';
 $route['villas'] = 'home/villas';
 $route['serviced_apartment'] = 'home/serviced_apartment';
 $route['contact'] = 'home/contact';
-
+$route['search_project'] = 'search_project';

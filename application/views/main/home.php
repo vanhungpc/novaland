@@ -64,19 +64,25 @@
 ?>
 </h5>
 					</div>
+					<form id="form0" action="<?php echo site_url('home/seach_project/')?>"  method="post"  enctype="multipart/form-data">
 					<div class="col-sm-5">
 							<div id="custom-search-input">
 							<div class="input-group col-sm-12">
-                                <input type="text" class="  search-query form-control" placeholder="Search" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
+
+	                                <input type="text" name= "name_project" class="  search-query form-control" placeholder="Search" />
+	                                <span class="input-group-btn">
+	                                    <button class="btn btn-danger" type="submit">
+	                                        <span class=" glyphicon glyphicon-search"></span>
+	                                    </button>
+	                                </span>
+
+
                             </div>
 						</div>
 
 					</div>
+
+					</form>
 
 
 					</div>
