@@ -17,7 +17,7 @@
 					<div class="card">
 						<div class="row-employer-menu  row employer-tools">
 							<div class="col-sm-12 col-sm-12 employer-box-header background-color-3">
-								<h5 class="employer-tools-title">HCMC rental property</h5>
+								<h5 class="employer-tools-title"><?php echo lang("rental_property"); ?></h5>
 								<!-- <div class="border-bottom-title border-color-3"></div> -->
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
@@ -47,7 +47,7 @@
 						<!-- new -->
 						<div class="row-employer-menu  row employer-tools">
 							<div class="col-sm-12 col-sm-12 employer-box-header background-color-3">
-								<h5 class="employer-tools-title">TIN TỨC MỚI NHẤT</h5>
+								<h5 class="employer-tools-title"><?php echo lang("news"); ?></h5>
 								<!-- <div class="border-bottom-title border-color-3"></div> -->
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
