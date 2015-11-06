@@ -83,15 +83,18 @@
 							<div class="info-employer row">
 								<div class="row">
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<h5 class="color-h5">Saigon Pavillon Apartment for rent in District 3, Fully furnished, $1400</h5>
+										<h5 class="color-h5"><?php echo $arr_news[0]->title?></h5>
 										<ul>
 											<li>
-												<span>277ngyen van cu</span>
+												<span><?php echo $arr_news[0]->date_create?></span>
 											</li>
-											<li>
-												<span>2000$</span>
-											</li>
+
 										</ul>
+
+									</div>
+
+									<div class="col-sm-12 col-sm-12 padding-row">
+										<?php echo $arr_news[0]->content?>
 									</div>
 
 
