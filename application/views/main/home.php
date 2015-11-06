@@ -59,8 +59,14 @@
 			<div class="col-sm-12">
 				<div class="card">
 					<div class="row-employer-menu  row employer-tools">
-						<div id="custom-search-input">
-							<div class="input-group col-md-12">
+					<div class="col-sm-7">
+						<h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {?>Có tất cả <?php echo count($data_project)?> dự án <?php } else {?> Không có dự án <?php }
+?>
+</h5>
+					</div>
+					<div class="col-sm-5">
+							<div id="custom-search-input">
+							<div class="input-group col-sm-12">
                                 <input type="text" class="  search-query form-control" placeholder="Search" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-danger" type="button">
@@ -69,6 +75,8 @@
                                 </span>
                             </div>
 						</div>
+
+					</div>
 
 
 					</div>
@@ -84,7 +92,7 @@
 					<div class="card">
 						<div class="row-employer-menu  row employer-tools">
 							<div class="col-sm-12 col-sm-12 employer-box-header background-color-3">
-								<h5 class="employer-tools-title"><?php echo lang("rental_property"); ?></h5>
+								<h5 class="employer-tools-title"><?php echo lang("rental_property");?></h5>
 								<!-- <div class="border-bottom-title border-color-3"></div> -->
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
@@ -114,7 +122,7 @@
 						<!-- new -->
 						<div class="row-employer-menu  row employer-tools">
 							<div class="col-sm-12 col-sm-12 employer-box-header background-color-3">
-								<h5 class="employer-tools-title"><?php echo lang("news"); ?></h5>
+								<h5 class="employer-tools-title"><?php echo lang("news");?></h5>
 								<!-- <div class="border-bottom-title border-color-3"></div> -->
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
@@ -147,6 +155,8 @@
 		<div class="col-sm-8 col-xs-12">
 			<div class="row  margin-right-25">
 				<div class="col-sm-12 col-sm-12 no-padding">
+				<?php if (!empty($data_project)) {
+	?>
 					<?php foreach ($data_project as $value) {?>
 
 					<div class="col-sm-6 col-md-6 no-padding">
@@ -198,6 +208,8 @@
 
 					</div>
 					<?php }
+	?>
+	<?php }
 ?>
 
 
