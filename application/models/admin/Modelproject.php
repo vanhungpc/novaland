@@ -34,6 +34,26 @@ class ModelProject extends CI_Model {
 		}
 	}
 
+	public function getNewsById($_id_news) {
+		$sql = "select * from news where _id_news = " . $_id_news;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
+	public function getCountyById($_id_county) {
+		$sql = "select * from county where _id_county = " . $_id_county;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
 	public function getAllCategory() {
 		$sql = "select * from category";
 		$query = $this->db->query($sql);
@@ -186,11 +206,77 @@ class ModelProject extends CI_Model {
 		$insert_id = $this->db->insert_id();
 		$this->db->trans_complete();
 		return $insert_id;
+	}
+
+	public function updateCounty($params, $_id_county) {
+		$this->db->trans_start();
+		$data = array(
+			'name_county' => $params['name_county']);
+		$this->db->where('_id_county', $_id_county);
+		$query = $this->db->update('county', $data);
+		$this->db->trans_complete();
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	public function deleteCounty($_id_county) {
+		$sql = "DELETE FROM county
+                WHERE _id_county = $_id_county";
+
+		$query = $this->db->query($sql);
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+
+	public function addNews($params) {
+		$this->db->trans_start();
+		$data = array(
+			'title' => $params['title'],
+			'content' => $params['content'],
+			'date_create' => $params['date_create'],
+			'img_news' => $params['img_news']);
+		$query = $this->db->insert('news', $data);
+		$insert_id = $this->db->insert_id();
+		$this->db->trans_complete();
+		return $insert_id;
 //        if ($query) {
 		//            return TRUE;
 		//        } else {
 		//            return FALSE;
 		//        }
+	}
+
+	public function updateNews($params, $_id_news) {
+		$this->db->trans_start();
+		$data = array(
+			'title' => $params['title'],
+			'content' => $params['content'],
+			'date_create' => $params['date_create'],
+			'img_news' => $params['img_news']);
+		$this->db->where('_id_news', $_id_news);
+		$query = $this->db->update('news', $data);
+		$this->db->trans_complete();
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	public function deleteNews($_id_news) {
+		$sql = "DELETE FROM news
+                WHERE _id_news = $_id_news";
+
+		$query = $this->db->query($sql);
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
 	}
 
 }

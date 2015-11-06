@@ -1,19 +1,14 @@
  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/demo.css" type="text/css" media="screen" />
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="<?php echo base_url()?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>public/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>public/ckfinder/ckfinder.js"></script>
 <div id="titlediv">
     <div class="clearfix container" id="pattern">
         <div class="row">
             <div class="col_12">
                 <ul class="breadcrumbs hor-list">
-                    <li><a href="<?php echo site_url('news');?>">News</a></li>
-                    <li><a href="#">News create</a></li>
+                    <li><a href="<?php echo site_url('county');?>">County</a></li>
+                    <li><a href="#">County update</a></li>
                 </ul>
-                <h1>News create</h1>
+                <h1>County update</h1>
             </div>
         </div>
     </div>
@@ -31,38 +26,23 @@ if (!empty($error_msg)) {
 <div class="container" id="actualbody">
     <div class="row">
         <div class="widget clearfix">
-            <h2>News create</h2>
+            <h2>County update</h2>
             <div class="widget_inside">
                 <div class="col_12">
                     <div class="pre_2 col_8 last">
                         <div class="form">
-                            <form id="form0" action="<?php echo site_url('news/addNewsFormSubmission/')?>"  method="post"  enctype="multipart/form-data">
+                            <form id="form0" action="<?php echo site_url('county/editCountyFormSubmission/' . $county['_id_county'])?>"  method="post"  enctype="multipart/form-data">
                                 <div class="clearfix">
-                                    <label>Title</label>
+                                    <label>Name County</label>
                                     <div class="input">
-                                        <input class="xlarge validate[required]" type="text" name="title" id="title" />
+                                        <input class="xlarge validate[required]" type="text" name="name_county" id="name_county" value="<?php echo $county['name_county']?>" />
                                     </div>
                                 </div>
 
-                                 <div class="clearfix">
-                                    <label>Upload</label>
-                                    <div class="input">
-                                        <input id="file_upload"  class="large validate[required]"  name="file_upload" type="file" />
 
-                                    </div>
-                                </div>
-
-                                 <div class="clearfix">
-                                    <label>Description</label>
-
-                                </div>
-
-                                    <div> <span class="right">
-                                    <textarea id="txt_content" name="txt_content"></textarea>
-                                    </span> </div>
                                 <div class="clearfix">
                                     <div class="input" style="margin-left:300px !important;">
-                                        <input type="submit" class="button blue" value="Add news" />
+                                        <input type="submit" class="button blue" value="Update county" />
                                     </div>
                                 </div>
                             </form>

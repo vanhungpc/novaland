@@ -36,7 +36,7 @@ class News extends CI_Controller {
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_add');
+		$this->load->view('admin/news_add');
 		$this->load->view('admin/footer');
 	}
 
@@ -50,18 +50,12 @@ class News extends CI_Controller {
 	}
 
 	public function addNewsFormSubmission() {
-		$params['name_project'] = $this->input->post('name_project');
-		$params['address'] = $this->input->post('address');
-		$params['price'] = $this->input->post('price');
-		$params['category'] = $this->input->post('category');
-		$params['county'] = $this->input->post('county');
-		$params['slider'] = $this->input->post('slider');
-		$params['desc_slider'] = $this->input->post('desc_slider');
-		$params['description'] = $this->input->post('txt_content');
-		$params['lat'] = $this->input->post('lat');
-		$params['lng'] = $this->input->post('lng');
-		$params['img_slider'] = "";
-		$targetFolder = '/uploads/img_slider';
+		$params['title'] = $this->input->post('title');
+		$params['content'] = $this->input->post('txt_content');
+		$params['date_create'] = date('Y-m-d');
+
+		$params['img_news'] = "";
+		$targetFolder = '/uploads/img_news';
 
 		if (!empty($_FILES)) {
 			$picId = rand(10000, 500000);
@@ -77,21 +71,21 @@ class News extends CI_Controller {
 			if (in_array($fileParts['extension'], $fileTypes)) {
 				move_uploaded_file($tempFile, $targetFile);
 				$_FILES['Filedata']['name'] = $image_name;
-				$params['img_slider'] = 'img_slider/' . $image_name;
+				$params['img_news'] = 'img_news/' . $image_name;
 
 			} else {
 				echo 'Invalid file type.';
 			}
 		}
 
-		$addprojecr = $this->project->addProject($params);
+		$addprojecr = $this->project->addNews($params);
 		if ($addprojecr) {
-			$this->session->set_flashdata('success_msg', 'Your project has been added successfully');
-			redirect('project');
+			$this->session->set_flashdata('success_msg', 'Your news has been added successfully');
+			redirect('news');
 		} else {
 //            $delete = $this->vehicleModel->deleteTemp();
-			$this->session->set_flashdata('error_msg', 'Please try again adding a project');
-			redirect('project/addProject');
+			$this->session->set_flashdata('error_msg', 'Please try again adding a news');
+			redirect('news/addNews');
 		}
 		/*  } else {
 	$this->session->set_flashdata('error_msg', 'Please upload images in product');
@@ -99,41 +93,33 @@ class News extends CI_Controller {
 	}*/
 	}
 
-	public function editNews($_id_project) {
+	public function editNews($_id_news) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		if (empty($_id_project)) {
-			redirect('project');
+		if (empty($_id_news)) {
+			redirect('news');
 		}
 
-		$data = $this->project->getProjectById($_id_project);
-		$data_category = $this->project->getAllCategory();
-		$data_county = $this->project->getAllCountyAdmin();
+		$data = $this->project->getNewsById($_id_news);
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_edit', array('project' => $data));
+		$this->load->view('admin/news_edit', array('news' => $data));
 		$this->load->view('admin/footer');
 	}
 
-	public function editNewsFormSubmission($_id_project) {
+	public function editNewsFormSubmission($_id_news) {
 
-		$params['name_project'] = $this->input->post('name_project');
-		$params['address'] = $this->input->post('address');
-		$params['price'] = $this->input->post('price');
-		$params['category'] = $this->input->post('category');
-		$params['county'] = $this->input->post('county');
-		$params['slider'] = $this->input->post('slider');
-		$params['desc_slider'] = $this->input->post('desc_slider');
-		$params['description'] = $this->input->post('txt_content');
-		$params['lat'] = $this->input->post('lat');
-		$params['lng'] = $this->input->post('lng');
-		$params['img_slider'] = "";
-		$targetFolder = '/uploads/img_slider';
+		$params['title'] = $this->input->post('title');
+		$params['content'] = $this->input->post('txt_content');
+		$params['date_create'] = date('Y-m-d');
 
-		if (!empty($_FILES)) {
+		$params['img_news'] = "";
+		$targetFolder = '/uploads/img_news';
+
+		if (!empty($_FILES) && ($_FILES['file_upload']['size'] != 0)) {
 			$picId = rand(10000, 500000);
 			$tempFile = $_FILES['file_upload']['tmp_name'];
 			$targetPath = getcwd() . '' . $targetFolder;
@@ -147,56 +133,54 @@ class News extends CI_Controller {
 			if (in_array($fileParts['extension'], $fileTypes)) {
 				move_uploaded_file($tempFile, $targetFile);
 				$_FILES['Filedata']['name'] = $image_name;
-				$params['img_slider'] = 'img_slider/' . $image_name;
+				$params['img_news'] = 'img_news/' . $image_name;
 
 			} else {
 //                echo 'Invalid file type.';
 				$this->session->set_flashdata('error_msg', 'Please try again, Invalid file type');
-				redirect('project/editProject/' . $_id_project);
+				redirect('news/editNews/' . $_id_news);
 			}
 		} else {
-			// $params['img_slider'] = $this->input->post('image_name');
+			$params['img_news'] = $this->input->post('image_name');
 
 		}
 
-		$updatep = $this->project->updateProject($params, $_id_project);
+		$updatep = $this->project->updateNews($params, $_id_news);
 		if ($updatep) {
-			$this->session->set_flashdata('success_msg', 'Your project has been added successfully');
-			redirect('project');
+			$this->session->set_flashdata('success_msg', 'Your news has been added successfully');
+			redirect('news');
 		} else {
 //            $delete = $this->vehicleModel->deleteTemp();
-			$this->session->set_flashdata('error_msg', 'Please try again adding a project');
-			redirect('project/editProject');
+			$this->session->set_flashdata('error_msg', 'Please try again adding a news');
+			redirect('news/editNews');
 		}
 	}
 
-	public function viewNews($_id_project) {
+	public function viewNews($_id_news) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		if (empty($_id_project)) {
-			redirect('project');
+		if (empty($_id_news)) {
+			redirect('news');
 		}
 
-		$data = $this->project->getProjectById($_id_project);
-		$data_category = $this->project->getAllCategory();
-		$data_county = $this->project->getAllCountyAdmin();
+		$data = $this->project->getNewsById($_id_news);
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_view', array('project' => $data));
+		$this->load->view('admin/news_view', array('news' => $data));
 		$this->load->view('admin/footer');
 	}
 
-	public function deleteNews($_id_project) {
+	public function deleteNews($_id_news) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		$this->session->set_flashdata('success_msg', 'Your project is deleted successfully');
-		$this->project->deleteProject($_id_project);
-		redirect('project');
+		$this->session->set_flashdata('success_msg', 'Your news is deleted successfully');
+		$this->project->deleteNews($_id_news);
+		redirect('news');
 	}
 
 	public function validateUserSession() {

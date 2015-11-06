@@ -54,11 +54,11 @@ class County extends CI_Controller {
 
 		$addcounty = $this->project->addCounty($name_county);
 		if ($addcounty) {
-			$this->session->set_flashdata('success_msg', 'Your project has been added successfully');
+			$this->session->set_flashdata('success_msg', 'Your county has been added successfully');
 			redirect('county');
 		} else {
 //            $delete = $this->vehicleModel->deleteTemp();
-			$this->session->set_flashdata('error_msg', 'Please try again adding a project');
+			$this->session->set_flashdata('error_msg', 'Please try again adding a county');
 			redirect('county/addCounty');
 		}
 		/*  } else {
@@ -67,127 +67,63 @@ class County extends CI_Controller {
 	}*/
 	}
 
-	public function editProduct($vehicleId) {
+	public function editCounty($_id_county) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		if (empty($vehicleId)) {
-			redirect('produce');
+		if (empty($_id_county)) {
+			redirect('county');
 		}
 
-		$data['product'] = $this->Productmodel->viewProduct($vehicleId);
-		$data['id_make'] = $this->Productmodel->getMake();
-		$data['id_style'] = $this->Productmodel->getStyle();
-		$data['id_engine_size'] = $this->Productmodel->getEngine_size();
-		$idverhicle = $data['product']['id'];
+		$data['county'] = $this->project->getCountyById($_id_county);
 
-		$img = $this->Productmodel->getAllImageByIdProduct($idverhicle);
-		$data['arrImages'] = $img;
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/product_edit', $data);
+		$this->load->view('admin/county_edit', $data);
 		$this->load->view('admin/footer');
 	}
 
-	public function editProductFormSubmission($vehicleId) {
+	public function editCountyFormSubmission($_id_county) {
 
-		$params['id_model'] = $this->input->post('modelDrp');
-		$params['year'] = $this->input->post('yearDrp');
-		$params['id_style'] = $this->input->post('id_style');
-		$params['id_engine_size'] = $this->input->post('id_engine_size');
-		$params['name'] = $this->input->post('name');
-		$params['title'] = $this->input->post('title');
-		$params['description'] = $this->input->post('description');
-		$params['price'] = $this->input->post('price');
-		$params['quantity_product'] = $this->input->post('quantity_product');
-		// $dateTS = $this->input->post('create_date');
-		//  $dateS = explode('/', $dateTS);
-		// $params['create_date'] = date('Y-m-d');
+		$params['name_county'] = $this->input->post('name_county');
 
-		// $dateTE = $this->input->post('update_date');
-		// $dateE = explode('/', $dateTE);
-		$params['update_date'] = date('Y-M-d');
-
-		$editVehicle = $this->Productmodel->editProduct($params, $vehicleId);
-		// check success or not.
-		if ($editVehicle) {
-			$imageTemp = $this->Productmodel->getImageTemp($params);
-			// check if user add more image, then add image from table tamp to table images.
-			if ($imageTemp) {
-				foreach ($imageTemp as $key => $value) {
-					$paramsImg['id_product'] = $vehicleId;
-					$paramsImg['url'] = $value->f_name;
-					$paramsImg['name'] = $value->f_name;
-					$paramsImg['create_date'] = date('Y-m-d');
-					$paramsImg['update_date'] = date('Y-m-d');
-					$addImages = $this->Productmodel->addImageProduct($paramsImg);
-				}
-				// when add all image to table image delete all image in table tamp
-				$this->Productmodel->deleteTemp();
-			} else {
-
-			}
-
-			$name_array = array();
-			if (!empty($_FILES) && ($_FILES['file_upload']['size'] != 0)) {
-				$count = sizeof($_FILES['file_upload']['tmp_name']);
-
-				foreach ($_FILES as $key => $value) {
-					for ($s = 0; $s <= $count - 1; $s++) {
-						if ($_FILES['file_upload']['name'][$s] != null) {
-							$imgage_name = $this->input->post('id_image');
-							$id_image = $imgage_name[$s];
-
-							$upload_dir = getcwd() . '' . '/uploads/product/';
-							$tempFile = $_FILES['file_upload']['tmp_name'][$s];
-							$targetPath = $upload_dir;
-							// Adding timestamp with image's name so that files with same name can be uploaded easily.
-							$fname = $targetPath . time() . '-' . $_FILES['file_upload']['name'][$s];
-							$file_name = time() . '-' . $_FILES['file_upload']['name'][$s];
-
-							$paramImg['url'] = $file_name;
-							$addImages = $this->Productmodel->updateImage($paramImg, $id_image);
-							move_uploaded_file($tempFile, $fname);
-						}
-					}
-				}
-
-			}
-
-			$this->session->set_flashdata('success_msg', 'Your procut has been updated successfully');
-			redirect('product');
+		$editcounty = $this->project->updateCounty($params, $_id_county);
+		if ($editcounty) {
+			$this->session->set_flashdata('success_msg', 'Your county has been added successfully');
+			redirect('county');
 		} else {
-			$this->session->set_flashdata('error_msg', 'Please try again updating your vehicle');
-			redirect('product/editProduct/' . $vehicleId);
+//            $delete = $this->vehicleModel->deleteTemp();
+			$this->session->set_flashdata('error_msg', 'Please try again adding a county');
+			redirect('county/editCounty');
 		}
 	}
 
-	public function viewProduct($vehicleId) {
+	public function viewCounty($_id_county) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		if (empty($vehicleId)) {
-			redirect('product');
+		if (empty($_id_county)) {
+			redirect('county');
 		}
 
-		$data['product'] = $this->Productmodel->viewProduct($vehicleId);
+		$data['county'] = $this->project->getCountyById($_id_county);
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/product_view', $data);
+		$this->load->view('admin/county_view', $data);
 		$this->load->view('admin/footer');
 	}
 
-	public function deleteProduct($vehicleId) {
+	public function deleteCounty($_id_county) {
 
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 
-		$this->session->set_flashdata('success_msg', 'Your events is deleted successfully');
-		$this->Productmodel->deleteProduct($vehicleId);
-		redirect('product');
+		$this->session->set_flashdata('success_msg', 'Your county is deleted successfully');
+		$this->project->deleteCounty($_id_county);
+		redirect('county');
 	}
 
 	public function validateUserSession() {

@@ -89,8 +89,7 @@ if (!empty($error_msg)) {
                 <div class="col_12">
                     <div class="pre_2 col_8 last">
                         <div class="form">
-                            <form id="form0" action="<?php echo site_url('project/editProjectFormSubmission/' . $project['_id_project'])?>"  method="post"  enctype="multipart/form-data">
-                                <div class="clearfix">
+                            <div class="clearfix">
                                     <label>Name Project</label>
                                     <div class="input">
                                         <input class="xlarge validate[required]" type="text" name="name_project" id="nameproject" value="<?php echo $project['name_project']?> " readonly/>
@@ -210,7 +209,6 @@ if (!empty($error_msg)) {
                                        <!--  <input type="submit" class="button blue" value="Add produce" /> -->
                                     </div>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>

@@ -133,7 +133,7 @@ class Project extends CI_Controller {
 		$params['img_slider'] = "";
 		$targetFolder = '/uploads/img_slider';
 
-		if (!empty($_FILES)) {
+		if (!empty($_FILES) && ($_FILES['file_upload']['size'] != 0)) {
 			$picId = rand(10000, 500000);
 			$tempFile = $_FILES['file_upload']['tmp_name'];
 			$targetPath = getcwd() . '' . $targetFolder;
@@ -155,7 +155,7 @@ class Project extends CI_Controller {
 				redirect('project/editProject/' . $_id_project);
 			}
 		} else {
-			// $params['img_slider'] = $this->input->post('image_name');
+			$params['img_slider'] = $this->input->post('image_name');
 
 		}
 
