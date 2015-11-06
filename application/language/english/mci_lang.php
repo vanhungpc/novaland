@@ -1,15 +1,17 @@
 <?php
 #pages home
 #jobseeker
-$lang['jobseeker_title'] = "DÀNH CHO NGƯỜI TÌM VIỆC";
-$lang['jobseeker_register'] = "Đăng ký tài khoản";
-$lang['jobseeker_create_cv'] = "Nộp hồ sơ";
-$lang['jobseeker_create_cv_online'] = "Tạo hồ sơ ứng tuyển";
+$lang['home'] = "HOME";
+$lang['about'] = "ABOUT";
+$lang['office_tel'] = "OFFICE TEL";
+$lang['apartment'] = "APARTMENT";
 #employer
-$lang['employer_title'] = "DÀNH CHO NHÀ TUYỂN DỤNG";
-$lang['employer_register'] = "Đăng ký";
-$lang['employer_recruitment'] = "Đăng tin";
-$lang['employer_contact_advertising'] = "LIÊN HỆ QUẢNG CÁO";
+$lang['house'] = "HOUSE";
+$lang['villas'] = "VILLAS";
+$lang['service_apartment'] = "SERVICE APARTMENT";
+$lang['contact'] = "CONTACT";
+$lang['news'] = "NEWS";
+$lang['rental_property'] = "HCMC RENTAL PROPERTY";
 #
 $lang['require_info'] = "Thông tin bắt buộc nhập";
 # validate err
