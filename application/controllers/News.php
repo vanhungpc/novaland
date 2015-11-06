@@ -190,7 +190,8 @@ class News extends CI_Controller {
 			redirect("admin/login");
 		}
 	}
-	public function detail_project($_id_project) {
+	public function detail_news($_id_news) {
+		$lang = $this->lang->mci_current();
 		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
@@ -201,17 +202,16 @@ class News extends CI_Controller {
 		), TRUE);
 		$data = $this->project->getAllCounty();
 		$data_news = $this->project->getAllNews();
-		$data_project = $this->project->getAllProject();
+		$data_news_id = $this->project->getNewsById($_id_news);
 		$data_slider = $this->project->getSliderProject();
 
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/project_detail', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
+		$content = $this->load->view('main/news_detail', array('county' => $data, 'arr_news' => $data_news, 'data_news' => $data_news_id, 'data_slider' => $data_slider), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
-		$this->load->view('main/layout', array('head' => $head, 'header' => $header,
+		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
 			'footer' => $footer));
 	}
-
 }
 
 /* End of file events.php */
