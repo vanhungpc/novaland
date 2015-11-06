@@ -30,7 +30,7 @@
 							        <label class="nav-toggle nav-header"><span><i class="fa fa-angle-double-right"></i>&nbsp;<?php echo $value['name_county']?></span></label>
 							            <ul class="nav nav-list nav-left-ml menu_left">
 							            	<?php foreach ($value['arr_project'] as $key => $values) {?>
-							                <li><a href="#"><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
+							                <li><a href="<?php echo site_url('project/detail_project/' . $values['_id_project']);?>"><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
 							            	<?php }
 	?>
 							            </ul>
@@ -55,7 +55,7 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-							        <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label>
+							       <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" ><i class="fa fa-newspaper-o"></i><?php echo $value->title?> </a></li>
 								</ul>
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
@@ -83,15 +83,19 @@
 							<div class="info-employer row">
 								<div class="row">
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<h5 class="color-h5">Saigon Pavillon Apartment for rent in District 3, Fully furnished, $1400</h5>
+										<h5 class="color-h5"><?php echo $data_project['name_project']?></h5>
 										<ul>
 											<li>
-												<span>277ngyen van cu</span>
+												<span><?php echo $data_project['address']?></span>
 											</li>
 											<li>
-												<span>2000$</span>
+												<span><?php echo $data_project['price']?>  $</span>
 											</li>
 										</ul>
+									</div>
+
+									<div class="col-sm-12 col-sm-12 padding-row">
+										<?php echo $data_project['description']?>
 									</div>
 
 

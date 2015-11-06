@@ -13,8 +13,8 @@ class Project extends CI_Controller {
 		$CI = &get_instance();
 		$CI->load->library('session');
 		$this->load->model('admin/Modelproject', 'project');
-                $this->load->language('mci');
-                $this->load->helper('language');
+		$this->load->language('mci');
+		$this->load->helper('language');
 	}
 
 	public function index() {
@@ -211,7 +211,7 @@ class Project extends CI_Controller {
 		}
 	}
 	public function detail_project($_id_project) {
-                $lang = $this->lang->mci_current();
+		$lang = $this->lang->mci_current();
 		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
@@ -222,13 +222,13 @@ class Project extends CI_Controller {
 		), TRUE);
 		$data = $this->project->getAllCounty();
 		$data_news = $this->project->getAllNews();
-		$data_project = $this->project->getAllProject();
+		$data_project = $this->project->getProjectById($_id_project);
 		$data_slider = $this->project->getSliderProject();
 
 		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/project_detail', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
-		$this->load->view('main/layout', array('head' => $head, 'header' => $header,'lang'=>$lang,
+		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
 			'footer' => $footer));
 	}
