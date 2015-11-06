@@ -27,6 +27,14 @@ if ($controller == 'county') {
             <a href="<?php echo site_url() . 'county';?>"><span>County</span></a>
         </li>
 
+        <li <?php
+if ($controller == 'news') {
+	echo 'class="active iconed"';
+}
+?>>
+            <a href="<?php echo site_url() . 'news';?>"><span>News</span></a>
+        </li>
+
     </ul>
 </nav>
 
