@@ -6,7 +6,7 @@
 						</div>
 
 						<div class="col-sm-6 text-right change-language-header">   
-                                                    <a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>">Tiếng Việt</a> |
+                                                    <a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>/<?php if(!empty($idproduct)) echo $idproduct ?>">Tiếng Việt</a> |
 							<?php echo anchor(lchange('en'), 'English');?>
 						</div>
 					</div>
