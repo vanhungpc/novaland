@@ -54,7 +54,6 @@
  <script src="<?php echo base_url()?>/assets/main/js/bootstrap.js"></script>
   <script src="<?php echo base_url()?>/assets/main/js/resize-page.js"></script>
     <script src="<?php echo base_url()?>/assets/main/js/job7vn.js"></script>
-    <script src="<?php echo base_url()?>/assets/main/js/job7vn-register.js"></script>
  <!-- <script src="<?php echo base_url()?>/assets/main/js/map/markerwithlabel.js">
  </script>-->
 

@@ -33,9 +33,9 @@
 			          <h2><?php echo $value->name_project?></h2>
 			          <div class="clear">
 			          </div>
-			          <div class="bn-desc"><span><?php echo $value->address?></span></div>
-						 <div class="clear">
-			          </div>
+			          <!-- <div class="bn-desc"><span><?php echo $value->address?></span></div>
+			          						 <div class="clear">
+			          </div> -->
 			          <div class="bn-desc"><span><?php echo $value->desc_slider?></span></div>
 
 			        </div>
