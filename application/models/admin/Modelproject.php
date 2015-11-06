@@ -33,6 +33,16 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
+
+	public function getAllProjectByName($name_project) {
+		$sql = "select * from project where name_project like '%" . $name_project . "%'";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
+	}
 	public function getProjectById($_id_project) {
 		$sql = "select * from project where _id_project = " . $_id_project;
 		$query = $this->db->query($sql);
