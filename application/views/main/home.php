@@ -24,7 +24,6 @@
 		  	<div class="at-slider col-ms-12">
 
 		  		<?php foreach ($data_slider as $value) {?>
-	# code...
 	<div class="slide-item col-ms-12">
 			      <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
