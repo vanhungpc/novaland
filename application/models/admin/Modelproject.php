@@ -24,6 +24,15 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
+	public function getAllProjectByIdCategory($_id_category) {
+		$sql = "select * from project where _id_category = " . $_id_category;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
+	}
 	public function getProjectById($_id_project) {
 		$sql = "select * from project where _id_project = " . $_id_project;
 		$query = $this->db->query($sql);
@@ -49,6 +58,25 @@ class ModelProject extends CI_Model {
 		$query = $this->db->query($sql);
 		if ($query->num_rows() > 0) {
 			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
+	public function getNameCategoryById($_id_category) {
+		$sql = "select * from category where _id_category = " . $_id_category;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
+	}
+	public function getNameCountyById($_id_county) {
+		$sql = "select * from county where _id_county = " . $_id_county;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
 		} else {
 			return "";
 		}
@@ -86,6 +114,7 @@ class ModelProject extends CI_Model {
 	public function getAllCounty() {
 		$sql = "select * from county";
 		$query = $this->db->query($sql);
+
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				if ($this->checProjectByCounty($row->_id_county) == 1) {
@@ -93,9 +122,7 @@ class ModelProject extends CI_Model {
 					$data['arr_project'] = $this->getProjectByCounty($row->_id_county);
 					$dataex[] = $data;
 				}
-
 			}
-
 			return $dataex;
 		} else {
 			return "";

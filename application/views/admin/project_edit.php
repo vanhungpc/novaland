@@ -144,12 +144,17 @@ if (!empty($error_msg)) {
                                     <label>Category</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="category" id="category">
-                                            <option value="1" <?php if ($project['_id_category'] == 1) {?> selected="selected"<?php }
-?> >villa</option>
-                                            <option value="2" <?php if ($project['_id_category'] == 2) {?> selected="selected"<?php }
-?> >khach san</option>
-                                            <option value="3" <?php if ($project['_id_category'] == 3) {?> selected="selected"<?php }
-?>>nha tho</option>
+                                             <?php foreach ($category as $value) {
+	?>
+                                                <?php if ($value->_id_category == $project['_id_category']) {?>
+                                                    <option  value="<?php echo $value->_id_category?>" selected><?php echo $value->name_category_eng?></option>
+                                                <?php } else {?>
+                                                    <option  value="<?php echo $value->_id_category?>"><?php echo $value->name_category_eng?></option>
+                                                <?php }
+	?>
+                                            <?php }
+?>
+
                                         </select>
                                     </div>
                                 </div>
@@ -158,9 +163,16 @@ if (!empty($error_msg)) {
                                     <label>County</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="county" id="county">
-                                            <option value="1">Quận 1</option>
-                                            <option value="2">Quận 2</option>
-                                            <option value="3">Quận 3</option>
+                                              <?php foreach ($county as $value) {?>
+                                                <?php if ($value->_id_county == $project['_id_county']) {?>
+                                                    <option  value="<?php echo $value->_id_county?>" selected><?php echo $value->name_county?></option>
+                                                <?php } else {?>
+                                                    <option  value="<?php echo $value->_id_county?>"><?php echo $value->name_county?></option>
+                                                <?php }
+	?>
+                                                                                            <?php }
+?>
+
                                         </select>
                                     </div>
                                 </div>

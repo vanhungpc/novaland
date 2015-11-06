@@ -142,25 +142,14 @@ if (!empty($error_msg)) {
                                  <div class="clearfix">
                                     <label>Category</label>
                                     <div class="input">
-                                        <select class="xlarge validate[required]" name="category" id="category" readonly>
-                                            <option value="1" <?php if ($project['_id_category'] == 1) {?> selected="selected"<?php }
-?> >villa</option>
-                                            <option value="2" <?php if ($project['_id_category'] == 2) {?> selected="selected"<?php }
-?> >khach san</option>
-                                            <option value="3" <?php if ($project['_id_category'] == 3) {?> selected="selected"<?php }
-?>>nha tho</option>
-                                        </select>
+                                       <input class="xlarge validate[required]" type="text" name="price" id="price" value="<?php echo $name_category[0]->name_category_eng?>" readonly/>
                                     </div>
                                 </div>
 
                                 <div class="clearfix">
                                     <label>County</label>
                                     <div class="input">
-                                        <select class="xlarge validate[required]" name="county" id="county" readonly>
-                                            <option value="1">Quận 1</option>
-                                            <option value="2">Quận 2</option>
-                                            <option value="3">Quận 3</option>
-                                        </select>
+                                         <input class="xlarge validate[required]" type="text" name="price" id="price" value="<?php echo $name_county[0]->name_county?>" readonly/>
                                     </div>
                                 </div>
 

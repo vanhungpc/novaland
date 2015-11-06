@@ -144,9 +144,11 @@ if (!empty($error_msg)) {
                                     <label>Category</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="category" id="category">
-                                            <option value="1">villa</option>
-                                            <option value="2">khach san</option>
-                                            <option value="3">nha tho</option>
+                                            <?php foreach ($category as $value) {?>
+                                                  <option value="<?php echo $value->_id_category?>"><?php echo $value->name_category_eng?></option>
+                                           <?php }
+?>
+
                                         </select>
                                     </div>
                                 </div>
@@ -155,9 +157,11 @@ if (!empty($error_msg)) {
                                     <label>County</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="county" id="county">
-                                            <option value="1">Quận 1</option>
-                                            <option value="2">Quận 2</option>
-                                            <option value="3">Quận 3</option>
+                                             <?php foreach ($county as $value) {?>
+                                                  <option value="<?php echo $value->_id_county?>"><?php echo $value->name_county?></option>
+                                           <?php }
+?>
+
                                         </select>
                                     </div>
                                 </div>

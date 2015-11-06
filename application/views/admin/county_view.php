@@ -38,11 +38,6 @@ if (!empty($error_msg)) {
                                     </div>
                                 </div>
 
-
-
-
-
-
                                 <div class="clearfix">
                                     <div class="input" style="margin-left:300px !important;">
                                        <a href="<?php echo site_url('county');?>"><input type="submit" class="button blue" value="Back"></input></a>

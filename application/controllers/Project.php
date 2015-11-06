@@ -33,10 +33,12 @@ class Project extends CI_Controller {
 		/*	$data['id_make'] = $this->Productmodel->getMake();
 		$data['id_style'] = $this->Productmodel->getStyle();
 		$data['id_engine_size'] = $this->Productmodel->getEngine_size();*/
+		$data_category = $this->project->getAllCategory();
+		$data_county = $this->project->getAllCountyAdmin();
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_add');
+		$this->load->view('admin/project_add', array('category' => $data_category, 'county' => $data_county));
 		$this->load->view('admin/footer');
 	}
 
@@ -114,7 +116,7 @@ class Project extends CI_Controller {
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_edit', array('project' => $data));
+		$this->load->view('admin/project_edit', array('project' => $data, 'category' => $data_category, 'county' => $data_county));
 		$this->load->view('admin/footer');
 	}
 
@@ -180,12 +182,12 @@ class Project extends CI_Controller {
 		}
 
 		$data = $this->project->getProjectById($_id_project);
-		$data_category = $this->project->getAllCategory();
-		$data_county = $this->project->getAllCountyAdmin();
+		$name_category = $this->project->getNameCategoryById($data['_id_category']);
+		$name_county = $this->project->getNameCountyById($data['_id_county']);
 
 		$this->load->view('admin/header');
 		$this->load->view('admin/navigation');
-		$this->load->view('admin/project_view', array('project' => $data));
+		$this->load->view('admin/project_view', array('project' => $data, 'name_category' => $name_category, 'name_county' => $name_county));
 		$this->load->view('admin/footer');
 	}
 
