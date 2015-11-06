@@ -53,7 +53,10 @@
  <script src="<?php echo base_url()?>/assets/novaland/js/canhcam.js"></script>
  <script src="<?php echo base_url()?>/assets/main/js/bootstrap.js"></script>
   <script src="<?php echo base_url()?>/assets/main/js/resize-page.js"></script>
- <!-- <script src="<?php echo base_url()?>/assets/main/js/map/markerwithlabel.js"></script>-->
+    <script src="<?php echo base_url()?>/assets/main/js/job7vn.js"></script>
+    <script src="<?php echo base_url()?>/assets/main/js/job7vn-register.js"></script>
+ <!-- <script src="<?php echo base_url()?>/assets/main/js/map/markerwithlabel.js">
+ </script>-->
 
 <!--<script src="<?php echo base_url()?>/assets/main/js/jquery4a80.js"></script>-->
 <!-- <script src="<?php echo base_url()?>/assets/common/js/jquery.prettyPhoto.js"></script>
