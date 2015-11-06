@@ -123,7 +123,9 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-							        <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label>
+									  <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" ><i class="fa fa-newspaper-o"></i><?php echo $value->title?> </a></li>
+
+							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
