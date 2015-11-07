@@ -7,8 +7,8 @@
 
 						<div class="col-sm-6 text-right change-language-header">   
                                                     <!-- <a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>/<?php if(!empty($idproduct)) echo $idproduct ?>">Tiếng Việt</a> | -->
-                                                        <?php echo anchor(lchange('vn',$this->router->class), 'Vietnamese');?>|
-							<?php echo anchor(lchange('en', $this->router->class), 'English');?>
+                                                        <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
+							<?php echo anchor(lchange('en'), 'English');?>
 						</div>
 					</div>
 					<div class="row top-header margin-bottom--4">
