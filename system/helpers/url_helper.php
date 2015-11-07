@@ -175,6 +175,13 @@ if ( ! function_exists('anchor'))
 
 		return '<a href="'.$site_url.'"'.$attributes.'>'.$title.'</a>';
 	}
+        
+        function linkNav($method, $lang, $textlang){
+            if($lang=='vn'){
+                return '<a href="'.  site_url('vn/'.$method).'">'.lang($textlang).'</a>';
+            }
+            return '<a href="'.  site_url($method).'">'.lang($textlang).'</a>';
+        }
 }
 
 // ------------------------------------------------------------------------
