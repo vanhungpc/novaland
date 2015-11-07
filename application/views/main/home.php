@@ -167,40 +167,44 @@
 
 					<div class="col-sm-6 col-md-6 no-padding">
 						<div class="card">
-							<div class="info-employer row">
-								<div class="row ">
-									<div class="col-sm-12 col-md-12 text-center">
+							<div class="info-employer row padding-2">
+								<div class="row padding-left-15">
+									<div class="col-sm-5 col-md-5 no-padding">
 										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 										<img class="card-img" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 										</a>
 									</div>
 
-								</div>
-								<div class="row">
-									<div class="col-sm-12  col-md-12 text-left">
-									 	<ul class="liststyle">
-										<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
-										<li>
-											<b><?php echo $value->name_project?></b>
-										</li>
-										</a>
-										<li>
-											<span><?php echo $value->address?> </span>
-										</li>
-										<li>
-											<span> <?php echo $value->price?> USD</span>
-										</li>
-										<li>
+									<div class="col-sm-7 col-md-7  no-padding">
+										 	<div class="col-sm-12  col-md-12 text-left">
+										 	<ul class="liststyle">
+											<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
+											<li>
+												<b><?php echo $value->name_project?></b>
+											</li>
+											</a>
+											<li>
+												<span><?php echo $value->address?> </span>
+											</li>
+											<li>
+												<span> <?php echo $value->price?> USD</span>
+											</li>
+											<li>
 
-										</li>
-									</ul>
+											</li>
+										</ul>
 
+										</div>
 									</div>
+
 								</div>
+								<!-- <div class="row">
+
+								</div> -->
 
 
 								<div class="row ">
-									<div class="col-sm-12  col-md-12  text-center margin-buttom-5">
+									<div class="col-sm-12  col-md-12  text-right">
 
 										<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $value->lat?>, <?php echo $value->lng?>)">View Map</button>
 									</div>

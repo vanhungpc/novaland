@@ -104,7 +104,7 @@ header{
 .site-header{
 	position: relative;
     z-index: 3;
-    background: #fff !important;
+    background: #8E3B13 !important;
     color: #000 !important;
 }
 
@@ -1846,5 +1846,15 @@ ul.ul-term-child-1{
 }
 .color-h5{
 	color: #014876;
+}
+.padding-left-15{
+	padding-left: 15px;
+}
+.padding-2:{
+	padding: 2px !important;
+
+}
+.info-employer.row.padding-2 {
+    padding: 2px;
 }
 
