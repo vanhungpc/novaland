@@ -17,7 +17,7 @@
 						</div>
 						<div class="col-sm-6 text-right">
 							<label class="hotlines margin-right-15">
-								Email: <span>thienttt.finance@gmail.com</span><br>
+                                                            Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a><br>
 								Hotline: <b> (84) 909 288 281</b>
 							</label>
 						</div>
