@@ -140,7 +140,7 @@ class Video extends CI_Controller {
 		}
 	}
 
-	public function all_news() {
+	public function all_video() {
 
 	}
 }

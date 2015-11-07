@@ -134,16 +134,31 @@
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
 
+							<?php foreach ($data_video as $value) {?>
+
 							<div class="col-sm-12 employer-tools-item">
-								<label class="nav-toggle nav-header"><span><i class="fa fa-video-camera"></i>video 1</span></label>
-								<iframe class="col-lg-12 col-md-12 col-sm-12" src="https://www.youtube.com/embed/2EIeUlvHAiM" frameborder="0" allowfullscreen></iframe>
+								<label class="nav-toggle nav-header"><span><i class="fa fa-video-camera"></i><?php echo $value->title_video?></span></label>
+								<iframe class="col-lg-12 col-md-12 col-sm-12" src="<?php echo $value->url_video?>" frameborder="0" allowfullscreen></iframe>
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
 
+<?php }
+?>
+
+<?php if (sizeof($data_video) >= 3) {?>
+
 							<div class="col-sm-12 employer-tools-item">
-								<iframe class="col-lg-12 col-md-12 col-sm-12" src="https://www.youtube.com/embed/2EIeUlvHAiM" frameborder="0" allowfullscreen></iframe>
+								<ul class="nav nav-list-main">
+									  <li><a href="<?php echo site_url('video/all_video/');?>" >Tất cả các video </a></li>
+
+							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
+								</ul>
+
 							</div>
-							<div class="col-sm-12 col-sm-12 employer-line"></div>
+
+	<?php }
+?>
+
 
 
 						</div>
