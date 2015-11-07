@@ -1880,3 +1880,6 @@ ul.bottomnav li a:hover{
 #menu-main-menu li a:hover{
     color: #003362 !important;
 }
+.change-language-header a{
+    font-weight: bolder;
+}
