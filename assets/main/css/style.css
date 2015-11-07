@@ -1877,3 +1877,6 @@ ul.bottomnav li a:hover{
     text-decoration: underline;
     color: red;
 }
+#menu-main-menu li a:hover{
+    color: #003362 !important;
+}
