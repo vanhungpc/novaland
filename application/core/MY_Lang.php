@@ -55,7 +55,7 @@ class MY_Lang extends CI_Lang {
   }
   
   // returns uri string with language segment
-  function mci_make_uri($language_segment, $class = '', $uri = FALSE) {
+  function mci_make_uri($language_segment, $uri = FALSE) {
     $uri = ($uri === FALSE) ? $this->mci_clean_uri() : trim($uri, '/');
     
     if(!array_key_exists($language_segment, $this->mci_languages)) {
@@ -66,7 +66,7 @@ class MY_Lang extends CI_Lang {
       return $uri;
     }
     
-    $uri = $language_segment.'/'.$class.'/'.$uri;
+    $uri = $language_segment.'/'.$uri;
     
     return $uri;
   }
@@ -91,7 +91,7 @@ class MY_Lang extends CI_Lang {
   }
 
 	// returns uri(s) for different languages, mixed
-	function mci_change($language = false, $class = '') {
+	function mci_change($language = false) {
 		if($language == false) {
 			unset($this->mci_languages[$this->mci_current()]);
 
@@ -110,7 +110,7 @@ class MY_Lang extends CI_Lang {
 			return '';
 		}
 
-		return $this->mci_make_uri($language, $class);
+		return $this->mci_make_uri($language);
 	}
 
 
