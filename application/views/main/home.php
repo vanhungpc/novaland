@@ -125,6 +125,28 @@
 ?>
 						</div>
 
+						<!-- video news -->
+
+						<div class="row-employer-menu  row employer-tools">
+							<div class="col-sm-12 col-sm-12 employer-box-header background-color-3">
+								<h5 class="employer-tools-title">VIDEO</h5>
+								<!-- <div class="border-bottom-title border-color-3"></div> -->
+							</div>
+							<div class="col-sm-12 col-sm-12 employer-line"></div>
+
+							<div class="col-sm-12 employer-tools-item">
+								<label class="nav-toggle nav-header"><span><i class="fa fa-video-camera"></i>video 1</span></label>
+								<iframe class="col-lg-12 col-md-12 col-sm-12" src="https://www.youtube.com/embed/2EIeUlvHAiM" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="col-sm-12 col-sm-12 employer-line"></div>
+
+							<div class="col-sm-12 employer-tools-item">
+								<iframe class="col-lg-12 col-md-12 col-sm-12" src="https://www.youtube.com/embed/2EIeUlvHAiM" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="col-sm-12 col-sm-12 employer-line"></div>
+
+
+						</div>
 
 						<!-- new -->
 						<div class="row-employer-menu  row employer-tools">

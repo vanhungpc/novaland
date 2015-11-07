@@ -63,6 +63,16 @@ class ModelProject extends CI_Model {
 		}
 	}
 
+	public function getVideoById($_id_video) {
+		$sql = "select * from video where _id_video = " . $_id_video;
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
 	public function getCountyById($_id_county) {
 		$sql = "select * from county where _id_county = " . $_id_county;
 		$query = $this->db->query($sql);
@@ -167,6 +177,16 @@ class ModelProject extends CI_Model {
 
 	public function getAllNews() {
 		$sql = "select * from news order by _id_news desc limit 6 ";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
+	}
+
+	public function getAllVideo() {
+		$sql = "select * from video order by _id_video desc limit 3 ";
 		$query = $this->db->query($sql);
 		if ($query->num_rows() > 0) {
 			return $query->result();
@@ -317,6 +337,47 @@ class ModelProject extends CI_Model {
 	public function deleteNews($_id_news) {
 		$sql = "DELETE FROM news
                 WHERE _id_news = $_id_news";
+
+		$query = $this->db->query($sql);
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+
+	//video
+
+	public function addVideo($params) {
+		$this->db->trans_start();
+		$data = array(
+			'title_video' => $params['title_video'],
+			'url_video' => $params['url_video'],
+			'date_create' => $params['date_create']);
+		$query = $this->db->insert('video', $data);
+		$insert_id = $this->db->insert_id();
+		$this->db->trans_complete();
+		return $insert_id;
+	}
+
+	public function updateVideo($params, $_id_video) {
+		$this->db->trans_start();
+		$data = array(
+			'title_video' => $params['title_video'],
+			'url_video' => $params['url_video'],
+			'date_create' => $params['date_create']);
+		$this->db->where('_id_video', $_id_video);
+		$query = $this->db->update('video', $data);
+		$this->db->trans_complete();
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+	public function deleteVideo($_id_video) {
+		$sql = "DELETE FROM video
+                WHERE _id_video = $_id_video";
 
 		$query = $this->db->query($sql);
 		if ($query) {

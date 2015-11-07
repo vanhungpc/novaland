@@ -35,6 +35,15 @@ if ($controller == 'news') {
             <a href="<?php echo site_url() . 'news';?>"><span>News</span></a>
         </li>
 
+        <li <?php
+if ($controller == 'video') {
+	echo 'class="active iconed"';
+}
+?>>
+            <a href="<?php echo site_url() . 'video';?>"><span>Video</span></a>
+        </li>
+
+
     </ul>
 </nav>
 
