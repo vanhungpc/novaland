@@ -58,42 +58,42 @@
 	echo 'active-menu';
 }
 ?>  menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
-                            <a href="<?php echo base_url();?>"><?php echo lang("home") ?></a>
+                           <?php echo linkNav("", $this->lang->mci_segment, "home") ?>
 			</li>
 			<li id=" menu-item-2075" class="  <?php if (isset($menu) && $menu == 'about') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><a href="<?php echo base_url("about");?>"><?php echo lang("about") ?></a>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("about", $this->lang->mci_segment, "about") ?>
 
 			</li>
 	<li id="menu-item-1897" class="<?php if (isset($menu) && $menu == 'officetel') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><a href="<?php echo base_url("officetel");?>"><?php echo lang("office_tel") ?></a></li>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("officetel", $this->lang->mci_segment, "office_tel") ?></li>
 	<li id="menu-item-2075" class="<?php if (isset($menu) && $menu == 'apartment') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><a href="<?php echo base_url("apartment");?>"><?php echo lang("apartment"); ?></a>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("apartment", $this->lang->mci_segment, "apartment") ?>
 
 	</li>
 
 	<li  id="register-modal" class="<?php if (isset($menu) && $menu == 'house') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="<?php echo base_url('house');?>"><?php echo lang("house") ?></a></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("house", $this->lang->mci_segment, "house") ?></li>
 
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'villas') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="<?php echo base_url('villas');?>"><?php echo lang("villas") ?></a></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("villas", $this->lang->mci_segment, "villas") ?></li>
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'serviced_apartment') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="<?php echo base_url('serviced_apartment');?>"><?php echo lang("service_apartment"); ?></a></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("serviced_apartment", $this->lang->mci_segment, "service_apartment") ?></li>
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'contact') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><a href="<?php echo base_url('contact');?>"><?php echo lang("contact"); ?></a></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact") ?></li>
 
 	<!-- <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login/index.html">Login</a></li> -->
 	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><a href="find-a-job/index.html">English<i class="fa fa-chevron-down"></i></a>
