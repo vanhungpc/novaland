@@ -11,13 +11,13 @@
         </div>
         <div class="col-md-8">
             <ul class="bottomnav">
-                <li class="first"><a title="Apartment for rent" href="http://www.apartmentforrent.com.vn/">APARTMENT FOR RENT</a></li>          
-                						<li><a title="Apartment" href="http://www.apartmentforrent.com.vn/apartment/">Apartment</a></li>
-												<li><a title="House" href="http://www.apartmentforrent.com.vn/house/">House</a></li>
-												<li><a title="Villas" href="http://www.apartmentforrent.com.vn/villas/">Villas</a></li>
-												<li><a title="Office" href="http://www.apartmentforrent.com.vn/office/">Office</a></li>
-												<li><a title="Serviced apartment" href="http://www.apartmentforrent.com.vn/serviced-apartment/">Serviced apartment</a></li>
-						                <li class="last"><a title="Contact" href="http://www.apartmentforrent.com.vn/contact.html">CONTACT</a></li>
+       
+                						<li><a title="Apartment" href="<?php echo base_url("apartment");?>" style="border-right: 1px solid #ddd; padding-right: 15px;">APARTMENT</a></li>
+                                                                <li><a title="House" href="<?php echo base_url('house');?>" style="border-right: 1px solid #ddd; padding-right: 15px;">HOUSE</a></li>
+												<li><a title="Villas" href="<?php echo base_url('villas');?>" style="border-right: 1px solid #ddd; padding-right: 15px;">VILLAS</a></li>
+												<li><a title="Office" href="<?php echo base_url("officetel");?>" style="border-right: 1px solid #ddd; padding-right: 15px;">OFFICE</a></li>
+												<li><a title="Serviced apartment" href="<?php echo base_url('serviced_apartment');?>" style="border-right: 1px solid #ddd; padding-right: 15px;">SERVICED APARTMENT</a></li>
+						                <li class="last"><a title="Contact" href="<?php echo base_url('contact');?>">CONTACT</a></li>
             </ul>
             
             <p style="color: #fff; font-size: 14px; float: right;font-style: italic "> © 2015  NOVALAND. A company of THANH DO INTL.</p>
