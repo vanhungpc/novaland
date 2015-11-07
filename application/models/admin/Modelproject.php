@@ -122,7 +122,7 @@ class ModelProject extends CI_Model {
 		}
 	}
 	public function getAllCounty() {
-		$sql = "select * from county";
+		$sql = "select * from county order by name_county";
 		$query = $this->db->query($sql);
 
 		if ($query->num_rows() > 0) {
@@ -166,7 +166,7 @@ class ModelProject extends CI_Model {
 	}
 
 	public function getAllNews() {
-		$sql = "select * from news";
+		$sql = "select * from news order by _id_news desc limit 6 ";
 		$query = $this->db->query($sql);
 		if ($query->num_rows() > 0) {
 			return $query->result();
@@ -174,6 +174,16 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
+
+	/*public function getAllNews_link() {
+	$sql = "select * from news order by _id_news desc";
+	$query = $this->db->query($sql);
+	if ($query->num_rows() > 0) {
+	return $query->result();
+	} else {
+	return "";
+	}
+	}*/
 
 	public function addProject($params) {
 		$this->db->trans_start();

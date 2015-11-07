@@ -87,10 +87,10 @@
 							<div class="info-employer row">
 								<div class="row">
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<h5 class="color-h5"><?php echo $arr_news[0]->title?></h5>
+										<h5 class="color-h5"><?php echo $data_news_id['title']?></h5>
 										<ul>
 											<li>
-												<span><?php echo $arr_news[0]->date_create?></span>
+												<span><?php echo $data_news_id['date_create']?></span>
 											</li>
 
 										</ul>
@@ -98,7 +98,7 @@
 									</div>
 
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<?php echo $arr_news[0]->content?>
+										<?php echo $data_news_id['content']?>
 									</div>
 
 

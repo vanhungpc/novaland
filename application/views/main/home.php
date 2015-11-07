@@ -54,7 +54,7 @@
 		<!-- end slider -->
 	</div>
 
-	<div class="row">
+	<div class="row padding-10">
 
 			<div class="col-sm-12">
 				<div class="card">
@@ -93,7 +93,7 @@
 
 	<div class="row margin-bottom-15">
 		<div class="col-sm-4 col-xs-12">
-			<div class="row">
+			<div class="row padding-10">
 				<div class="col-sm-12 col-md-12">
 					<div class="card">
 						<div class="row-employer-menu  row employer-tools">
@@ -132,7 +132,8 @@
 								<!-- <div class="border-bottom-title border-color-3"></div> -->
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
-							<?php foreach ($arr_news as $value) {?>
+							<?php foreach ($arr_news as $value) {
+	?>
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
@@ -140,12 +141,30 @@
 
 							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
+
 							</div>
 							<div class="col-sm-12 col-sm-12 employer-line"></div>
 
 
 							<?php }
+
 ?>
+
+<?php if (sizeof($arr_news) >= 6) {?>
+
+							<div class="col-sm-12 employer-tools-item">
+								<ul class="nav nav-list-main">
+									  <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" >Tất cả các tin </a></li>
+
+							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
+								</ul>
+
+							</div>
+
+	<?php }
+?>
+
+
 						</div>
 
 						<!-- -->
@@ -165,17 +184,17 @@
 	?>
 					<?php foreach ($data_project as $value) {?>
 
-					<div class="col-sm-6 col-md-6 no-padding">
+					<div class="col-xs-12 col-sm-6 col-md-6  no-padding">
 						<div class="card">
 							<div class="info-employer row padding-2">
 								<div class="row padding-left-15">
-									<div class="col-sm-5 col-md-5 no-padding">
+									<div class="col-sm-5 col-md-5 col-xs-5 no-padding">
 										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 										<img class="card-img" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 										</a>
 									</div>
 
-									<div class="col-sm-7 col-md-7  no-padding">
+									<div class="col-sm-7 col-md-7 col-xs-7 no-padding">
 										 	<div class="col-sm-12  col-md-12 text-left">
 										 	<ul class="liststyle">
 											<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">

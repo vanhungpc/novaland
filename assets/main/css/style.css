@@ -1088,7 +1088,7 @@ a.toggle-menu:hover{
 }
 .card .info-employer{
 	margin: 10px;
-		border: 1px solid #fff;
+		border: 1px solid #919094;
     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
@@ -1097,7 +1097,7 @@ a.toggle-menu:hover{
 }
 .card .row-employer-menu{
 	/* margin: 10px; */
-		border: 1px solid #fff;
+		border: 1px solid #919094;
     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);

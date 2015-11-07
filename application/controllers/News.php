@@ -208,11 +208,15 @@ class News extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/news_detail', array('county' => $data, 'arr_news' => $data_news, 'data_news' => $data_news_id, 'data_slider' => $data_slider), TRUE);
+		$content = $this->load->view('main/news_detail', array('county' => $data, 'arr_news' => $data_news, 'data_news_id' => $data_news_id, 'data_slider' => $data_slider), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
 			'footer' => $footer));
+	}
+
+	public function all_news() {
+
 	}
 }
 

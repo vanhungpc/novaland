@@ -10962,3 +10962,13 @@ input.form-control.input-sm {
 .dialog_a{
     color: #333 !important;
 }
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+    .margin-right-25 {
+       margin-right: -15px;
+    }
+    .padding-10{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
