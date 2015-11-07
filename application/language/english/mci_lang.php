@@ -14,6 +14,8 @@ $lang['news'] = "NEWS";
 $lang['rental_property'] = "HCMC RENTAL PROPERTY";
 #
 $lang['require_info'] = "Thông tin bắt buộc nhập";
+$lang['not_found_project'] = "Không có dự án";
+$lang['total_projects'] = "There are total %u projects";
 # validate err
 $lang['email'] = "Email";
 $lang['password'] = "Mật khẩu";

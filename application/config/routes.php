@@ -50,13 +50,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
  */
 $route['default_controller'] = 'home';
+$route['^(en|vn)/contact'] = 'home/contact';
+$route['^(en|vn)/detail_project/(:num)'] = 'project/detail_project/$2';  
+$route['^(en|vn)/detail_news/(:num)'] = 'news/detail_news/$2';
+$route['^(en|vn)/about'] = 'home/about';
+$route['^(en|vn)/officetel'] = 'home/officetel';
+$route['^(en|vn)/apartment'] = 'home/apartment';
+$route['^(en|vn)/house'] = 'home/house';
+$route['^(en|vn)/villas'] = 'home/villas';
+$route['^(en|vn)/serviced_apartment'] = 'home/serviced_apartment';
 $route['^(en|vn)/(.+)$'] = "$2";
+ 
 $route['^(en|vn)$'] = $route['default_controller'];
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['home'] = 'home/index';
 $route['example'] = 'example';
-$route['admin/login'] = "admin/login";
+$route['admin/login'] = "admin/login";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 $route['about'] = 'home/about';
 $route['officetel'] = 'home/officetel';
 $route['apartment'] = 'home/apartment';
@@ -64,4 +74,8 @@ $route['house'] = 'home/house';
 $route['villas'] = 'home/villas';
 $route['serviced_apartment'] = 'home/serviced_apartment';
 $route['contact'] = 'home/contact';
+
 $route['search_project'] = 'search_project';
+$route['detail_project/(:num)'] = 'project/detail_project/$1';   
+$route['detail_news/(:num)'] = 'news/detail_news/$1';
+

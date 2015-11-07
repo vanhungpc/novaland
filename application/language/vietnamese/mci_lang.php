@@ -13,6 +13,8 @@ $lang['contact'] = "LIÊN HỆ";
 $lang['news'] = "TIN TỨC MỚI NHẤT";
 $lang['rental_property'] = "BẤT ĐỘNG SẢN CHO THUÊ";
 $lang['require_info'] = "Thông tin bắt buộc nhập";
+$lang['not_found_project'] = "Not found projects";
+$lang['total_projects'] = "Có tất cả %u dự án";
 # validate err
 $lang['email'] = "Email";
 $lang['password'] = "Mật khẩu";

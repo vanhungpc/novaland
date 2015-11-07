@@ -25,7 +25,7 @@
 
 		  		<?php foreach ($data_slider as $value) {?>
 	<div class="slide-item col-ms-12">
-			      <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
+			      <a href="<?php echo site_url('detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 			      </a>
 			      <div class="container-s">
@@ -60,7 +60,8 @@
 				<div class="card">
 					<div class="row-employer-menu  row employer-tools">
 					<div class="col-sm-7">
-						<h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {?>Có tất cả <?php echo count($data_project)?> dự án <?php } else {?> Không có dự án <?php }
+
+                                            <h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {echo sprintf(lang("total_projects"), count($data_project))?><?php } else {echo lang('not_found_project');?> <?php }
 ?>
 </h5>
 					</div>
@@ -169,6 +170,7 @@
 
 						<!-- -->
 					</div>
+					<?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county));?>
 				</div>
 
 			</div>
