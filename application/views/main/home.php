@@ -170,11 +170,13 @@
 
 						<!-- -->
 					</div>
-					<?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county));?>
+
 				</div>
 
 			</div>
 		</div>
+
+
     <div id="dialog" style="display: none">
 	        <div id="dvMap" style="height: 380px; width: 580px;">
 	        </div>
