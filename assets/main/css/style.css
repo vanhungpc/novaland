@@ -1850,7 +1850,7 @@ ul.ul-term-child-1{
 .padding-left-15{
 	padding-left: 15px;
 }
-.padding-2:{
+.padding-2{
 	padding: 2px !important;
 
 }
@@ -1858,3 +1858,22 @@ ul.ul-term-child-1{
     padding: 2px;
 }
 
+ul.bottomnav {
+    float: right;
+    height: 22px;
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0;
+    font-size: 14px;
+}
+ul.bottomnav li {
+    display: block;
+    float: left;
+    height: 22px;
+    position: relative;
+    font-weight: bolder;
+}
+ul.bottomnav li a:hover{
+    text-decoration: underline;
+    color: red;
+}
