@@ -18,7 +18,8 @@
 						<div class="col-sm-6 text-right">
 							<label class="hotlines margin-right-15">
                                                             Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a><br>
-								Hotline: <b> (84) 909 288 281</b>
+                                                            <div class="enable_call">  Hotline:<a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
+                                                            <div class="unable_call">  Hotline:<b> (84) 909 288 281</b> </div>
 							</label>
 						</div>
 					</div>
