@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"data",
-				"data_category"
+				"marg",
+				"margin-right"
 			],
 			[
-				"marg",
-				"margin-top"
+				"data",
+				"data_category"
 			],
 			[
 				"detail",
@@ -152,18 +152,26 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/main/home.php",
+			"file": "application/controllers/Home.php",
 			"settings":
 			{
-				"buffer_size": 8542,
+				"buffer_size": 10612,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/controllers/Home.php",
+			"file": "application/views/main/home.php",
 			"settings":
 			{
-				"buffer_size": 10536,
+				"buffer_size": 10383,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/Video.php",
+			"settings":
+			{
+				"buffer_size": 5227,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,79 +179,7 @@
 			"file": "application/models/admin/Modelproject.php",
 			"settings":
 			{
-				"buffer_size": 7888,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/main/news_detail.php",
-			"settings":
-			{
-				"buffer_size": 4201,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/main/project_detail.php",
-			"settings":
-			{
-				"buffer_size": 5679,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/main/layout.php",
-			"settings":
-			{
-				"buffer_size": 789,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/search_project.php",
-			"settings":
-			{
-				"buffer_size": 9454,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/main/header.php",
-			"settings":
-			{
-				"buffer_size": 5997,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/main/head.php",
-			"settings":
-			{
-				"buffer_size": 4854,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/admin/news_add.php",
-			"settings":
-			{
-				"buffer_size": 4273,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/News.php",
-			"settings":
-			{
-				"buffer_size": 6986,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/Project.php",
-			"settings":
-			{
-				"buffer_size": 8520,
+				"buffer_size": 9619,
 				"line_ending": "Windows"
 			}
 		},
@@ -265,28 +201,6 @@
 				"buffer_size": 0,
 				"line_ending": "Windows",
 				"name": "Xdebug Watch",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows",
-				"name": "Xdebug Stack",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"contents": "=> C:\\xampp\\htdocs\\novaland\\application\\controllers\\News.php\n	|+| 122\n",
-			"settings":
-			{
-				"buffer_size": 70,
-				"line_ending": "Windows",
-				"name": "Xdebug Breakpoint",
 				"read_only": true,
 				"scratch": true
 			}
@@ -365,60 +279,62 @@
 	[
 		"/C/xampp/htdocs/novaland",
 		"/C/xampp/htdocs/novaland/application",
-		"/C/xampp/htdocs/novaland/application/config",
 		"/C/xampp/htdocs/novaland/application/controllers",
-		"/C/xampp/htdocs/novaland/application/models",
-		"/C/xampp/htdocs/novaland/application/models/admin",
 		"/C/xampp/htdocs/novaland/application/views",
 		"/C/xampp/htdocs/novaland/application/views/main",
 		"/C/xampp/htdocs/novaland/assets",
 		"/C/xampp/htdocs/novaland/assets/main",
-		"/C/xampp/htdocs/novaland/assets/main/css",
 		"/C/xampp/htdocs/novaland/assets/main/js"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/novaland/application/config/routes.php",
-		"/C/xampp/htdocs/novaland/application/controllers/News.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/header.php",
+		"/C/xampp/htdocs/novaland/application/views/main/home.php",
+		"/C/xampp/htdocs/novaland/application/controllers/Video.php",
+		"/C/xampp/htdocs/novaland/application/models/Utilmodel.php",
+		"/C/xampp/htdocs/novaland/assets/main/css/style.css",
+		"/C/xampp/htdocs/novaland/assets/main/css/style4189.css",
+		"/C/xampp/htdocs/novaland/application/models/admin/Modelproject.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video.php",
 		"/C/xampp/htdocs/novaland/application/views/main/news_detail.php",
 		"/C/xampp/htdocs/novaland/application/views/main/project_detail.php",
-		"/C/xampp/htdocs/novaland/application/controllers/Home.php",
+		"/C/xampp/htdocs/novaland/application/views/main/layout.php",
 		"/C/xampp/htdocs/novaland/application/controllers/search_project.php",
-		"/C/xampp/htdocs/novaland/application/controllers/Example.php",
-		"/C/xampp/htdocs/novaland/assets/main/css/style.css",
 		"/C/xampp/htdocs/novaland/application/views/main/header.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/project_edit.php",
+		"/C/xampp/htdocs/novaland/application/views/main/head.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news_add.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video_add.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/news_edit.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video_edit.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news_view.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video_view.php",
+		"/C/xampp/htdocs/novaland/application/config/routes.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/navigation.php",
+		"/C/xampp/htdocs/novaland/application/controllers/News.php",
+		"/C/xampp/htdocs/novaland/application/controllers/Project.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/header.php",
+		"/C/xampp/htdocs/novaland/application/controllers/Home.php",
+		"/C/xampp/htdocs/novaland/application/controllers/Example.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/project_edit.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county_edit.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county_add.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news_view.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county_view.php",
-		"/C/xampp/htdocs/novaland/application/controllers/Project.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/project_view.php",
 		"/C/xampp/htdocs/novaland/application/controllers/County.php",
-		"/C/xampp/htdocs/novaland/application/views/main/home.php",
-		"/C/xampp/htdocs/novaland/assets/main/css/style4189.css",
 		"/C/xampp/htdocs/novaland/application/models/admin/Modeladmin.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/navigation.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/project.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/project_add.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news_add.php",
-		"/C/xampp/htdocs/novaland/application/models/admin/Modelproject.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Admin.php",
 		"/C/xampp/htdocs/novaland/application/views/main/example_post.php",
 		"/C/xampp/htdocs/novaland/application/views/main/about.php",
 		"/C/xampp/htdocs/novaland/application/views/main/contact.php",
 		"/C/xampp/htdocs/novaland/application/models/Recruitment_model.php",
 		"/C/xampp/htdocs/novaland/application/views/county_add.php",
-		"/C/xampp/htdocs/novaland/application/views/main/head.php",
 		"/C/xampp/htdocs/novaland/application/views/main/footer.php",
 		"/C/xampp/htdocs/novaland/assets/novaland/css/theme.css",
 		"/C/xampp/htdocs/novaland/assets/novaland/css/default.css",
 		"/C/xampp/htdocs/novaland/assets/main/css/responsive-style.css",
-		"/C/xampp/htdocs/novaland/application/views/main/layout.php",
 		"/C/xampp/htdocs/novaland/application/config/config.php",
 		"/C/xampp/htdocs/novaland/assets/novaland/js/canhcam.js",
 		"/C/xampp/htdocs/novaland/novaland.sublime-project",
@@ -435,7 +351,6 @@
 		"/C/xampp/htdocs/novaland/application/models/Example_model.php",
 		"/C/xampp/htdocs/novaland/public/ckfinder/plugins/imageresize/plugin.php",
 		"/C/xampp/htdocs/novaland/application/models/Dbutil.php",
-		"/C/xampp/htdocs/novaland/application/models/Utilmodel.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/login/layout.php",
 		"/C/xampp/htdocs/novaland/public/ckeditor/ckeditor.js",
 		"/C/xampp/htdocs/novaland/system/core/CodeIgniter.php",
@@ -500,16 +415,11 @@
 		"/C/xampp/htdocs/job/application/controllers/Uploadcv.php",
 		"/C/xampp/htdocs/job/application/logs/log-2015-09-17.php",
 		"/C/xampp/htdocs/job/application/controllers/admin/Admin_document.php",
-		"/C/xampp/htdocs/job/system/core/CodeIgniter.php",
-		"/C/xampp/htdocs/job/system/core/Common.php",
-		"/C/xampp/htdocs/job/application/views/main/employer/modal_update_recruitment.php",
-		"/C/xampp/htdocs/job/application/models/employer/Employer_model.php",
-		"/C/xampp/htdocs/job/application/views/main/employer/modal_detail_recruitment.php",
-		"/C/xampp/htdocs/job/application/controllers/employer/Employer.php"
+		"/C/xampp/htdocs/job/system/core/CodeIgniter.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -523,6 +433,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getNewsById",
+			"}\n",
+			"@media",
+			"@me",
+			"@",
 			"job7vn-register.js ",
 			".margin-top-10",
 			"getNewsById",
@@ -645,12 +560,7 @@
 			"selectpicker",
 			"getAllProvince",
 			"career",
-			"carre",
-			"carrer",
-			"care",
-			"incrementalHash",
-			"update_contact_info_employer",
-			"employer_updateModal"
+			"carre"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -680,24 +590,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/main/home.php",
+					"file": "application/controllers/Home.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8542,
+						"buffer_size": 10612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1446,
-								1446
+								440,
+								1470
 							]
 						],
 						"settings":
@@ -706,169 +616,114 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 151.0,
-						"translation.y": 528.0,
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/main/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5553,
+								5539
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2745.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/controllers/Video.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4696,
+								4696
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1885.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "application/controllers/Home.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10536,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10037,
-								10037
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5200.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "application/models/admin/Modelproject.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7888,
+						"buffer_size": 9619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								911,
-								911
+								4522,
+								4533
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 41.0,
-						"translation.y": 624.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/main/news_detail.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4201,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								659,
-								659
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 132.0,
+						"translation.y": 3533.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 4,
-					"file": "application/views/main/project_detail.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5661,
-								5661
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2882.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "application/views/main/layout.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 789,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								470,
-								470
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 264.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "application/controllers/search_project.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9454,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -881,160 +736,11 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "application/views/main/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5997,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3520,
-								3529
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 702.0,
-						"translation.y": 1452.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "application/views/main/head.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4854,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3497,
-								3497
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1057.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "application/views/admin/news_add.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2972,
-								2991
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 141.0,
-						"translation.y": 1386.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "application/controllers/News.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								414,
-								414
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "application/controllers/Project.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8520,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								417,
-								353
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -1047,7 +753,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 12,
+					"buffer": 5,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1071,97 +777,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 14,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 70,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1169,7 +785,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1201,13 +817,13 @@
 		"cols":
 		[
 			0.0,
-			0.532692307692,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.667757213048,
+			0.7,
 			1.0
 		]
 	},
@@ -1224,7 +840,7 @@
 	"project": "novaland.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1259,6 +875,7 @@
 	{
 		"xdebug":
 		{
+			"hide_conflict": false,
 			"restore_index":
 			{
 				"17":
@@ -1269,7 +886,7 @@
 				"18":
 				{
 					"group": 0,
-					"index": 1
+					"index": 3
 				},
 				"19":
 				{
@@ -1323,18 +940,33 @@
 				},
 				"29":
 				{
-					"group": 0,
-					"index": 14
+					"group": 1,
+					"index": 0
+				},
+				"30":
+				{
+					"group": 1,
+					"index": 1
 				},
 				"31":
 				{
-					"group": 0,
-					"index": 2
+					"group": 2,
+					"index": 0
 				},
 				"32":
 				{
+					"group": 2,
+					"index": 1
+				},
+				"33":
+				{
 					"group": 0,
-					"index": 3
+					"index": 1
+				},
+				"34":
+				{
+					"group": 0,
+					"index": 2
 				}
 			},
 			"restore_layout":
@@ -1363,13 +995,13 @@
 				"cols":
 				[
 					0.0,
-					0.5,
+					0.532692307692,
 					1.0
 				],
 				"rows":
 				[
 					0.0,
-					0.684163633212,
+					0.668737912057,
 					1.0
 				]
 			}
