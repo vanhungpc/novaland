@@ -596,7 +596,7 @@ button.color-10:hover{
 	border-color: #82CAFF !important;
 }
 footer{
-	background: #003362;
+	background: #8e3b13;
 	/*margin-top: 5px;*/
 	padding: 20px 0;
 	  border: 1px solid #000;
@@ -1882,4 +1882,33 @@ ul.bottomnav li a:hover{
 }
 .change-language-header a{
     font-weight: bolder;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .enable_call{
+        display: block;
+    }
+    .unable_call{
+        display: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .enable_call{
+        display: none;
+    }
+    .unable_call{
+        display: block;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .enable_call{
+        display: none;
+    }
+    .unable_call{
+        display: block;
+    }
 }
