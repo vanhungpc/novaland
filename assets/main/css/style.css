@@ -1807,7 +1807,7 @@ ul.ul-term-child-1{
    min-height:100px;
 }
 .margin-right-25{
-	 margin-right: -25px;
+	 /* margin-right: -25px; */
 }
 
 #custom-search-input{
@@ -1911,4 +1911,9 @@ ul.bottomnav li a:hover{
     .unable_call{
         display: block;
     }
+}
+
+.img_height{
+	max-height: 100px;
+	max-width: auto;
 }

@@ -18,9 +18,10 @@
 		<div class="col-sm-4 col-xs-12">
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
-					 <?php $this->load->view('main/leftcontent', array('arr_news'=>$arr_news, 'county'=>$county, 'data_video'=>$data_video)); ?>
+					 <?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county, 'data_video' => $data_video));?>
 
 			</div>
+		</div>
 		</div>
     <div id="dialog" style="display: none">
 	        <div id="dvMap" style="height: 380px; width: 580px;">

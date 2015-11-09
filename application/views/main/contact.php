@@ -8,80 +8,17 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/jquery-ui.js" type="text/javascript"></script>
     <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/themes/blitzer/jquery-ui.css"
         rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/main/css/contact.css">
+<link rel="stylesheet" href="<?php echo base_url()?>assets/main/css/contact.css">
 <div class="content">
 
 	<div class='container Module Module-31'>
-	<!-- slider -->
-		<div class="row sl-wrap">
-			<div class="col-ms-12">
-				<a href="#" class="btn-prev">
-			  	</a>
-			  	<a href="#" class="btn-next">
-			  	</a>
 
-			  	<!-- content slider -->
-		  	<div class="at-slider col-ms-12">
-
-		  		<?php foreach ($data_slider as $value) {?>
-	<div class="slide-item col-ms-12">
-			      <a href="thesunavenue/chuong-trinh-ban-hang.html" title="The Sun Avenue">
-			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
-			      </a>
-			      <div class="container-s">
-			        <div class="sub">
-			          <h2><?php echo $value->name_project?></h2>
-			          <div class="clear">
-			          </div>
-			          <div class="bn-desc"><span><?php echo $value->address?></span></div>
-						 <div class="clear">
-			          </div>
-			          <div class="bn-desc"><span><?php echo $value->desc_slider?></span></div>
-
-			        </div>
-			      </div>
-			    </div>
-	<?php }
-?>
-
-
-		</div>
-
-
-			</div>
-
-
-		<!-- end slider -->
-	</div>
-
-	<div class="row">
-
-			<div class="col-sm-12">
-				<div class="card">
-					<div class="row-employer-menu  row employer-tools">
-						<div id="custom-search-input">
-							<div class="input-group col-md-12">
-                                <input type="text" class="  search-query form-control" placeholder="Search" />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </div>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-	</div>
 
 	<div class="row margin-bottom-15">
 		<div class="col-sm-4 col-xs-12">
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
-                                    <?php $this->load->view('main/leftcontent', array('arr_news'=>$arr_news, 'county'=>$county, 'data_video'=>$data_video)); ?>
+                                    <?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county, 'data_video' => $data_video));?>
 				</div>
 
 			</div>
@@ -112,14 +49,14 @@
                                         </div>
                                     </div>
                                     <div class="form">
-                                        <form id="form0" action="<?php echo site_url("home/contact") ?>" method="post" enctype="multipart/form-data">
+                                        <form id="form0" action="<?php echo site_url("home/contact")?>" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Your name:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <input class="xlarge validate[required]" type="text" name="name" id="name" />
-                                        </div>                                        
+                                        </div>
                                     </div>
                                      <div class="row">
                                         <div class="col-sm-3 col-sx-3">
@@ -127,39 +64,39 @@
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <input class="xlarge validate[required]" type="text" name="phone" id="phone" />
-                                        </div>                                        
-                                    </div>  
+                                        </div>
+                                    </div>
                                      <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Email:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <input class="xlarge validate[required]" type="text" name="email" id="email" />
-                                        </div>                                        
-                                    </div>   
+                                        </div>
+                                    </div>
                                      <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Subject:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <input class="xlarge validate[required]" type="text" name="subject" id="subject" />
-                                        </div>                                        
-                                    </div>    
+                                        </div>
+                                    </div>
                                       <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Content message:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <textarea name="content" id="content"></textarea>
-                                        </div>                                        
+                                        </div>
                                     </div>
                                             <div class="row" style="margin-bottom:20px;margin-top: 20px;">
                                         <div class="col-sm-3 col-sx-3">
-                                          
+
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
                                             <input type="submit" class="btn btn-primary custom_btn_send_message" value="send message">
-                                        </div>                                        
+                                        </div>
                                     </div>
                                         </form>
                                     </div>

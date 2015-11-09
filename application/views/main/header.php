@@ -5,8 +5,11 @@
 
 						</div>
 
-						<div class="col-sm-6 text-right change-language-header">   
-                                                    <!-- <a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>/<?php if(!empty($idproduct)) echo $idproduct ?>">Tiếng Việt</a> | -->
+						<div class="col-sm-6 text-right change-language-header">
+                                                    <!-- <a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>/<?php if (!empty($idproduct)) {
+	echo $idproduct;
+}
+?>">Tiếng Việt</a> | -->
                                                         <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
 							<?php echo anchor(lchange('en'), 'English');?>
 						</div>
@@ -59,48 +62,48 @@
 	echo 'active-menu';
 }
 ?>  menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
-                           <?php echo linkNav("", $this->lang->mci_segment, "home") ?>
+                           <?php echo linkNav("", $this->lang->mci_segment, "home")?>
 			</li>
 			<li id=" menu-item-2075" class="  <?php if (isset($menu) && $menu == 'about') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("about", $this->lang->mci_segment, "about") ?>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("about", $this->lang->mci_segment, "about")?>
 
 			</li>
 	<li id="menu-item-1897" class="<?php if (isset($menu) && $menu == 'officetel') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("officetel", $this->lang->mci_segment, "office_tel") ?></li>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("officetel", $this->lang->mci_segment, "office_tel")?></li>
 	<li id="menu-item-2075" class="<?php if (isset($menu) && $menu == 'apartment') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("apartment", $this->lang->mci_segment, "apartment") ?>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("apartment", $this->lang->mci_segment, "apartment")?>
 
 	</li>
 
 	<li  id="register-modal" class="<?php if (isset($menu) && $menu == 'house') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("house", $this->lang->mci_segment, "house") ?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("house", $this->lang->mci_segment, "house")?></li>
 
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'villas') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("villas", $this->lang->mci_segment, "villas") ?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("villas", $this->lang->mci_segment, "villas")?></li>
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'serviced_apartment') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("serviced_apartment", $this->lang->mci_segment, "service_apartment") ?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("serviced_apartment", $this->lang->mci_segment, "service_apartment")?></li>
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'contact') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact") ?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact")?></li>
 
 	<!-- <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login/index.html">Login</a></li> -->
 	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><a href="find-a-job/index.html">English<i class="fa fa-chevron-down"></i></a>
 			<ul class="sub-menu">
 				<li id="menu-item-2076" class="menu-item menu-item-type-taxonomy menu-item-object-job_listing_region menu-item-2076"><?php echo anchor(lchange('en'), 'English');?></li>
-				<li id="menu-item-2077" class="menu-item menu-item-type-taxonomy menu-item-object-job_listing_region menu-item-2077"><a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>">Tiếng Việt</a></li>
+				<li id="menu-item-2077" class="menu-item menu-item-type-taxonomy menu-item-object-job_listing_region menu-item-2077"><a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>">Tiếng Việt</a></li>
 			</ul>
 	</li>
 	</ul></div>				</nav>

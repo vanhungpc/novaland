@@ -33,7 +33,7 @@
 			          <h2><?php echo $value->name_project?></h2>
 			          <div class="clear">
 			          </div>
-			        
+
 			          <div class="bn-desc"><span><?php echo $value->desc_slider?></span></div>
 
 			        </div>
@@ -52,11 +52,12 @@
 		<!-- end slider -->
 	</div>
 
-	<div class="row padding-10">
+	<div class="row">
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 no-padding">
+
 				<div class="card">
-					<div class="row-employer-menu  row employer-tools">
+					<div class="info-employer row padding-2">
 					<div class="col-sm-7">
 
                                             <h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {echo sprintf(lang("total_projects"), count($data_project))?><?php } else {echo lang('not_found_project');?> <?php }
@@ -86,6 +87,8 @@
 
 					</div>
 				</div>
+
+
 			</div>
 
 	</div>
@@ -94,7 +97,7 @@
 		<div class="col-sm-4 col-xs-12">
 			<div class="row padding-10">
 				<div class="col-sm-12 col-md-12">
- <?php $this->load->view('main/leftcontent', array('arr_news'=>$arr_news, 'county'=>$county, 'data_video'=>$data_video)); ?>
+ <?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county, 'data_video' => $data_video));?>
 
 				</div>
 
@@ -103,7 +106,7 @@
 
 
     <div id="dialog" style="display: none">
-	        <div id="dvMap" style="height: 380px; width: 580px;">
+	        <div id="dvMap" style="height: 300px; width: 95%;">
 	        </div>
 	    </div>
 		<div class="col-sm-8 col-xs-12">
@@ -119,7 +122,7 @@
 								<div class="row padding-left-15">
 									<div class="col-sm-5 col-md-5 col-xs-5 no-padding">
 										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
-										<img class="card-img" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
+										<img class="card-img img_height" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 										</a>
 									</div>
 

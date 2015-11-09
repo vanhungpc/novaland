@@ -224,9 +224,10 @@ class Project extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getProjectById($_id_project);
 		$data_slider = $this->project->getSliderProject();
+		$data_video = $this->project->getAllVideo();
 
-		$header = $this->load->view('main/header', array('idproduct'=>$_id_project), TRUE);
-		$content = $this->load->view('main/project_detail', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider), TRUE);
+		$header = $this->load->view('main/header', array('idproduct' => $_id_project), TRUE);
+		$content = $this->load->view('main/project_detail', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,

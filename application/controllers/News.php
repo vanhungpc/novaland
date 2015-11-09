@@ -206,9 +206,9 @@ class News extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_news_id = $this->project->getNewsById($_id_news);
 		$data_slider = $this->project->getSliderProject();
-
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/news_detail', array('county' => $data, 'arr_news' => $data_news, 'data_news_id' => $data_news_id, 'data_slider' => $data_slider), TRUE);
+		$content = $this->load->view('main/news_detail', array('county' => $data, 'arr_news' => $data_news, 'data_news_id' => $data_news_id, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -216,6 +216,26 @@ class News extends CI_Controller {
 	}
 
 	public function all_news() {
+		$lang = $this->lang->mci_current();
+		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
+		$header = $this->load->view('main/header', array(
+			'logo' => 'img/header/logo_novaland.png',
+			'showTitle' => true,
+			'logoWidth' => '126px',
+			'logoHeight' => '95px',
+		), TRUE);
+		$data = $this->project->getAllCounty();
+		$data_news = $this->project->getAllNews();
+		$data_all_news = $this->project->getAllNews_link();
+		$data_slider = $this->project->getSliderProject();
+		$data_video = $this->project->getAllVideo();
+
+		$header = $this->load->view('main/header', array(), TRUE);
+		$content = $this->load->view('main/all_news', array('county' => $data, 'arr_news' => $data_news, 'data_all_news' => $data_all_news, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
+		$footer = $this->load->view('main/footer', array(), TRUE);
+		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
+			'content' => $content,
+			'footer' => $footer));
 
 	}
 }

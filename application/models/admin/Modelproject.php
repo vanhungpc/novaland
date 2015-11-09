@@ -195,15 +195,15 @@ class ModelProject extends CI_Model {
 		}
 	}
 
-	/*public function getAllNews_link() {
-	$sql = "select * from news order by _id_news desc";
-	$query = $this->db->query($sql);
-	if ($query->num_rows() > 0) {
-	return $query->result();
-	} else {
-	return "";
+	public function getAllNews_link() {
+		$sql = "select * from news order by _id_news desc";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
 	}
-	}*/
 
 	public function addProject($params) {
 		$this->db->trans_start();

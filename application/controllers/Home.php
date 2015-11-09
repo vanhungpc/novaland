@@ -52,9 +52,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProject();
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/about', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/about', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -75,9 +75,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(1);
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -99,9 +99,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(2);
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -123,9 +123,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(3);
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -146,9 +146,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(4);
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -170,9 +170,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(5);
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -221,9 +221,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProject();
 		$data_slider = $this->project->getSliderProject();
-                $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/contact', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/contact', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -245,9 +245,9 @@ class Home extends CI_Controller {
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByName($name_project);
 		$data_slider = $this->project->getSliderProject();
-                  $data_video = $this->project->getAllVideo();
+		$data_video = $this->project->getAllVideo();
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider,'data_video'=>$data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
