@@ -101,11 +101,21 @@
 ?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact")?></li>
 
 	<!-- <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login/index.html">Login</a></li> -->
-	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><a href="find-a-job/index.html">English<i class="fa fa-chevron-down"></i></a>
-			<ul class="sub-menu">
-				<li id="menu-item-2076" class="menu-item menu-item-type-taxonomy menu-item-object-job_listing_region menu-item-2076"><?php echo anchor(lchange('en'), 'English');?></li>
-				<li id="menu-item-2077" class="menu-item menu-item-type-taxonomy menu-item-object-job_listing_region menu-item-2077"><a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>">Tiếng Việt</a></li>
-			</ul>
+	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
+<div class="dropdown">
+  <button class="btn btn-default select_lang" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <?php if($this->lang->mci_segment == 'vn') { ?>
+      Vietnamese
+      <?php } else{ ?>
+      English
+      <?php } ?>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><?php echo anchor(lchange('vn'), 'Vietnamese');?></li>
+    <li><?php echo anchor(lchange('en'), 'English');?></li>
+  </ul>
+</div>
 	</li>
 	</ul></div>				</nav>
 
