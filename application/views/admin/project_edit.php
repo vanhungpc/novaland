@@ -1,3 +1,7 @@
+ <style>#cke_description {
+    width: auto !important;
+}
+</style>
  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/demo.css" type="text/css" media="screen" />
  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
@@ -163,7 +167,8 @@ if (!empty($error_msg)) {
                                     <label>County</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="county" id="county">
-                                              <?php foreach ($county as $value) {?>
+                                              <?php foreach ($county as $value) {
+	?>
                                                 <?php if ($value->_id_county == $project['_id_county']) {?>
                                                     <option  value="<?php echo $value->_id_county?>" selected><?php echo $value->name_county?></option>
                                                 <?php } else {?>

@@ -1917,3 +1917,17 @@ ul.bottomnav li a:hover{
 	max-height: 100px;
 	max-width: auto;
 }
+
+/* iphone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	img { max-width: 100%; }
+}
+
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	img { max-width: 100%; }
+}
+ p img{
+	   max-width: 100%;
+    height: auto;
+}
