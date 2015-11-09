@@ -15,9 +15,19 @@ class ModelProject extends CI_Model {
 			return FALSE;
 		}
 	}
-	public function getAllProject() {
-		$sql = "select * from project";
+	function count_items() {
+		return $this->db->count_all('project');
+	}
+	public function getAllProject($limit, $start) {
+		/*	$this->db->select("*");
+		$this->db->from('project');
+		$this->db->limit($limit, $offset);
+		$query = $this->db->get();*/
+
+		$sql = $this->db->get('project');
+		$sql = "select * from project limit " . $start . "," . $limit;
 		$query = $this->db->query($sql);
+
 		if ($query->num_rows() > 0) {
 			return $query->result();
 		} else {

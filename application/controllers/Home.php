@@ -12,8 +12,41 @@ class Home extends CI_Controller {
 		$this->load->language('mci');
 		$this->load->model('admin/Modelproject', 'project');
 		$this->load->helper('language');
+		$this->load->library('pagination');
 	}
 	public function index() {
+
+		//pagination settings
+		$config['base_url'] = site_url('home/index');
+		$config['total_rows'] = $this->project->count_items();
+		$config['per_page'] = "4";
+		$config["uri_segment"] = 3;
+		$choice = $config["total_rows"] / $config["per_page"];
+		$config["num_links"] = floor($choice);
+
+		//config for bootstrap pagination class integration
+		$config['full_tag_open'] = '<ul class="pagination">';
+		$config['full_tag_close'] = '</ul>';
+		$config['first_link'] = false;
+		$config['last_link'] = false;
+		$config['first_tag_open'] = '<li>';
+		$config['first_tag_close'] = '</li>';
+		$config['prev_link'] = '&laquo';
+		$config['prev_tag_open'] = '<li class="prev">';
+		$config['prev_tag_close'] = '</li>';
+		$config['next_link'] = '&raquo';
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '</li>';
+		$config['last_tag_open'] = '<li>';
+		$config['last_tag_close'] = '</li>';
+		$config['cur_tag_open'] = '<li class="active"><a href="#">';
+		$config['cur_tag_close'] = '</a></li>';
+		$config['num_tag_open'] = '<li>';
+		$config['num_tag_close'] = '</li>';
+
+		$this->pagination->initialize($config);
+		$data_page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
 		$lang = $this->lang->mci_current();
 		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
 		$header = $this->load->view('main/header', array(
@@ -25,12 +58,14 @@ class Home extends CI_Controller {
 		), TRUE);
 		$data = $this->project->getAllCounty();
 		$data_news = $this->project->getAllNews();
-		$data_project = $this->project->getAllProject();
+		$data_project = $this->project->getAllProject($config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 
+		$data_pagination = $this->pagination->create_links();
+
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
+		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,

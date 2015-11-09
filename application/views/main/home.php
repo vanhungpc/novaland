@@ -112,7 +112,7 @@
 		<div class="col-sm-8 col-xs-12">
 			<div class="row  margin-right-25">
 				<div class="col-sm-12 col-sm-12 no-padding">
-				<?php if (!empty($data_project)) {
+				<?php if (!empty($data_project) && is_array($data_project) && count($data_project)) {
 	?>
 					<?php foreach ($data_project as $value) {?>
 
@@ -177,6 +177,12 @@
 				</div>
 
 			</div>
+
+		<div class="row">
+              <div class="col-md-12 text-center">
+            <?php echo $pagination;?>
+        </div>
+
 		</div>
 	</div>
 </div>
