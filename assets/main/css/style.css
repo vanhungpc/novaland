@@ -1917,6 +1917,14 @@ ul.bottomnav li a:hover{
 	max-height: 100px;
 	max-width: auto;
 }
+p img{
+	max-width: 100% !important;
+    height: auto !important;
+}
+a img{
+	max-width: 100%  !important;
+    height: auto;
+}
 
 /* iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -1926,12 +1934,4 @@ ul.bottomnav li a:hover{
 /* ipad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	img { max-width: 100%; }
-}
-p img{
-	   max-width: 100%;
-    height: auto;
-}
-a img{
-	   max-width: 100%;
-    height: auto;
 }
