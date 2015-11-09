@@ -13,8 +13,8 @@
                                                         <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
 							<?php echo anchor(lchange('en'), 'English');?>
 						</div>
-					</div>
-					<div class="row top-header margin-bottom--4">
+					</div> <!-- top-header margin-bottom--4 -->
+					<div class="row ">
 						<div class="col-sm-6 text-center">
 
 						</div>
