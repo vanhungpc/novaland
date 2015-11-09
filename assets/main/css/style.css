@@ -1901,6 +1901,12 @@ ul.bottomnav li a:hover{
     .unable_call{
         display: block;
     }
+            .email_device{
+        display: none;
+    }
+    .email_destop{
+        display: block;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -1911,6 +1917,12 @@ ul.bottomnav li a:hover{
     .unable_call{
         display: block;
     }
+        .email_device{
+        display: none;
+    }
+    .email_destop{
+        display: block;
+    }
 }
 
 .img_height{
@@ -1919,11 +1931,17 @@ ul.bottomnav li a:hover{
 }
 
 /* iphone */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
         .enable_call{
         display: block;
     }
     .unable_call{
+        display: none;
+    }
+    .email_device{
+        display: block;
+    }
+    .email_destop{
         display: none;
     }
 	img { max-width: 100%; }
@@ -1933,8 +1951,15 @@ ul.bottomnav li a:hover{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         .enable_call{
         display: block;
+       
     }
     .unable_call{
+        display: none;
+    }
+        .email_device{
+        display: block;
+    }
+    .email_destop{
         display: none;
     }
 	img { max-width: 100%; }
