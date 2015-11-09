@@ -1964,11 +1964,35 @@ ul.bottomnav li a:hover{
     }
 	img { max-width: 100%; }
 }
+
 p img{
 	   max-width: 100%;
     height: auto;
 }
+
 a img{
 	   max-width: 100%;
     height: auto;
+}
+
+.btn-default{
+    background-color: #8E3B13 !important;
+    font-weight: bolder !important;
+    
+    color: #000 !important;
+    
+}
+
+.btn-default:hover{
+    color: #003362 !important;
+    border-color: 1px solid #8E3B13 !important;
+    
+}
+.dropdown-menu{
+    background-color: #8E3B13 !important;
+    
+}
+.dropdown-menu li a{
+    padding-left: 10px !important;
+    color: #000 !important;
 }
