@@ -20,8 +20,9 @@
 						</div>
 						<div class="col-sm-6 text-right">
 							<label class="hotlines margin-right-15">
-                                                            Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a><br>
-                                                            <div class="enable_call">  Hotline:<a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
+                                                            <div class="email_destop"> Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
+                                                             <div class="email_device"><a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
+                                                            <div class="enable_call"> <a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
                                                             <div class="unable_call">  Hotline:<b> (84) 909 288 281</b> </div>
 							</label>
 						</div>
