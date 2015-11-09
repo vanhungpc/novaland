@@ -1920,11 +1920,23 @@ ul.bottomnav li a:hover{
 
 /* iphone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .enable_call{
+        display: block;
+    }
+    .unable_call{
+        display: none;
+    }
 	img { max-width: 100%; }
 }
 
 /* ipad */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .enable_call{
+        display: block;
+    }
+    .unable_call{
+        display: none;
+    }
 	img { max-width: 100%; }
 }
 p img{
