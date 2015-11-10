@@ -51,7 +51,7 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-									  <li><a href="<?php echo site_url('video/all_video/');?>" >Tất cả các video </a></li>
+									  <li><a href="<?php echo site_url('video/all_video/');?>" ><?php echo lang('show_more_video'); ?></a></li>
 
 							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
@@ -94,7 +94,7 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-									  <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" >Tất cả các tin </a></li>
+									  <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" ><?php echo lang('show_more_video') ?></a></li>
 
 							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
