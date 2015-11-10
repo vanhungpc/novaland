@@ -1864,7 +1864,7 @@ ul.bottomnav {
     list-style-type: none;
     margin: 0 0 0 30px;
     padding: 0;
-    font-size: 14px;
+    font-size: 13px;
 }
 ul.bottomnav li {
     display: block;
@@ -1964,6 +1964,9 @@ ul.bottomnav li a:hover{
 	.no-padding-img {
     	padding: 0 !important;
 	}
+        ul.bottomnav {
+            font-size: 12px !important;
+        }
 }
 
 /* ipad */
