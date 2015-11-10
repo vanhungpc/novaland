@@ -10,24 +10,13 @@
 	echo $idproduct;
 }
 ?>">Tiếng Việt</a> | -->
-                                                        <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
+                            <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
 							<?php echo anchor(lchange('en'), 'English');?>
 						</div>
 					</div> <!-- top-header margin-bottom--4 -->
 					<div class="row ">
-						<div class="col-sm-6 text-center">
-
-						</div>
-						<div class="col-sm-6 text-right">
-							<label class="hotlines margin-right-15">
-                                                            <div class="email_destop"> Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
-                                                             <div class="email_device"><a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
-                                                            <div class="enable_call"> <a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
-                                                            <div class="unable_call">  Hotline:<b> (84) 909 288 281</b> </div>
-							</label>
-						</div>
-					</div>
-					<a href="<?php echo base_url();?>" title="Jobify Darker" rel="home" class="site-branding">
+						<div class="col-sm-3 col-xs-3  no-padding text-left">
+								<a href="<?php echo base_url();?>" title="Jobify Darker" rel="home" class="site-branding">
 						<h1 class="site-title">
 							<img  src="<?php if (isset($logo)) {
 	echo base_url() . 'assets/main/' . $logo;
@@ -42,6 +31,21 @@
 						</h1>
 						<!-- <h2 class="site-description">Job Searching Just Got Easy</h2> -->
 					</a>
+						</div>
+						<div class="col-sm-9 col-xs-9 text-left-right">
+							<label class="hotlines margin-right-15">
+                                                            <div class="email_destop"> Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
+                                                             <div class="email_device"><a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
+                                                            <div class="enable_call"> <a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
+                                                            <div class="unable_call">  Hotline:<b> (84) 909 288 281</b> </div>
+							</label>
+						</div>
+					</div>
+
+
+
+
+
 
 					<nav id="site-navigation" class="site-primary-navigation slide-left">
 						<a href="#" class="primary-menu-toggle navbar-toggle collapsed toggle-menu" id="toggle-menu-close"><i class="fa fa-times-circle"></i></a>

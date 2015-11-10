@@ -12,7 +12,8 @@
 <div class="content">
 
 	<div class='container Module Module-31'>
-	<!-- slider -->
+	<div class="row">
+		<!-- slider -->
 		<div class="row sl-wrap">
 			<div class="col-ms-12">
 				<a href="#" class="btn-prev">
@@ -49,7 +50,10 @@
 			</div>
 
 
-		<!-- end slider -->
+
+	</div>
+<!-- end slider -->
+
 	</div>
 
 	<div class="row">

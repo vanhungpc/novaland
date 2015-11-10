@@ -1908,7 +1908,9 @@ ul.bottomnav li a:hover{
         display: block;
     }
 }
-
+.text-left-right{
+		text-align: right;
+	}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .enable_call{
@@ -1945,6 +1947,9 @@ ul.bottomnav li a:hover{
         display: none;
     }
 	img { max-width: 100%; }
+	.text-left-right{
+		text-align: left;
+	}
 }
 
 /* ipad */
@@ -1963,6 +1968,9 @@ ul.bottomnav li a:hover{
         display: none;
     }
 	img { max-width: 100%; }
+	.text-left-right{
+		text-align: left;
+	}
 }
 
 p img{
