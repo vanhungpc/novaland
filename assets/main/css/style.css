@@ -1892,7 +1892,8 @@ ul.bottomnav li a:hover{
         display: none;
     }
 }
-
+	.no-padding-img {
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .enable_call{
@@ -1911,6 +1912,10 @@ ul.bottomnav li a:hover{
 .text-left-right{
 		text-align: right;
 	}
+	.margin-left-2{
+		   margin-left: -2px !important;
+	}
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .enable_call{
@@ -1925,6 +1930,9 @@ ul.bottomnav li a:hover{
     .email_destop{
         display: block;
     }
+    .no-padding-img {
+
+	}
 }
 
 .img_height{
@@ -1950,6 +1958,12 @@ ul.bottomnav li a:hover{
 	.text-left-right{
 		text-align: left;
 	}
+	.margin-left-2{
+		   
+	}
+	.no-padding-img {
+    	padding: 0 !important;
+	}
 }
 
 /* ipad */
@@ -1970,6 +1984,12 @@ ul.bottomnav li a:hover{
 	img { max-width: 100%; }
 	.text-left-right{
 		text-align: left;
+	}
+	.margin-left-2{
+		  
+	}
+	.no-padding-img {
+    	padding: 0 !important;
 	}
 }
 

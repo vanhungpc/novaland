@@ -12,7 +12,6 @@
 <div class="content">
 
 	<div class='container Module Module-31'>
-	<div class="row">
 		<!-- slider -->
 		<div class="row sl-wrap">
 			<div class="col-ms-12">
@@ -54,14 +53,12 @@
 	</div>
 <!-- end slider -->
 
-	</div>
-
 	<div class="row">
 
-			<div class="col-sm-12 no-padding">
+			<div class="col-xs-12 col-sm-12 col-md-12 no-padding">
 
 				<div class="card">
-					<div class="info-employer row padding-2">
+					<div class="info-employer row padding-2  margin-left-2">
 					<div class="col-sm-7">
 
                                             <h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {echo sprintf(lang("total_projects"), count($data_project))?><?php } else {echo lang('not_found_project');?> <?php }

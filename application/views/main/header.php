@@ -15,7 +15,7 @@
 						</div>
 					</div> <!-- top-header margin-bottom--4 -->
 					<div class="row ">
-						<div class="col-sm-3 col-xs-3  no-padding text-left">
+						<div class="col-sm-3 col-xs-3  no-padding-img text-left">
 								<a href="<?php echo base_url();?>" title="Jobify Darker" rel="home" class="site-branding">
 						<h1 class="site-title">
 							<img  src="<?php if (isset($logo)) {
@@ -108,14 +108,16 @@
 	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
 <div class="dropdown">
   <button class="btn btn-default select_lang" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <?php if($this->lang->mci_segment == 'vn') { ?>
+    <?php if (anchor(lchange('vn') == 'Vietnamese')) {?>
       Vietnamese
-      <?php } else{ ?>
+      <?php } else {?>
       English
-      <?php } ?>
+      <?php }
+?>
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
     <li><?php echo anchor(lchange('vn'), 'Vietnamese');?></li>
     <li><?php echo anchor(lchange('en'), 'English');?></li>
   </ul>
