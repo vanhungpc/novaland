@@ -10972,3 +10972,7 @@ input.form-control.input-sm {
         padding-right: 10px;
     }
 }
+span img{
+       max-width: 100%;
+    height: auto !important;
+}
