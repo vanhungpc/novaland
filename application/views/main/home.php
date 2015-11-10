@@ -95,22 +95,8 @@
 	</div>
 
 	<div class="row margin-bottom-15">
-		<div class="col-sm-4 col-xs-12">
-			<div class="row padding-10">
-				<div class="col-sm-12 col-md-12">
- <?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county, 'data_video' => $data_video));?>
 
-				</div>
-
-			</div>
-		</div>
-
-
-    <div id="dialog" style="display: none">
-	        <div id="dvMap" style="height: 300px; width: 95%;">
-	        </div>
-	    </div>
-		<div class="col-sm-8 col-xs-12">
+		<div class="col-sm-8 col-xs-12 col-md-push-4">
 			<div class="row  margin-right-25">
 				<div class="col-sm-12 col-sm-12 no-padding">
 				<?php if (!empty($data_project) && is_array($data_project) && count($data_project)) {
@@ -186,6 +172,23 @@
 
 		</div>
 	</div>
+
+		<div class="col-sm-4 col-xs-12 col-md-pull-8">
+			<div class="row padding-10">
+				<div class="col-sm-12 col-md-12">
+ <?php $this->load->view('main/leftcontent', array('arr_news' => $arr_news, 'county' => $county, 'data_video' => $data_video));?>
+
+				</div>
+
+			</div>
+		</div>
+
+
+    <div id="dialog" style="display: none">
+	        <div id="dvMap" style="height: 300px; width: 95%;">
+	        </div>
+	    </div>
+
 </div>
 </div>
 
