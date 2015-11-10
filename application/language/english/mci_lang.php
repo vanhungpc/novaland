@@ -2,6 +2,7 @@
 #pages home
 #jobseeker
 $lang['home'] = "HOME";
+$lang['show_more_video'] = "Show all video";
 $lang['about'] = "ABOUT";
 $lang['office_tel'] = "OFFICE TEL";
 $lang['apartment'] = "APARTMENT";

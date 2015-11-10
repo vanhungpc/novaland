@@ -2,6 +2,7 @@
 #pages home
 #jobseeker
 $lang['home'] = "TRANG CHỦ";
+$lang['show_more_video'] = "Tất cả các video";
 $lang['about'] = "GIỚI THIỆU";
 $lang['office_tel'] = "OFFICE TEL";
 $lang['apartment'] = "CĂN HỘ";
