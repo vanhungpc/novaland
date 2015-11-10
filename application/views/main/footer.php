@@ -24,7 +24,7 @@
             </div>
 
             </div>
-            <div  class="row">
+            <div  class="row" style="margin-top: 20px;">
               <div class="col-md-12 col-sm-12">
                 <p style="color: #fff; font-size: 14px; float: right;font-style: italic "> © 2015  NOVALAND. A company of THANH DO INTL.</p>
 
