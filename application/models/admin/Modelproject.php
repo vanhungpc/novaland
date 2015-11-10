@@ -34,8 +34,8 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
-	public function getAllProjectByIdCategory($_id_category) {
-		$sql = "select * from project where _id_category = " . $_id_category;
+	public function getAllProjectByIdCategory($_id_category, $limit, $start) {
+		$sql = "select * from project where _id_category = " . $_id_category . " limit " . $start . " ," . $limit;
 		$query = $this->db->query($sql);
 		if ($query->num_rows() > 0) {
 			return $query->result();
@@ -44,8 +44,8 @@ class ModelProject extends CI_Model {
 		}
 	}
 
-	public function getAllProjectByName($name_project) {
-		$sql = "select * from project where name_project like '%" . $name_project . "%'";
+	public function getAllProjectByName($name_project, $limit, $start) {
+		$sql = "select * from project where name_project like '%" . $name_project . "%'" . " limit " . $start . " ," . $limit;
 		$query = $this->db->query($sql);
 		if ($query->num_rows() > 0) {
 			return $query->result();
