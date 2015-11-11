@@ -13,9 +13,15 @@
 								<ul class="nav nav-list-main">
 							        <label class="nav-toggle nav-header"><span><i class="fa fa-angle-double-right"></i>&nbsp;<?php echo $value['name_county']?></span></label>
 							            <ul class="nav nav-list nav-left-ml menu_left">
-							            	<?php foreach ($value['arr_project'] as $key => $values) {?>
-							                <li><a href="<?php echo site_url('project/detail_project/' . $values['_id_project']);?>" ><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
-							            	<?php }
+							            	<?php foreach ($value['arr_project'] as $key => $values) { $lang = $this->lang->mci_segment."";
+                                                                            ?>
+                                                                        <?php if($lang == "vn") {?>
+							                <li><a href="<?php echo site_url('vn/project/detail_project/' . $values['_id_project']);?>" ><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>
+                                                        <?php } else{
+                                                            ?>
+                                                              <li><a href="<?php echo site_url('project/detail_project/' . $values['_id_project']);?>" ><i class="fa fa-hand-o-right"></i><?php echo $values['name_project']?> </a></li>          
+                                                                        <?php
+                                                        } }
 	?>
 							            </ul>
 								</ul>
@@ -51,8 +57,13 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-									  <li><a href="<?php echo site_url('video/all_video/');?>" ><?php echo lang('show_more_video'); ?></a></li>
-
+                                                                    <?php if($lang=="vn"){ ?>
+									  <li><a href="<?php echo site_url('vn/video/all_video/');?>" ><?php echo lang('show_more_video'); ?></a></li>
+                                                                    <?php }else{
+                                                                        ?>
+                                                                          <li><a href="<?php echo site_url('video/all_video/');?>" ><?php echo lang('show_more_video'); ?></a></li>
+                                                                          <?php
+                                                                    } ?>
 							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
 
@@ -77,8 +88,13 @@
 
 							<div class="col-sm-12 employer-tools-item">
 								<ul class="nav nav-list-main">
-									  <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" ><i class="fa fa-newspaper-o"></i><?php echo $value->title?> </a></li>
-
+                                                                    <?php if($lang=="vn"){ ?>
+									  <li><a href="<?php echo site_url('vn/news/detail_news/' . $value->_id_news);?>" ><i class="fa fa-newspaper-o"></i><?php echo $value->title?> </a></li>
+                                                                    <?php }else{
+                                                                        ?>
+                                                                          <li><a href="<?php echo site_url('news/detail_news/' . $value->_id_news);?>" ><i class="fa fa-newspaper-o"></i><?php echo $value->title?> </a></li>
+                                                                          <?php
+                                                                    } ?>
 							       <!--  <label class="nav-toggle nav-header"><span>&nbsp;<?php echo $value->title?></span></label> -->
 								</ul>
 
