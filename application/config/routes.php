@@ -72,7 +72,7 @@ $route['officetel'] = 'home/officetel';
 $route['apartment'] = 'home/apartment';
 $route['house'] = 'home/house';
 $route['villas'] = 'home/villas';
-$route['serviced_apartment'] = 'home/serviced_apartment';
+$route['retail'] = 'home/retail';
 $route['contact'] = 'home/contact';
 
 $route['search_project'] = 'search_project';
