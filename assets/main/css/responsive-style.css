@@ -1,7 +1,7 @@
 
 .no-padding{
 	padding: 0 !important;
-}
+
 @media (min-width: 768px) {
 	.search-box .search-box-content form select.select-address,
 .search-box .search-box-content form select.select-rank{

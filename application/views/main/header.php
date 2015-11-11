@@ -1,11 +1,9 @@
 
 				<div class="container">
 					<div class="row top-header">
-						<div class="col-sm-6 text-center">
+						<div class="col-sm-6 col-md-6"><label style="color:#8E3B13">a</label></div>
 
-						</div>
-
-						<div class="col-sm-6 text-right change-language-header">
+						<div class="col-sm-6  col-md-6 text-right change-language-header">
                                                     <!-- <a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>/<?php if (!empty($idproduct)) {
 	echo $idproduct;
 }

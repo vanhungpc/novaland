@@ -59,7 +59,7 @@ $baseUrl = '/userfiles/';
 
 ATTENTION: The trailing slash is required.
  */
-$baseUrl = 'http://localhost/novaland/uploads/';
+$baseUrl = 'http://www.muanhadautu.com/uploads';
 $enabled = true;
 /*
 $baseDir : the path to the local directory (in the server) which points to the

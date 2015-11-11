@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
         <link rel="apple-touch-con" href="" />
-        <title>Novaland admin</title>
+        <title>Automotive admin</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
         <!-- The Columnal Grid and mobile stylesheet -->
@@ -23,14 +23,19 @@
         <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/styles/global.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/styles/config.css" type="text/css" media="screen" />
 
-<script src="<?php echo base_url()?>/assets/novaland/js/jquery.min.js"></script>
-
+        <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/dropzone.css" type="text/css" media="screen" />
 
 
         <!-- Use CDN on production server -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <!-- <script src="assets/scripts/jquery-1.6.4.min.js"></script> -->
         <!-- <script src="assets/scripts/jqueryui/jquery-ui-1.8.16.custom.min.js"></script> -->
 
+
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
         <!-- Menu -->
         <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/scripts/superfish/superfish.css" type="text/css" media="screen" />
@@ -76,15 +81,11 @@
 
         <!-- Colorpicker -->
         <script src="<?php echo base_url();?>assets/admin/scripts/colorpicker/colorpicker.js"></script>
-        <!-- <script src="<?php echo base_url();?>assets/admin/scripts/muse.js"></script> -->
+        <script src="<?php echo base_url();?>assets/admin/scripts/muse.js"></script>
         <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/scripts/colorpicker/colorpicker.css" type="text/css" media="screen" />
 
         <!-- All the js used in the demo -->
-      <!--   <script src="<?php echo base_url();?>assets/admin/scripts/demo.js"></script> -->
-
-
-
-
+        <script src="<?php echo base_url();?>assets/admin/scripts/demo.js"></script>
         <!--<meta charset="UTF-8">-->
         <meta http-equiv='content-Type' content='text/html; charset=UTF-8'/>
     </head>
@@ -93,7 +94,7 @@
             <div id="main">
                 <header class="container">
                     <div class="row clearfix">
-                        <div class="left"> <a href="javascript:;" style="color: #FFFFFF;font-family: arial;font-size: 20px;">Novaland Administrator Panel</a> </div>
+                        <div class="left"> <a href="javascript:;" style="color: #FFFFFF;font-family: arial;font-size: 20px;">Automotive Store Administrator Panel</a> </div>
                         <?php
 $logged_in_status = $this->session->userdata('logged_in_status');
 if ($logged_in_status) {
@@ -122,6 +123,99 @@ if ($logged_in_status) {
                 </header>
                 <script type="text/javascript" >
 
+                    $(function() {
+                        $("#datepicker, #datepicker2").datepicker({minDate: new Date(), onSelect: function(dateText, inst) {
+                                datapicker = $(inst).attr('id');
+                                if (datapicker == "datepicker")
+                                {
+                                    $("#datepicker2").datepicker("option", "minDate", dateText);
+                                    $("#datepicker2").val("");
+                                    $("#datepicker2").attr("disabled", false);
+                                }
+
+                            }});
+                    });
+
+                    function changeDateRange() {
+                        $("#datepicker2").datepicker({
+                            showOn: "both",
+                            minDate: $("#datepicker").datepicker("getDate"),
+                            dateFormat: 'd M y'
+                        });
+                        $(".ui-datepicker-trigger").hide();
+                    }
+
+                    function changeDateRange1() {
+                        $("#datepicker2").datepicker({
+                            showOn: "both",
+                            minDate: $("#datepicker").datepicker("getDate"),
+                            dateFormat: 'd M y'
+                        });
+                        $(".ui-datepicker-trigger").hide();
+                    }
+
+                    function dealFormValidation() {
+                        if ($('#datepicker').val() == "") {
+                            $(".datepickerDiv").addClass("red-highlight");
+                            alert("Please enter the starting date inorder to proceed.");
+                            return false;
+                        }
+                        else if ($('#datepicker2').val() == "") {
+                            $(".datepickerDiv").removeClass("red-highlight");
+                            $(".datepicker2Div").addClass("red-highlight");
+                            $("#datepicker2").datepicker({
+                                showOn: "both",
+                                minDate: $("#datepicker").datepicker("getDate"),
+                                dateFormat: 'd M y'
+                            });
+                            $(".ui-datepicker-trigger").hide();
+                            alert("Please enter the expiry date inorder to proceed.");
+                            return false;
+                        }
+                        else if ($('#file_upload').val() == "") {
+                            $(".datepicker2Div").removeClass("red-highlight");
+                            $(".fileDiv").addClass("red-highlight");
+                            alert("Please select and image.");
+                            //                if(confirm("You haven`t uploaded your deal image. Do you want to continue ?")){
+                            //                    return true;
+                            //                } else {
+                            return false;
+                            //                }
+                            return false;
+                        }
+                        //            else if($('#is_popup').is(':checked')) {
+                        //                if($('#days').val()=="") {
+                        //                    alert("Please enter the expiry date inorder to proceed.");
+                        //                    return false;
+                        //                }
+                        //            }
+                        else {
+                            return true;
+                        }
+                    }
+
+                    function branchFormValidation() {
+                        if ($('#file_upload').val() == "") {
+                            $(".fileDiv").addClass("red-highlight");
+                            alert("Please select and image.");
+                            //                if(confirm("You haven`t uploaded your branch image. Do you want to continue ?")){
+                            //                    return true;
+                            //                } else {
+                            return false;
+                            //                }
+                        }
+                        else {
+                            return true;
+                        }
+                    }
+
+                    function popupDealChange() {
+                        if ($('#is_popup').is(':checked')) {
+                            $('#forPopUp').show();
+                        } else {
+                            $('#forPopUp').hide();
+                        }
+                    }
 
                     function merchantCategoryChange() {
                         $.ajax({

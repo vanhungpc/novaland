@@ -4,9 +4,6 @@
 </style>
  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/demo.css" type="text/css" media="screen" />
  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="<?php echo base_url()?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>public/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>public/ckfinder/ckfinder.js"></script>
@@ -196,7 +193,7 @@ if (!empty($error_msg)) {
                                 <div class="clearfix">
                                     <label>Description Slider</label>
                                     <div class="input">
-                                        <input class="xlarge validate[required]" type="text" name="desc_slider" id="desc_slider" value="<?php echo $project['desc_slider']?>"/>
+                                        <input class="xlarge" type="text" name="desc_slider" id="desc_slider" value="<?php echo $project['desc_slider']?>"/>
 
                                     </div>
                                 </div>
@@ -207,7 +204,7 @@ if (!empty($error_msg)) {
 
                                         <input   id="file_upload" name="file_upload" type="file" />
                                        <div> <span class="fileDiv"> <img src="<?php echo base_url('uploads') . '/' . $project['img_slider'];?>" with = "100" height = "100"/></span>
-                                            <input class="xlarge validate[required]" type="hidden" name="image_name" id="image_name" value="<?php echo $project['img_slider']?>"/>
+                                            <input class="xlarge" type="hidden" name="image_name" id="image_name" value="<?php echo $project['img_slider']?>"/>
 
                                         </div>
                                     </div>
@@ -223,7 +220,7 @@ if (!empty($error_msg)) {
                                     </span> </div>
                                 <div class="clearfix">
                                     <div class="input" style="margin-left:300px !important;">
-                                        <input type="submit" class="button blue" value="Add produce" />
+                                        <input type="submit" class="button blue" value="Update project" />
                                     </div>
                                 </div>
                             </form>

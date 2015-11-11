@@ -4,7 +4,7 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	config.extraPlugins = 'imageuploader';
+	//config.extraPlugins = 'imageuploader';
 };
 CKEDITOR.config.entities = false;
 
