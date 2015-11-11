@@ -16,7 +16,7 @@ html {
 }
 
 body {/*font-size: 12px;
-	font-family: "Helvetica Neue", Arial, sans-seri;*/
+  font-family: "Helvetica Neue", Arial, sans-seri;*/
   font: 400 13px/normal Tahoma, Geneva, sans-serif;
   -webkit-font-smoothing: antialiased;
   /*background: #f1f1f1;*/
@@ -33,16 +33,16 @@ h2 {
 }
 
 /*h3{
-	font-size: 1.8em;
+  font-size: 1.8em;
 }
 h4{
-	font-size: 1.55em;
+  font-size: 1.55em;
 }
 h5{
-	font-size: 1.3em;
+  font-size: 1.3em;
 }
 h6{
-	font-size: 1.1em;
+  font-size: 1.1em;
 }*/
 
 #main .container {
@@ -52,6 +52,11 @@ h6{
 a {
   text-decoration: none;
   color: #000;
+}
+
+.a_color {
+  text-decoration: none;
+  color: #fff;
 }
 
 a:hover, a:visited {
@@ -304,9 +309,9 @@ a.site-branding {
 }
 
 /*.load-more-job{
-	    font: 700 14px/normal Montserrat,sans-serif;
-	    color: #f1f1f1;
-	    border: 2px solid #f1f1f1;
+      font: 700 14px/normal Montserrat,sans-serif;
+      color: #f1f1f1;
+      border: 2px solid #f1f1f1;
 }*/
 
 .left-page .list-job-box .footer-job-box a:hover {
@@ -495,7 +500,7 @@ button.danger-color-text:hover {
 button.sendcv-color:hover {
   color: #82CAFA;
   /*background: #fff !important;
-	border-color:  #82CAFA;*/
+  border-color:  #82CAFA;*/
 }
 
 .color-fulltime {
@@ -609,8 +614,8 @@ button.sendcv-color:hover {
 }
 
 /*.freelancer-box{
-	margin-top: 10px;
-	background: #fff;
+  margin-top: 10px;
+  background: #fff;
 }*/
 
 .inline-css {/*display: inline-block;*/
@@ -1149,7 +1154,7 @@ h5.partner-title {
 }
 
 .active-menu {
-  border-bottom: 5px solid #cc3333;
+  border-bottom: 5px solid #fff;
 }
 
 .employer-title-box {
@@ -1227,7 +1232,7 @@ h5.partner-title {
 }
 
 /*.job{
-	background: #f1f1f1;
+  background: #f1f1f1;
 }*/
 
 a.toggle-menu:hover {
@@ -1271,7 +1276,7 @@ a.toggle-menu:hover {
   color: #000;
 }
 
-.employer-page .card {/*	border: 1px solid #d2d6de;
+.employer-page .card {/*  border: 1px solid #d2d6de;
     -webkit-box-shadow: 0 0px 5px rgba(210, 214, 222, 0.5);
     -moz-box-shadow: 0 0px 5px rgba(210, 214, 222, 0.5);
     box-shadow: 0 0px 5px rgba(210, 214, 222, 0.5);
@@ -1833,12 +1838,12 @@ h1.numjob-province-title label {
 /*support online*/
 
 /*.support-online{
-	position: fixed;
-	bottom: 0;
-	z-index: 100000;
+  position: fixed;
+  bottom: 0;
+  z-index: 100000;
 }
 .support-online label{
-	width: 150px;
+  width: 150px;
 }*/
 
 .support-online-box {
@@ -2068,13 +2073,13 @@ ul.ul-term-child-1 {
 }
 
 .hotlines b {
-  color: #f00;
+  color: #fff;
   font-size: 20px;
 }
 
 .hotlines span {
   font-size: 15px;
-  color: #f00;
+  color: #fff;
 }
 
 .margin-top-16 {
@@ -2355,4 +2360,8 @@ a img {
 .dropdown-menu li a {
   padding-left: 10px !important;
   color: #000 !important;
+}
+
+#header a {
+  color: #fff;
 }

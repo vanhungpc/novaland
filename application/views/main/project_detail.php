@@ -28,10 +28,10 @@
 									</div>
 
 									<div class="col-sm-12 padding-row">
-										<div class="col-sm-6 padding-row" >
+										<div class="col-sm-12 padding-row" >
 											<span>Địa chỉ:</span> <label class="hotlines"> <span class="hotlines"> <?php echo $data_project['address']?></span></label>
 										</div>
-										<div class="col-sm-6 padding-row">
+										<div class="col-sm-12 padding-row">
 											<span>Giá bán: </span><label class="hotlines"> <span> <?php echo $data_project['price']?>  $</span> </label>
 										</div>
 									</div>

@@ -3,7 +3,7 @@
 					<div class="row top-header">
 						<div class="col-sm-6 col-md-6"><label style="color:#8E3B13">a</label></div>
 
-						<div class="col-sm-6  col-md-6 text-right change-language-header">
+						<div class="col-sm-6  col-md-6 text-right change-language-header a_color">
                                                     <!-- <a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>/<?php if (!empty($idproduct)) {
 	echo $idproduct;
 }
@@ -32,10 +32,10 @@
 						</div>
 						<div class="col-sm-9 col-xs-9 text-left-right">
 							<label class="hotlines margin-right-15">
-                                                            <div class="email_destop"> Email: <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
+                                                            <div class="email_destop"> <span style="color:#fff">Email:</span> <a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
                                                              <div class="email_device"><a href="mailto:thienttt.finance@gmail.com"><span>thienttt.finance@gmail.com</span></a> <br></div>
                                                             <div class="enable_call"> <a href="tel:+840909288281"> <b> (84) 909 288 281</b></a> </div>
-                                                            <div class="unable_call">  Hotline:<b> (84) 909 288 281</b> </div>
+                                                            <div class="unable_call"><span style="color:#fff">  Hotline:<span><b> (84) 909 288 281</b> </div>
 							</label>
 						</div>
 					</div>
@@ -46,7 +46,7 @@
 
 
 					<nav id="site-navigation" class="site-primary-navigation slide-left">
-						<a href="#" class="primary-menu-toggle navbar-toggle collapsed toggle-menu" id="toggle-menu-close"><i class="fa fa-times-circle"></i></a>
+						<a href="#" class="primary-menu-toggle navbar-toggle collapsed toggle-menu a_color" id="toggle-menu-close"><i class="fa fa-times-circle"></i></a>
 						<!-- <form role="search" method="get" id="searchform" action="https://demo.astoundify.com/jobify-darker/">
 	    <div><label class="screen-reader-text" for="s">Search for:</label>
 	        <input type="text" value="" name="s" id="s">
@@ -105,15 +105,18 @@
 	<!-- <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login/index.html">Login</a></li> -->
 	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
 <div class="dropdown">
+
   <button class="btn btn-default select_lang" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <?php if (anchor(lchange('vn') == 'Vietnamese')) {?>
-      Vietnamese
+      <?php echo anchor(lchange('vn'), 'Vietnamese');?>
+
       <?php } else {?>
-      English
+     <?php echo anchor(lchange('en'), 'English');?>
       <?php }
 ?>
     <span class="caret"></span>
   </button>
+
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 
     <li><?php echo anchor(lchange('vn'), 'Vietnamese');?></li>
@@ -123,5 +126,5 @@
 	</li>
 	</ul></div>				</nav>
 
-									<a href="#" class="primary-menu-toggle in-header toggle-menu" id="toggle-menu-open"><i class="fa fa-bars"></i></a>
+									<a href="#" class="primary-menu-toggle in-header toggle-menu a_color" id="toggle-menu-open"><i class="fa fa-bars"></i></a>
 								</div>
