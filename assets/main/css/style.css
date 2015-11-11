@@ -73,7 +73,7 @@ a:hover, a:visited {
 }
 
 #main-page {
-  background: #777777; /*#d2d6de;*//*padding: 10px;*/
+  background: #eeeeee; /*#d2d6de;*//*padding: 10px;*/
 }
 
 #menu-main-menu {
@@ -1291,21 +1291,24 @@ a.toggle-menu:hover {
 
 .card .info-employer {
   margin: 10px;
-  border: 1px solid #919094;
+  border: none;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
      -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   background: #fff;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
+
 .card .row-employer-menu {/* margin: 10px; */
-  border: 1px solid #919094;
+  border: none;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
      -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   background: #fff;
   margin-top: 10px;
+  border-radius: 4px;
 }
 
 .card .row-employer {
@@ -2103,7 +2106,7 @@ ul.ul-term-child-1 {
   min-height: 100px;
 }
 
-.margin-right-25 {/* margin-right: -25px; */
+.margin-right-25 {/*   margin-right: -25px; */
 }
 
 #custom-search-input {/*  padding: 3px; */
@@ -2196,6 +2199,19 @@ ul.bottomnav li a:hover {
 
   .unable_call {
     display: none;
+  }
+
+  .card .info-employer {/* margin: 10px; */
+    border: none;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  .margin-left-2 {/* margin-left: -2px !important; */
   }
 }
 
@@ -2294,6 +2310,24 @@ ul.bottomnav li a:hover {
 
   ul.bottomnav {
     font-size: 12px !important;
+  }
+
+  .margin-right-25 {
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+
+  .card .info-employer {/* margin: 10px; */
+    border: none;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+       -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  .margin-left-2 {/* margin-left: -2px !important; */
   }
 }
 
