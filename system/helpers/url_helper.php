@@ -177,10 +177,14 @@ if ( ! function_exists('anchor'))
 	}
         
         function linkNav($method, $lang, $textlang){
-            if($lang=='vn'){
+            $changlang = "";
+            $changlang.=$lang;
+            if($changlang=="vn"){
                 return '<a href="'.  site_url('vn/'.$method).'">'.lang($textlang).'</a>';
+            }else{
+                return '<a href="'.  site_url($method).'">'.lang($textlang).'</a>';
             }
-            return '<a href="'.  site_url($method).'">'.lang($textlang).'</a>';
+             
         }
 }
 
