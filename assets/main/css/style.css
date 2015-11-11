@@ -1300,7 +1300,6 @@ a.toggle-menu:hover {
   border-radius: 4px;
 }
 
-
 .card .row-employer-menu {/* margin: 10px; */
   border: none;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
@@ -2317,14 +2316,8 @@ ul.bottomnav li a:hover {
     margin-left: -25px;
   }
 
-  .card .info-employer {/* margin: 10px; */
-    border: none;
-    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-       -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-    background: #fff;
-    margin-top: 10px;
-    border-radius: 4px;
+  .margin-left-45 {
+    margin-left: -45px;
   }
 
   .margin-left-2 {/* margin-left: -2px !important; */
@@ -2364,6 +2357,10 @@ ul.bottomnav li a:hover {
   .no-padding-img {
     padding: 0 !important;
   }
+
+  .margin-left-45 {
+    margin-top: 25px;
+  }
 }
 
 p img {
@@ -2398,4 +2395,7 @@ a img {
 
 #header a {
   color: #fff;
+}
+
+.margin-left-45 {
 }

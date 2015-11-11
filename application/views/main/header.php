@@ -30,7 +30,7 @@
 						<!-- <h2 class="site-description">Job Searching Just Got Easy</h2> -->
 					</a>
 						</div>
-						<div class="col-sm-9 col-xs-9 text-left-right">
+						<div class="col-sm-9 col-xs-9 text-left-right margin-left-45">
 							<label class="hotlines margin-right-15">
                                                             <div class="email_destop"> <span style="color:#fff">Email:</span> <a href="muanhadautu@gmail.com"><span>muanhadautu@gmail.com</span></a> <br></div>
                                                              <div class="email_device"><a href="muanhadautu@gmail.com"><span>muanhadautu@gmail.com</span></a> <br></div>
