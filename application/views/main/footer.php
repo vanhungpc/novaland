@@ -19,7 +19,7 @@
 
             </div>
         <div class="col-md-4 col-xs-12 col-md-pull-8 col-sm-pull-8" style="border-right: 1px solid #fff">
-            <p style="color: red;font-size: 15px;font-weight: bolder; margin-bottom: 5px;padding-left: 10px;">NOVALAND</p>
+
             <p style="color: #fff;font-size: 14px;padding-left: 10px;">
                 Address: The 16th floor - Saigon Tower -
                 29 Le Duan Boulevard - District 1 - HCM City - Vietnam.<br>

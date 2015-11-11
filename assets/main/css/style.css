@@ -819,20 +819,20 @@ footer span.copyrighttitle {
 }
 
 .share-btn-wrp > .facebook {
-  background: url(../img/share-button/share-icons.png) no-repeat -42px 0px;
+  background: url(../img/share-button/share-icons.png) no-repeat -41px 0px;
 }
 
 .share-btn-wrp > .facebook:hover {
-  background: url(../img/share-button/share-icons.png) no-repeat -42px -0px;
+  background: url(../img/share-button/share-icons.png) no-repeat 0px 0px;
   width: 38px;
 }
 
-.share-btn-wrp > .youtube {
-  background: url(../img/share-button/youtube.png) no-repeat ;
+.share-btn-wrp > .google {
+  background: url(../img/share-button/share-icons.png) no-repeat -41px -169px;
 }
 
-.share-btn-wrp > .youtube:hover {
-  background: url(../img/share-button/youtube.png) no-repeat ;
+.share-btn-wrp > .google:hover {
+  background: url(../img/share-button/share-icons.png) no-repeat 0px -169px;
   width: 38px;
 }
 
