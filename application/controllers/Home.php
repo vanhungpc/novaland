@@ -105,7 +105,6 @@ class Home extends CI_Controller {
 		$data_page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
 		$lang = $this->lang->mci_current();
-		$lang = $this->lang->mci_current();
 		$head = $this->load->view('main/head', array('titlePage' => 'novaland'), TRUE);
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
