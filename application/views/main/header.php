@@ -109,7 +109,7 @@
 <div class="dropdown">
 
   <button class="btn btn-default select_lang" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <?php if (anchor(lchange('vn') == 'Vietnamese')) {?>
+    <?php if ($this->lang->mci_segment == 'vn') {?>
       <?php echo anchor(lchange('vn'), 'Vietnamese');?>
 
       <?php } else {?>
