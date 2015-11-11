@@ -146,17 +146,17 @@ class Video extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		// $data_project = $this->project->getAllProject();
 		$data_slider = $this->project->getSliderProject();
+		$data_video_all = $this->project->getAllVideo_All();
 		$data_video = $this->project->getAllVideo();
-
 		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/all_video', array('county' => $data, 'arr_news' => $data_news, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
+		$content = $this->load->view('main/all_video', array('county' => $data, 'arr_news' => $data_news, 'data_slider' => $data_slider, 'data_video' => $data_video, 'data_video_all' => $data_video_all), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,

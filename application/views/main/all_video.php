@@ -14,9 +14,9 @@
 	<div class="col-sm-8 col-xs-12 col-md-push-4 col-sm-push-4">
 			<div class="row  margin-right-25">
 				<div class="col-sm-12 col-sm-12 no-padding">
-				<?php if (!empty($data_video)) {
+				<?php if (!empty($data_video_all)) {
 	?>
-					<?php foreach ($data_video as $value) {?>
+					<?php foreach ($data_video_all as $value) {?>
 
 					<div class="col-xs-12 col-sm-6 col-md-6  no-padding">
 						<div class="card">

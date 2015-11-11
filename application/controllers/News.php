@@ -198,11 +198,11 @@ class News extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_news_id = $this->project->getNewsById($_id_news);
 		$data_slider = $this->project->getSliderProject();
@@ -221,10 +221,10 @@ class News extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_all_news = $this->project->getAllNews_link();
 		$data_slider = $this->project->getSliderProject();

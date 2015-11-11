@@ -210,6 +210,15 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
+	public function getAllVideo_All() {
+		$sql = "select * from video order by _id_video desc";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		} else {
+			return "";
+		}
+	}
 
 	public function getAllNews_link() {
 		$sql = "select * from news order by _id_news desc";

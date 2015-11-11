@@ -216,11 +216,11 @@ class Project extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getProjectById($_id_project);
 		$data_slider = $this->project->getSliderProject();
