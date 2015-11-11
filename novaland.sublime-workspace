@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
 				"im",
 				"important"
 			],
@@ -58,10 +62,6 @@
 			[
 				"f",
 				"false"
-			],
-			[
-				"di",
-				"disabled	Attr"
 			],
 			[
 				"fla",
@@ -156,18 +156,18 @@
 	"buffers":
 	[
 		{
-			"file": "application/views/main/home.php",
+			"file": "application/views/main/contact.php",
 			"settings":
 			{
-				"buffer_size": 6821,
+				"buffer_size": 7866,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/main/project_detail.php",
+			"file": "application/views/main/home.php",
 			"settings":
 			{
-				"buffer_size": 3798,
+				"buffer_size": 6868,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,31 +175,63 @@
 			"file": "application/views/main/news_detail.php",
 			"settings":
 			{
-				"buffer_size": 2358,
+				"buffer_size": 2387,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/main/all_video.php",
+			"file": "application/views/main/project_detail.php",
 			"settings":
 			{
-				"buffer_size": 2183,
+				"buffer_size": 3830,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/main/all_news.php",
+			"file": "application/views/main/footer.php",
 			"settings":
 			{
-				"buffer_size": 2757,
+				"buffer_size": 2267,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".htaccess",
+			"file": "assets/main/css/style.css",
 			"settings":
 			{
-				"buffer_size": 203,
+				"buffer_size": 37439,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/admin/header.php",
+			"settings":
+			{
+				"buffer_size": 13539,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/main/header.php",
+			"settings":
+			{
+				"buffer_size": 6734,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/language/english/mci_lang.php",
+			"settings":
+			{
+				"buffer_size": 4376,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/Home.php",
+			"settings":
+			{
+				"buffer_size": 23028,
 				"line_ending": "Windows"
 			}
 		},
@@ -212,90 +244,42 @@
 			}
 		},
 		{
-			"file": "application/views/admin/project_add.php",
+			"file": "application/core/MY_Lang.php",
 			"settings":
 			{
-				"buffer_size": 10461,
+				"buffer_size": 3108,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/controllers/Project.php",
+			"file": "application/config/routes.php",
 			"settings":
 			{
-				"buffer_size": 8598,
+				"buffer_size": 3035,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/main/header.php",
+			"file": "application/language/vietnamese/mci_lang.php",
 			"settings":
 			{
-				"buffer_size": 6645,
+				"buffer_size": 4395,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/views/admin/header.php",
+			"file": "application/config/mci_languages.php",
 			"settings":
 			{
-				"buffer_size": 8379,
+				"buffer_size": 989,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/ckfinder/ckfinder.html",
+			"file": "assets/main/css/style4189.css",
 			"settings":
 			{
-				"buffer_size": 3598,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/ckfinder/ckfinder.js",
-			"settings":
-			{
-				"buffer_size": 293700,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/ckfinder/config.js",
-			"settings":
-			{
-				"buffer_size": 506,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/admin/project_edit.php",
-			"settings":
-			{
-				"buffer_size": 12240,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/ckeditor/ckeditor.js",
-			"settings":
-			{
-				"buffer_size": 478211,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/ckeditor/config.js",
-			"settings":
-			{
-				"buffer_size": 5829,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/ckfinder/config.php",
-			"settings":
-			{
-				"buffer_size": 10888,
+				"buffer_size": 220310,
 				"line_ending": "Windows"
 			}
 		}
@@ -373,37 +357,61 @@
 	[
 		"/C/xampp/htdocs/novaland",
 		"/C/xampp/htdocs/novaland/application",
+		"/C/xampp/htdocs/novaland/application/config",
 		"/C/xampp/htdocs/novaland/application/controllers",
+		"/C/xampp/htdocs/novaland/application/core",
+		"/C/xampp/htdocs/novaland/application/helpers",
+		"/C/xampp/htdocs/novaland/application/language",
+		"/C/xampp/htdocs/novaland/application/language/english",
+		"/C/xampp/htdocs/novaland/application/language/vietnamese",
 		"/C/xampp/htdocs/novaland/application/views",
 		"/C/xampp/htdocs/novaland/application/views/main",
 		"/C/xampp/htdocs/novaland/assets",
-		"/C/xampp/htdocs/novaland/assets/admin",
 		"/C/xampp/htdocs/novaland/assets/main",
-		"/C/xampp/htdocs/novaland/public",
-		"/C/xampp/htdocs/novaland/public/ckeditor",
-		"/C/xampp/htdocs/novaland/public/ckfinder"
+		"/C/xampp/htdocs/novaland/assets/main/css"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/novaland/application/views/main/project_detail.php",
-		"/C/xampp/htdocs/novaland/application/controllers/News.php",
-		"/C/xampp/htdocs/novaland/.htaccess",
-		"/C/xampp/htdocs/novaland/application/views/main/head.php",
-		"/C/xampp/htdocs/novaland/assets/novaland/css/theme.css",
-		"/C/xampp/htdocs/novaland/assets/main/css/style4189.css",
+		"/C/xampp/htdocs/novaland/application/language/vietnamese/mci_lang.php",
+		"/C/xampp/htdocs/novaland/application/views/main/layout.php",
+		"/C/xampp/htdocs/novaland/application/logs/log-2015-09-07.php",
+		"/C/xampp/htdocs/novaland/application/views/main/all_video.php",
+		"/C/xampp/htdocs/novaland/application/views/main/all_news.php",
+		"/C/xampp/htdocs/novaland/application/views/main/about.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/header.php",
+		"/C/xampp/htdocs/novaland/assets/admin/scripts/muse.js",
 		"/C/xampp/htdocs/novaland/application/views/admin/project_add.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/project_edit.php",
-		"/C/xampp/htdocs/novaland/application/views/main/all_news.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/project_view.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/county_add.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news_add.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news_edit.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/news_view.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video_add.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/video_edit.php",
 		"/C/xampp/htdocs/novaland/assets/novaland/css/default.css",
 		"/C/xampp/htdocs/novaland/application/views/main/header.php",
+		"/C/xampp/htdocs/novaland/application/views/main/home.php",
+		"/C/xampp/htdocs/novaland/application/views/main/project_detail.php",
+		"/C/xampp/htdocs/novaland/application/views/main/news_detail.php",
+		"/C/xampp/htdocs/novaland/.htaccess",
+		"/C/xampp/htdocs/novaland/application/views/main/head.php",
+		"/C/xampp/htdocs/novaland/application/controllers/Project.php",
+		"/C/xampp/htdocs/novaland/application/views/admin/navigation.php",
+		"/C/xampp/htdocs/novaland/public/ckfinder/ckfinder.html",
+		"/C/xampp/htdocs/novaland/public/ckfinder/ckfinder.js",
+		"/C/xampp/htdocs/novaland/public/ckfinder/config.js",
+		"/C/xampp/htdocs/novaland/public/ckeditor/ckeditor.js",
+		"/C/xampp/htdocs/novaland/public/ckeditor/config.js",
+		"/C/xampp/htdocs/novaland/public/ckfinder/config.php",
+		"/C/xampp/htdocs/novaland/application/controllers/News.php",
+		"/C/xampp/htdocs/novaland/assets/novaland/css/theme.css",
+		"/C/xampp/htdocs/novaland/assets/main/css/style4189.css",
 		"/C/xampp/htdocs/novaland/application/views/main/footer.php",
-		"/C/xampp/htdocs/novaland/application/views/main/all_video.php",
 		"/C/xampp/htdocs/novaland/application/views/main/leftcontent.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Video.php",
 		"/C/xampp/htdocs/novaland/application/models/admin/Modelproject.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Home.php",
-		"/C/xampp/htdocs/novaland/application/controllers/Project.php",
 		"/C/Users/maxmalla006/AppData/Roaming/Sublime Text 3/Packages/perfectionist/perfectionist.sublime-settings",
 		"/C/xampp/htdocs/novaland/assets/main/css/responsive-style.css",
 		"/C/xampp/htdocs/novaland/assets/main/css/style.css",
@@ -412,34 +420,22 @@
 		"/C/xampp/htdocs/novaland/application/config/email.php",
 		"/C/xampp/htdocs/novaland/.gitignore",
 		"/C/Users/maxmalla006/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
-		"/C/xampp/htdocs/novaland/application/views/main/home.php",
 		"/C/xampp/htdocs/novaland/application/views/main/contact.php",
 		"/C/xampp/htdocs/novaland/application/models/Utilmodel.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/news.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/video.php",
-		"/C/xampp/htdocs/novaland/application/views/main/news_detail.php",
-		"/C/xampp/htdocs/novaland/application/views/main/layout.php",
 		"/C/xampp/htdocs/novaland/application/controllers/search_project.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news_add.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/video_add.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news_edit.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/video_edit.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/news_view.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/video_view.php",
 		"/C/xampp/htdocs/novaland/application/config/routes.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/navigation.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Example.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county_edit.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/county_add.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county_view.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/county.php",
-		"/C/xampp/htdocs/novaland/application/views/admin/project_view.php",
 		"/C/xampp/htdocs/novaland/application/controllers/County.php",
 		"/C/xampp/htdocs/novaland/application/models/admin/Modeladmin.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/project.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Admin.php",
 		"/C/xampp/htdocs/novaland/application/views/main/example_post.php",
-		"/C/xampp/htdocs/novaland/application/views/main/about.php",
 		"/C/xampp/htdocs/novaland/application/models/Recruitment_model.php",
 		"/C/xampp/htdocs/novaland/application/views/county_add.php",
 		"/C/xampp/htdocs/novaland/assets/novaland/js/canhcam.js",
@@ -448,8 +444,6 @@
 		"/C/xampp/htdocs/novaland/assets/admin/css/basic.css",
 		"/C/xampp/htdocs/novaland/assets/admin/css/demo.css",
 		"/C/xampp/htdocs/novaland/application/views/example.php",
-		"/C/xampp/htdocs/novaland/public/ckfinder/config.php",
-		"/C/xampp/htdocs/novaland/public/ckeditor/config.js",
 		"/C/xampp/htdocs/novaland/application/views/admin/footer.php",
 		"/C/xampp/htdocs/novaland/application/controllers/admin/Admin.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/login.php",
@@ -457,7 +451,6 @@
 		"/C/xampp/htdocs/novaland/public/ckfinder/plugins/imageresize/plugin.php",
 		"/C/xampp/htdocs/novaland/application/models/Dbutil.php",
 		"/C/xampp/htdocs/novaland/application/views/admin/login/layout.php",
-		"/C/xampp/htdocs/novaland/public/ckeditor/ckeditor.js",
 		"/C/xampp/htdocs/novaland/system/core/CodeIgniter.php",
 		"/C/xampp/htdocs/novaland/application/controllers/Contact.php",
 		"/C/xampp/htdocs/recruitsys/assets/js/chosen/chosen.css",
@@ -506,17 +499,11 @@
 		"/C/xampp/htdocs/job/application/views/main/login.php",
 		"/C/xampp/htdocs/job/application/views/main/employer.php",
 		"/C/xampp/htdocs/job/application/views/main/footer.php",
-		"/C/xampp/htdocs/job/application/views/main/head.php",
-		"/C/xampp/htdocs/job/application/logs/log-2015-09-08.php",
-		"/C/xampp/htdocs/job/assets/main/js/job7vn.js",
-		"/C/xampp/htdocs/job/application/views/admin/head.php",
-		"/C/xampp/htdocs/job/application/logs/log-2015-09-05.php",
-		"/C/xampp/htdocs/job/application/logs/log-2015-09-06.php",
-		"/C/xampp/htdocs/job/application/logs/log-2015-09-07.php"
+		"/C/xampp/htdocs/job/application/views/main/head.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -530,6 +517,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Vietnamese",
+			"@media screen and (max-width: 480px) and (min-width: 320px)",
+			"@media screen and (max-width: 480px) and (min-width: 320px)\n.container-s",
+			"}\n",
+			"superfish",
+			"jquery",
+			"loginarrow",
 			"novaland",
 			" col-xs-push-4",
 			"@media",
@@ -650,14 +644,7 @@
 			"768px",
 			"modal-dialog",
 			"jquery.form.js",
-			"job_day1",
-			"minimumAge",
-			"getFullYear",
-			"dobPicker",
-			"dobday",
-			"dobPicker",
-			"rec_job_map_career",
-			"selectpicker"
+			"job_day1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -687,54 +674,55 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/main/home.php",
+					"file": "application/views/main/contact.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6821,
+						"buffer_size": 7866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5029,
-								5015
+								6044,
+								6015
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3847.0,
+						"translation.y": 380.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/main/project_detail.php",
+					"file": "application/views/main/home.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3798,
+						"buffer_size": 6868,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								743,
-								729
+								6210,
+								6210
 							]
 						],
 						"settings":
@@ -744,10 +732,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 190.0,
+						"translation.y": 4295.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -756,15 +744,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2358,
+						"buffer_size": 2387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1444,
-								1429
+								1466,
+								1466
 							]
 						],
 						"settings":
@@ -774,27 +762,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1018.0,
+						"translation.y": 1104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "application/views/main/all_video.php",
+					"file": "application/views/main/project_detail.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2183,
+						"buffer_size": 3830,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1211,
-								1211
+								1762,
+								1762
 							]
 						],
 						"settings":
@@ -803,73 +791,196 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 966.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/views/main/all_news.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								352,
-								352
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1449.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": ".htaccess",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								38,
-								38
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 436.0,
+						"translation.y": 564.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 12,
 					"type": "text"
 				},
 				{
+					"buffer": 4,
+					"file": "application/views/main/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/main/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37439,
+								37439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 54070.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
 					"buffer": 6,
+					"file": "application/views/admin/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/main/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1994,
+								1994
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 1047.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/language/english/mci_lang.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "application/controllers/Home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23026,
+								23026
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12466.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "application/views/main/head.php",
 					"semi_transient": false,
 					"settings":
@@ -881,269 +992,120 @@
 						"selection":
 						[
 							[
-								3151,
-								3159
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1006.0,
+						"translation.y": 2070.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "application/views/admin/project_add.php",
+					"buffer": 11,
+					"file": "application/core/MY_Lang.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10461,
+						"buffer_size": 3108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9215,
-								9215
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 601.0,
-						"translation.y": 4463.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "application/controllers/Project.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8598,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7548,
-								7556
+								1583,
+								1586
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5014.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "application/views/main/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 128.0,
-						"translation.y": 23.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "application/views/admin/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8379,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1775,
-								1695
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 339.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "public/ckfinder/ckfinder.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3598,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								97,
-								97
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2967.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
 					"buffer": 12,
-					"file": "public/ckfinder/ckfinder.js",
+					"file": "application/config/routes.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 293700,
+						"buffer_size": 3035,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "public/ckfinder/config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								506,
-								506
+								2156,
+								2165
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 276.0,
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "application/views/admin/project_edit.php",
+					"buffer": 13,
+					"file": "application/language/vietnamese/mci_lang.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12240,
+						"buffer_size": 4395,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10994,
-								10994
+								164,
+								164
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 418.0,
-						"translation.y": 5014.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "public/ckeditor/ckeditor.js",
+					"buffer": 14,
+					"file": "application/config/mci_languages.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 478211,
+						"buffer_size": 989,
 						"regions":
 						{
 						},
@@ -1156,73 +1118,43 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 828.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "public/ckeditor/config.js",
+					"buffer": 15,
+					"file": "assets/main/css/style4189.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5829,
+						"buffer_size": 220310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								210827,
+								210827
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4301.0,
+						"translation.y": 263011.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "public/ckfinder/config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10888,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2120,
-								2120
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1222.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1278,7 +1210,7 @@
 		"rows":
 		[
 			0.0,
-			0.684389790104,
+			0.667003347057,
 			1.0
 		]
 	},
@@ -1304,6 +1236,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"2075",
+				"application\\logs\\log-2015-09-07.php"
+			]
 		],
 		"width": 0.0
 	},

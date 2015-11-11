@@ -4,12 +4,12 @@
 $lang['home'] = "HOME";
 $lang['show_more_video'] = "Show all video";
 $lang['about'] = "ABOUT";
-$lang['office_tel'] = "OFFICE TEL";
+$lang['officetel'] = "OFFICETEL";
 $lang['apartment'] = "APARTMENT";
 #employer
 $lang['house'] = "HOUSE";
 $lang['villas'] = "VILLAS";
-$lang['service_apartment'] = "SERVICE APARTMENT";
+$lang['retail'] = "retail";
 $lang['contact'] = "CONTACT";
 $lang['news'] = "NEWS";
 $lang['rental_property'] = "HCMC RENTAL PROPERTY";

@@ -4,12 +4,12 @@
 $lang['home'] = "TRANG CHỦ";
 $lang['show_more_video'] = "Tất cả các video";
 $lang['about'] = "GIỚI THIỆU";
-$lang['office_tel'] = "OFFICE TEL";
+$lang['officetel'] = "OFFICETEL";
 $lang['apartment'] = "CĂN HỘ";
 #employer
-$lang['house'] = "NHÀ";
+$lang['house'] = "NHÀ PHỐ";
 $lang['villas'] = "BIỆT THỰ";
-$lang['service_apartment'] = "DỊCH VỤ CĂN HỘ";
+$lang['retail'] = "RETAIL";
 $lang['contact'] = "LIÊN HỆ";
 $lang['news'] = "TIN TỨC MỚI NHẤT";
 $lang['rental_property'] = "BẤT ĐỘNG SẢN CHO THUÊ";

@@ -52,7 +52,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'home',
 		), TRUE);
@@ -109,7 +109,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'about',
 		), TRUE);
@@ -165,7 +165,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'officetel',
 		), TRUE);
@@ -221,7 +221,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'apartment',
 		), TRUE);
@@ -277,7 +277,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'house',
 		), TRUE);
@@ -333,7 +333,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'villas',
 		), TRUE);
@@ -352,7 +352,7 @@ class Home extends CI_Controller {
 
 	}
 
-	function serviced_apartment() {
+	function retail() {
 
 		//pagination settings
 		$config['base_url'] = site_url('home/index');
@@ -390,9 +390,9 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
-			'menu' => 'serviced_apartment',
+			'menu' => 'retail',
 		), TRUE);
 		$data = $this->project->getAllCounty();
 		$data_news = $this->project->getAllNews();
@@ -474,7 +474,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'contact',
 		), TRUE);
@@ -531,7 +531,7 @@ class Home extends CI_Controller {
 		$header = $this->load->view('main/header', array(
 			'logo' => 'img/header/logo_novaland.png',
 			'showTitle' => true,
-			'logoWidth' => '126px',
+			'logoWidth' => '95px',
 			'logoHeight' => '95px',
 			'menu' => 'serviced_apartment',
 		), TRUE);
