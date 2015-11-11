@@ -64,7 +64,7 @@
 		</div>
 		</div>
     <div id="dialog" style="display: none">
-	        <div id="dvMap" style="height: 380px; width: 580px;">
+	        <div id="dvMap" style="height: 450px; width: 100%;">
 	        </div>
 	    </div>
 
@@ -92,7 +92,7 @@
 		$("#dialog").dialog({
                     modal: true,
                     title: "Google Map",
-                    width: 600,
+                    width: "100%",
                     hright: 450,
 
                     open: function () {

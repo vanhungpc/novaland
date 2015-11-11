@@ -185,7 +185,7 @@
 
 
     <div id="dialog" style="display: none">
-	        <div id="dvMap" style="height: 300px; width: 95%;">
+	        <div id="dvMap" style="height: 450px; width: 100%; display:block">
 	        </div>
 	    </div>
 
@@ -210,7 +210,7 @@
 		$("#dialog").dialog({
                     modal: true,
                     title: "Google Map",
-                    width: 600,
+                    width: "100%",
                     hright: 450,
 
                     open: function () {
