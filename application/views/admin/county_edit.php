@@ -33,9 +33,15 @@ if (!empty($error_msg)) {
                         <div class="form">
                             <form id="form0" action="<?php echo site_url('county/editCountyFormSubmission/' . $county['_id_county'])?>"  method="post"  enctype="multipart/form-data">
                                 <div class="clearfix">
-                                    <label>Name County</label>
+                                    <label>Name County EN</label>
                                     <div class="input">
                                         <input class="xlarge validate[required]" type="text" name="name_county" id="name_county" value="<?php echo $county['name_county']?>" />
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Name County VI</label>
+                                    <div class="input">
+                                        <input class="xlarge validate[required]" type="text" name="name_county_vi" id="name_county_vi" value="<?php echo $county['name_county_vi']?>" />
                                     </div>
                                 </div>
 

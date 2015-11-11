@@ -56,7 +56,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'home',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProject($config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -113,7 +113,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'about',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProject($config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -169,7 +169,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'officetel',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(1, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -225,7 +225,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'apartment',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(2, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -281,7 +281,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'house',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(3, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -337,7 +337,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'villas',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(4, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -394,7 +394,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'retail',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByIdCategory(5, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -478,7 +478,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'contact',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProject($config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();
@@ -535,7 +535,7 @@ class Home extends CI_Controller {
 			'logoHeight' => '95px',
 			'menu' => 'serviced_apartment',
 		), TRUE);
-		$data = $this->project->getAllCounty();
+		$data = $this->project->getAllCounty($lang);
 		$data_news = $this->project->getAllNews();
 		$data_project = $this->project->getAllProjectByName($name_project, $config["per_page"], $data_page);
 		$data_slider = $this->project->getSliderProject();

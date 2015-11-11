@@ -141,14 +141,20 @@ class ModelProject extends CI_Model {
 			return "";
 		}
 	}
-	public function getAllCounty() {
+	public function getAllCounty($lang) {
 		$sql = "select * from county order by name_county";
 		$query = $this->db->query($sql);
 
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				if ($this->checProjectByCounty($row->_id_county) == 1) {
-					$data['name_county'] = $row->name_county;
+					if ($lang == "en") {
+						$data['name_county'] = $row->name_county;
+
+					} else {
+						$data['name_county'] = $row->name_county_vi;
+					}
+
 					$data['arr_project'] = $this->getProjectByCounty($row->_id_county);
 					$dataex[] = $data;
 				}
@@ -275,9 +281,10 @@ class ModelProject extends CI_Model {
 		}
 	}
 
-	public function addCounty($name_county) {
+	public function addCounty($params) {
 		$data = array(
-			'name_county' => $name_county);
+			'name_county' => $params['name_county'],
+			'name_county_vi' => $params['name_county_vi']);
 		$this->db->trans_start();
 		$query = $this->db->insert('county', $data);
 		$insert_id = $this->db->insert_id();
@@ -288,7 +295,8 @@ class ModelProject extends CI_Model {
 	public function updateCounty($params, $_id_county) {
 		$this->db->trans_start();
 		$data = array(
-			'name_county' => $params['name_county']);
+			'name_county' => $params['name_county'],
+			'name_county_vi' => $params['name_county_vi']);
 		$this->db->where('_id_county', $_id_county);
 		$query = $this->db->update('county', $data);
 		$this->db->trans_complete();

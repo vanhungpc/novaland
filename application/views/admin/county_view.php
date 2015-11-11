@@ -32,9 +32,15 @@ if (!empty($error_msg)) {
                     <div class="pre_2 col_8 last">
                         <div class="form">
                             <div class="clearfix">
-                                    <label>Title</label>
+                                    <label>Name County EN</label>
                                     <div class="input">
                                         <input class="xlarge validate[required]" type="text" name="name_county" id="name_county" value="<?php echo $county['name_county']?>" readonly />
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Name County VI</label>
+                                    <div class="input">
+                                        <input class="xlarge validate[required]" type="text" name="name_county_vi" id="name_county_vi" value="<?php echo $county['name_county_vi']?>" readonly />
                                     </div>
                                 </div>
 

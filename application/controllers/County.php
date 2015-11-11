@@ -50,9 +50,9 @@ class County extends CI_Controller {
 	}
 
 	public function addCountyFormSubmission() {
-		$name_county = $this->input->post('name_county');
-
-		$addcounty = $this->project->addCounty($name_county);
+		$params['name_county'] = $this->input->post('name_county');
+		$params['name_county_vi'] = $this->input->post('name_county_vi');
+		$addcounty = $this->project->addCounty($params);
 		if ($addcounty) {
 			$this->session->set_flashdata('success_msg', 'Your county has been added successfully');
 			redirect('county');
@@ -87,6 +87,7 @@ class County extends CI_Controller {
 	public function editCountyFormSubmission($_id_county) {
 
 		$params['name_county'] = $this->input->post('name_county');
+		$params['name_county_vi'] = $this->input->post('name_county_vi');
 
 		$editcounty = $this->project->updateCounty($params, $_id_county);
 		if ($editcounty) {
