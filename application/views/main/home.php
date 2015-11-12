@@ -58,7 +58,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 no-padding">
 
 				<div class="card">
-					<div class="info-employer row padding-2  margin-left-2">
+					<div class="info-employer row padding-2  margin-left-2 margin-search-right-10">
 					<div class="col-sm-7">
 
                                             <h5 class="color-h5 margin-top-10"><?php if (!empty($data_project)) {echo sprintf(lang("total_projects"), count($data_project))?><?php } else {echo lang('not_found_project');?> <?php }
@@ -106,26 +106,26 @@
 					<div class="col-xs-12 col-sm-6 col-md-6  no-padding">
 						<div class="card">
 							<div class="info-employer row padding-2">
-								<div class="row padding-left-15">
-									<div class="col-sm-5 col-md-5 col-xs-5 no-padding">
+								<div class="row padding-left-15 table">
+									<div class="col-sm-5 col-md-5 col-xs-5 no-padding table-cell" style="float:none; vertical-align:middle">
 										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 										<img class="card-img img_height" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
 										</a>
 									</div>
 
-									<div class="col-sm-7 col-md-7 col-xs-7 no-padding">
+									<div class="col-sm-7 col-md-7 col-xs-7 no-padding table-cell" style=" float:none; padding-top:0; padding-bottom:0; position:static">
 										 	<div class="col-sm-12  col-md-12 text-left">
 										 	<ul class="liststyle">
 											<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
 											<li>
-												<b><?php echo $value->name_project?></b>
+												<b class="text-b"><?php echo $value->name_project?></b>
 											</li>
 											</a>
 											<li>
-												<span><?php echo $value->address?> </span>
+												<span class="text-span"><?php echo $value->address?> </span>
 											</li>
 											<li>
-												<span> <?php echo $value->price?> USD</span>
+												<span class="text-span"> <?php echo $value->price?> USD</span>
 											</li>
 											<li>
 
@@ -133,6 +133,11 @@
 										</ul>
 
 										</div>
+										<div class="col-sm-12  col-md-12 text-right buttonBox" style="position: absolute;bottom: 13px; right: -2px;">
+											<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $value->lat?>, <?php echo $value->lng?>)">View Map</button>
+										</div>
+
+
 									</div>
 
 								</div>
@@ -141,14 +146,14 @@
 								</div> -->
 
 
-								<div class="row ">
+								<!-- <div class="row ">
 									<div class="col-sm-12  col-md-12  text-right">
 
-										<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $value->lat?>, <?php echo $value->lng?>)">View Map</button>
+
 									</div>
 
 								</div>
-
+								 -->
 
 							</div>
 

@@ -6,11 +6,14 @@
 </head>
 <body>
       <!--Content website-->
+    <?php if ($this->router->method == "index") {?>
      <ul class="share-btn-wrp">
         <li class="facebook button-wrap">Facebook</li>
         <li class="google button-wrap">Google</li>
 
     </ul>
+    <?php }
+?>
     <a href="#" class="scrollToTop"></a>
       <div id="page" class="">
        <header id="header" class="site-header">

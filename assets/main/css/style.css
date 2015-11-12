@@ -2323,6 +2323,13 @@ ul.bottomnav li a:hover {
 
   .margin-left-2 {/* margin-left: -2px !important; */
   }
+
+  .margin-search-right-10 {
+    margin-right: -10px !important;
+  }
+}
+
+.margin-search-right-10 {
 }
 
 /* ipad */
@@ -2362,6 +2369,9 @@ ul.bottomnav li a:hover {
   .margin-left-45 {
     margin-top: 25px;
   }
+
+  .margin-search-right-10 {
+  }
 }
 
 p img {
@@ -2399,4 +2409,39 @@ a img {
 }
 
 .margin-left-45 {
+}
+
+.text-b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px; /* fallback */
+  max-height: 32px; /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.text-span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px; /* fallback */
+  max-height: 32px; /* fallback */
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.buttonBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.table {
+  display: table;
+  margin-bottom: 0 !important;
+}
+
+.table-cell {
+  display: table-cell;
 }

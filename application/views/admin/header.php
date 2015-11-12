@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
         <link rel="apple-touch-con" href="" />
-        <title>Automotive admin</title>
+        <title>Novaland admin</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
         <!-- The Columnal Grid and mobile stylesheet -->
@@ -94,7 +94,7 @@
             <div id="main">
                 <header class="container">
                     <div class="row clearfix">
-                        <div class="left"> <a href="javascript:;" style="color: #FFFFFF;font-family: arial;font-size: 20px;">Automotive Store Administrator Panel</a> </div>
+                        <div class="left"> <a href="javascript:;" style="color: #FFFFFF;font-family: arial;font-size: 20px;">Novand Administrator Panel</a> </div>
                         <?php
 $logged_in_status = $this->session->userdata('logged_in_status');
 if ($logged_in_status) {

@@ -1275,6 +1275,38 @@ height: 508px !important;
           transition: all 0.3s ease-out;
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  .btn-prev, .btn-next {
+    background: url(images/slnav.png) no-repeat 10px 0;
+    width: 46px;
+    height: 58px;
+    position: absolute;
+    cursor: pointer;
+    top: 28%;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .btn-prev, .btn-next {
+    background: url(images/slnav.png) no-repeat 10px 0;
+    width: 46px;
+    height: 58px;
+    position: absolute;
+    cursor: pointer;
+    top: 38%;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+  }
+}
+
 .container-s {
   float: right;
   position: relative;
@@ -1334,7 +1366,7 @@ height: 508px !important;
   .container-s {
     float: right;
     position: relative;
-    height: ;
+    height: 200px;
   }
 }
 
@@ -1357,7 +1389,7 @@ height: 508px !important;
   .container-s {
     float: right;
     position: relative;
-    height: 350px;
+    height: 200px;
   }
 }
 

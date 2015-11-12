@@ -421,11 +421,11 @@ $(document).ready(function () {
     showItem(0);
     $('.container-s .sub').each(function () {
          if ($(this).find('h2').html().length > 26 || $(this).find('.bn-desc').html().length > 50) {
-            $(this).width(443)
+            $(this).width(300)
         }
          else if($(this).find('h2').html().length > 21 || $(this).find('.bn-desc').html().length < 20)
         {
-         $(this).width(300);
+         $(this).width(220);
         }
     })
 
