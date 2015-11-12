@@ -33,9 +33,9 @@
 						<div class="col-sm-9 col-xs-9 text-left-right margin-left-45">
 							<label class="hotlines margin-right-15">
                                                             <div class="email_destop"> <span style="color:#fff">Email:</span> <a href="muanhadautu@gmail.com"><span>muanhadautu@gmail.com</span></a> <br></div>
-                                                             <div class="email_device"><a href="muanhadautu@gmail.com"><span>muanhadautu@gmail.com</span></a> <br></div>
-                                                            <div class="enable_call"> <a href="tel:+840909288281"> <b> (84) 909 880 247</b></a> </div>
-                                                            <div class="unable_call"><span style="color:#fff">  Hotline:<span><b> (84) 909 880 247</b> </div>
+                                                             <div class="email_device"><a href="#"><span>muanhadautu@gmail.com</span></a> <br></div>
+                                                            <div class="enable_call"> <a href="tel:+84909288281"> <b> 0909 880 247</b></a> </div>
+                                                            <div class="unable_call"><span style="color:#fff">  Hotline:<span><b> 0909 880 247</b> </div>
 							</label>
 						</div>
 					</div>

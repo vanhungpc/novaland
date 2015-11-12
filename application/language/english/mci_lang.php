@@ -9,7 +9,7 @@ $lang['apartment'] = "APARTMENT";
 #employer
 $lang['house'] = "HOUSE";
 $lang['villas'] = "VILLAS";
-$lang['retail'] = "retail";
+$lang['retail'] = "RETAIL";
 $lang['contact'] = "CONTACT";
 $lang['news'] = "NEWS";
 $lang['rental_property'] = "HCMC RENTAL PROPERTY";
