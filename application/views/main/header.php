@@ -4,17 +4,17 @@
 						<div class="col-sm-6 col-md-6"><label style="color:#8E3B13">a</label></div>
 
 						<div class="col-sm-6  col-md-6 text-right change-language-header a_color">
-                                                    <!-- <a href="<?php echo base_url();?>vn/<?php echo $this->router->class;?>/<?php echo $this->router->method?>/<?php if (!empty($idproduct)) {
+                                                    <!-- <a href="<?php echo base_url(); ?>vn/<?php echo $this->router->class; ?>/<?php echo $this->router->method ?>/<?php if (!empty($idproduct)) {
 	echo $idproduct;
 }
 ?>">Tiếng Việt</a> | -->
-                            <?php echo anchor(lchange('vn'), 'Vietnamese');?>|
-							<?php echo anchor(lchange('en'), 'English');?>
+                            <?php echo anchor(lchange('vn'), 'Vietnamese'); ?>|
+							<?php echo anchor(lchange('en'), 'English'); ?>
 						</div>
 					</div> <!-- top-header margin-bottom--4 -->
 					<div class="row ">
 						<div class="col-sm-3 col-xs-3  no-padding-img text-left">
-								<a href="<?php echo base_url();?>" title="Jobify Darker" rel="home" class="site-branding">
+								<a href="<?php echo base_url(); ?>" title="Jobify Darker" rel="home" class="site-branding">
 						<h1 class="site-title">
 							<img  src="<?php if (isset($logo)) {
 	echo base_url() . 'assets/main/' . $logo;
@@ -32,10 +32,10 @@
 						</div>
 						<div class="col-sm-9 col-xs-9 text-left-right margin-left-45">
 							<label class="hotlines margin-right-15">
-                                                            <div class="email_destop"> <span style="color:#fff">Email:</span> <a href="muanhadautu@gmail.com"><span>muanhadautu@gmail.com</span></a> <br></div>
-                                                             <div class="email_device"><a href="#"><span>muanhadautu@gmail.com</span></a> <br></div>
-                                                            <div class="enable_call"> <a href="tel:+84909288281"> <b> 0909 880 247</b></a> </div>
-                                                            <div class="unable_call"><span style="color:#fff">  Hotline:<span><b> 0909 880 247</b> </div>
+                                                            <div class="email_destop"> <span style="color:#fff">Email:</span> <a href="mailto:muanhadautu247@gmail.com"><span>muanhadautu247@gmail.com</span></a> <br></div>
+                                                             <div class="email_device"><a href="mailto:muanhadautu247@gmail.com"><span>muanhadautu247@gmail.com</span></a> <br></div>
+                                                            <div class="enable_call"> <a href="tel:+84909880247"> <b> 0909.880.247</b></a> </div>
+                                                            <div class="unable_call"><span style="color:#fff">  Hotline:<span><b> 0909.880.247</b> </div>
 							</label>
 						</div>
 					</div>
@@ -65,44 +65,44 @@
 	echo 'active-menu';
 }
 ?>  menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
-                           <?php echo linkNav("", $this->lang->mci_segment, "home")?>
+                           <?php echo linkNav("", $this->lang->mci_segment, "home") ?>
 			</li>
 			<li id=" menu-item-2075" class="  <?php if (isset($menu) && $menu == 'about') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("about", $this->lang->mci_segment, "about")?>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("about", $this->lang->mci_segment, "about") ?>
 
 			</li>
 <li id="menu-item-1897" class="<?php if (isset($menu) && $menu == 'retail') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("retail", $this->lang->mci_segment, "retail")?></li>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("retail", $this->lang->mci_segment, "retail") ?></li>
 
 	<li id="menu-item-1897" class="<?php if (isset($menu) && $menu == 'officetel') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("officetel", $this->lang->mci_segment, "officetel")?></li>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"><?php echo linkNav("officetel", $this->lang->mci_segment, "officetel") ?></li>
 	<li id="menu-item-2075" class="<?php if (isset($menu) && $menu == 'apartment') {
 	echo 'active-menu';
 }
-?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("apartment", $this->lang->mci_segment, "apartment")?>
+?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075"><?php echo linkNav("apartment", $this->lang->mci_segment, "apartment") ?>
 
 	</li>
 
 	<li  id="register-modal" class="<?php if (isset($menu) && $menu == 'house') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("house", $this->lang->mci_segment, "house")?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("house", $this->lang->mci_segment, "house") ?></li>
 
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'villas') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("villas", $this->lang->mci_segment, "villas")?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("villas", $this->lang->mci_segment, "villas") ?></li>
 
 <li  id="register-modal" class="<?php if (isset($menu) && $menu == 'contact') {
 	echo 'active-menu';
 }
-?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact")?></li>
+?> register menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><?php echo linkNav("contact", $this->lang->mci_segment, "contact") ?></li>
 
 	<!-- <li id="login-modal" class="login menu-item menu-item-type-post_type menu-item-object-page menu-item-1900"><a href="login/index.html">Login</a></li> -->
 	<li id="menu-item-2075" class=" reponsive-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-2075">
@@ -110,10 +110,10 @@
 
   <button class="btn btn-default select_lang" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <?php if ($this->lang->mci_segment == 'vn') {?>
-      <?php echo anchor(lchange('vn'), 'Vietnamese');?>
+      <?php echo anchor(lchange('vn'), 'Vietnamese'); ?>
 
       <?php } else {?>
-     <?php echo anchor(lchange('en'), 'English');?>
+     <?php echo anchor(lchange('en'), 'English'); ?>
       <?php }
 ?>
     <span class="caret"></span>
@@ -121,8 +121,8 @@
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 
-    <li><?php echo anchor(lchange('vn'), 'Vietnamese');?></li>
-    <li><?php echo anchor(lchange('en'), 'English');?></li>
+    <li><?php echo anchor(lchange('vn'), 'Vietnamese'); ?></li>
+    <li><?php echo anchor(lchange('en'), 'English'); ?></li>
   </ul>
 </div>
 	</li>

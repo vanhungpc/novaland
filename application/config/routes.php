@@ -51,8 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 $route['default_controller'] = 'home';
 $route['^(en|vn)/contact'] = 'home/contact';
-$route['^(en|vn)/detail_project/(:num)'] = 'project/detail_project/$2';
-$route['^(en|vn)/detail_news/(:num)'] = 'news/detail_news/$2';
+$route['^(en|vn)/detail-project/(:num)'] = 'project/detail_project/$2';
+$route['^(en|vn)/detail-news/(:num)'] = 'news/detail_news/$2';
 $route['^(en|vn)/about'] = 'home/about';
 $route['^(en|vn)/officetel'] = 'home/officetel';
 $route['^(en|vn)/apartment'] = 'home/apartment';
@@ -75,6 +75,6 @@ $route['villas'] = 'home/villas';
 $route['retail'] = 'home/retail';
 $route['contact'] = 'home/contact';
 
-$route['search_project'] = 'search_project';
-$route['detail_project/(:num)'] = 'project/detail_project/$1';
-$route['detail_news/(:num)'] = 'news/detail_news/$1';
+$route['search-project'] = 'search_project';
+$route['detail-project/(:num)'] = 'project/detail_project/$1';
+$route['detail-news/(:num)'] = 'news/detail_news/$1';

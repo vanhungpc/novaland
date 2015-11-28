@@ -8,6 +8,7 @@ CKEDITOR.editorConfig = function( config ) {
 };
 CKEDITOR.config.entities = false;
 
+
 		
 		CKEDITOR.plugins.add("imageresize", {
     	init : function(editor){

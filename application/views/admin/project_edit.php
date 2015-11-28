@@ -2,11 +2,11 @@
     width: auto !important;
 }
 </style>
- <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/demo.css" type="text/css" media="screen" />
+ <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/css/demo.css" type="text/css" media="screen" />
  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="<?php echo base_url()?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>public/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>public/ckfinder/ckfinder.js"></script>
+<script src="<?php echo base_url() ?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>public/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>public/ckfinder/ckfinder.js"></script>
  <script>
   $(function() {
     var addresspicker = $( "#addresspicker" ).addresspicker({
@@ -64,7 +64,7 @@
         <div class="row">
             <div class="col_12">
                 <ul class="breadcrumbs hor-list">
-                    <li><a href="<?php echo site_url('project');?>">Project</a></li>
+                    <li><a href="<?php echo site_url('project'); ?>">Project</a></li>
                     <li><a href="#">Project update</a></li>
                 </ul>
                 <h1>Project update</h1>
@@ -77,7 +77,7 @@
 $error_msg = $this->session->flashdata('error_msg');
 if (!empty($error_msg)) {
 	?>
-    <div class="notification undone"><?php echo $error_msg;?></div>
+    <div class="notification undone"><?php echo $error_msg; ?></div>
     <?php
 }
 ?>
@@ -90,18 +90,18 @@ if (!empty($error_msg)) {
                 <div class="col_12">
                     <div class="pre_2 col_8 last">
                         <div class="form">
-                            <form id="form0" action="<?php echo site_url('project/editProjectFormSubmission/' . $project['_id_project'])?>"  method="post"  enctype="multipart/form-data">
+                            <form id="form0" action="<?php echo site_url('project/editProjectFormSubmission/' . $project['_id_project']) ?>"  method="post"  enctype="multipart/form-data">
                                 <div class="clearfix">
                                     <label>Name Project</label>
                                     <div class="input">
-                                        <input class="xlarge validate[required]" type="text" name="name_project" id="nameproject" value="<?php echo $project['name_project']?>" />
+                                        <input class="xlarge validate[required]" type="text" name="name_project" id="nameproject" value="<?php echo $project['name_project'] ?>" />
                                     </div>
                                 </div>
 
                                 <div class="clearfix">
                                     <label>Address</label>
                                     <div class="input">
-                                        <input class="xlarge validate[required]" type="text" id="address"  name="address" value="<?php echo $project['address']?>"/>
+                                        <input class="xlarge validate[required]" type="text" id="address"  name="address" value="<?php echo $project['address'] ?>"/>
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@ if (!empty($error_msg)) {
                                 <div class="clearfix">
                                     <label>Location</label>
                                     <div class="input">
-                                        <input class="xlarge" type="text" id="addresspicker_map"  value="<?php echo $project['address']?>"/>
+                                        <input class="xlarge" type="text" id="addresspicker_map"  value="<?php echo $project['address'] ?>"/>
                                     </div>
                                 </div>
 
@@ -131,14 +131,20 @@ if (!empty($error_msg)) {
                                 </div>
                                 <div id="map"></div>
 
-                                <input id="lat" name="lat" hidden value="<?php echo $project['lat']?>">
-                                <input id="lng" name="lng" hidden value="<?php echo $project['lng']?>">
+                                <input id="lat" name="lat" hidden value="<?php echo $project['lat'] ?>">
+                                <input id="lng" name="lng" hidden value="<?php echo $project['lng'] ?>">
 
 
                                  <div class="clearfix">
                                     <label>Price</label>
                                     <div class="input">
-                                        <input class="xlarge validate[required]" type="text" name="price" id="price" value="<?php echo $project['price']?>"/>
+                                        <input class="xlarge validate[required]" type="text" name="price" id="price" value="<?php echo $project['price'] ?>"/>
+                                    </div>
+                                </div>
+                                  <div class="clearfix">
+                                    <label>Unit</label>
+                                    <div class="input">
+                                        <input class="xlarge validate[required]" type="text" name="unit" id="unit" value="<?php echo $project['unit'] ?>"/>
                                     </div>
                                 </div>
                                  <div class="clearfix">
@@ -148,9 +154,9 @@ if (!empty($error_msg)) {
                                              <?php foreach ($category as $value) {
 	?>
                                                 <?php if ($value->_id_category == $project['_id_category']) {?>
-                                                    <option  value="<?php echo $value->_id_category?>" selected><?php echo $value->name_category_eng?></option>
+                                                    <option  value="<?php echo $value->_id_category ?>" selected><?php echo $value->name_category_eng ?></option>
                                                 <?php } else {?>
-                                                    <option  value="<?php echo $value->_id_category?>"><?php echo $value->name_category_eng?></option>
+                                                    <option  value="<?php echo $value->_id_category ?>"><?php echo $value->name_category_eng ?></option>
                                                 <?php }
 	?>
                                             <?php }
@@ -167,9 +173,9 @@ if (!empty($error_msg)) {
                                               <?php foreach ($county as $value) {
 	?>
                                                 <?php if ($value->_id_county == $project['_id_county']) {?>
-                                                    <option  value="<?php echo $value->_id_county?>" selected><?php echo $value->name_county?></option>
+                                                    <option  value="<?php echo $value->_id_county ?>" selected><?php echo $value->name_county ?></option>
                                                 <?php } else {?>
-                                                    <option  value="<?php echo $value->_id_county?>"><?php echo $value->name_county?></option>
+                                                    <option  value="<?php echo $value->_id_county ?>"><?php echo $value->name_county ?></option>
                                                 <?php }
 	?>
                                                                                             <?php }
@@ -193,7 +199,7 @@ if (!empty($error_msg)) {
                                 <div class="clearfix">
                                     <label>Description Slider</label>
                                     <div class="input">
-                                        <input class="xlarge" type="text" name="desc_slider" id="desc_slider" value="<?php echo $project['desc_slider']?>"/>
+                                        <input class="xlarge" type="text" name="desc_slider" id="desc_slider" value="<?php echo $project['desc_slider'] ?>"/>
 
                                     </div>
                                 </div>
@@ -203,8 +209,8 @@ if (!empty($error_msg)) {
                                     <div class="input">
 
                                         <input   id="file_upload" name="file_upload" type="file" />
-                                       <div> <span class="fileDiv"> <img src="<?php echo base_url('uploads') . '/' . $project['img_slider'];?>" with = "100" height = "100"/></span>
-                                            <input class="xlarge" type="hidden" name="image_name" id="image_name" value="<?php echo $project['img_slider']?>"/>
+                                       <div> <span class="fileDiv"> <img src="<?php echo base_url('uploads') . '/' . $project['img_slider']; ?>" with = "100" height = "100"/></span>
+                                            <input class="xlarge" type="hidden" name="image_name" id="image_name" value="<?php echo $project['img_slider'] ?>"/>
 
                                         </div>
                                     </div>
@@ -216,7 +222,7 @@ if (!empty($error_msg)) {
                                 </div>
 
                                     <div> <span class="right">
-                                    <textarea id="txt_content" name="txt_content"><?php echo $project['description']?></textarea>
+                                    <textarea id="txt_content" name="txt_content"><?php echo $project['description'] ?></textarea>
                                     </span> </div>
                                 <div class="clearfix">
                                     <div class="input" style="margin-left:300px !important;">
@@ -233,8 +239,8 @@ if (!empty($error_msg)) {
     </div>
 </div>
 
-<script type="text/javascript"> $(function() {    var editor = CKEDITOR.replace('txt_content', { filebrowserBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html";?>', filebrowserImageBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Images";?>', filebrowserFlashBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Flash"?>', filebrowserUploadUrl : '<?php
-echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files"?>', filebrowserImageUploadUrl : '<?php
-echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images";?>', filebrowserFlashUploadUrl : '<?php
-echo base_url() . "ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash";?>', filebrowserWindowWidth : '800', filebrowserWindowHeight : '480' }); CKFinder.setupCKEditor( editor, "<?php
-echo base_url() . 'public/ckfinder/'?>" ); }) </script>
+<script type="text/javascript"> $(function() {    var editor = CKEDITOR.replace('txt_content', { filebrowserBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html"; ?>', filebrowserImageBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Images"; ?>', filebrowserFlashBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Flash" ?>', filebrowserUploadUrl : '<?php
+echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files" ?>', filebrowserImageUploadUrl : '<?php
+echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images"; ?>', filebrowserFlashUploadUrl : '<?php
+echo base_url() . "ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"; ?>', filebrowserWindowWidth : '800', filebrowserWindowHeight : '480' }); CKFinder.setupCKEditor( editor, "<?php
+echo base_url() . 'public/ckfinder/' ?>" ); }) </script>

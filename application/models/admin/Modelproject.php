@@ -20,9 +20,9 @@ class ModelProject extends CI_Model {
 	}
 	public function getAllProject($limit, $start) {
 		/*	$this->db->select("*");
-		$this->db->from('project');
-		$this->db->limit($limit, $offset);
-		$query = $this->db->get();*/
+			$this->db->from('project');
+			$this->db->limit($limit, $offset);
+		*/
 
 		$sql = $this->db->get('project');
 		$sql = "select * from project limit " . $start . "," . $limit;
@@ -238,6 +238,7 @@ class ModelProject extends CI_Model {
 			'_id_county' => $params['county'],
 			'address' => $params['address'],
 			'price' => $params['price'],
+			'unit' => $params['unit'],
 			'lat' => $params['lat'],
 			'lng' => $params['lng'],
 			'description' => $params['description'],
@@ -262,6 +263,7 @@ class ModelProject extends CI_Model {
 			'_id_county' => $params['county'],
 			'address' => $params['address'],
 			'price' => $params['price'],
+			'unit' => $params['unit'],
 			'lat' => $params['lat'],
 			'lng' => $params['lng'],
 			'description' => $params['description'],
@@ -407,6 +409,54 @@ class ModelProject extends CI_Model {
                 WHERE _id_video = $_id_video";
 
 		$query = $this->db->query($sql);
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+
+	public function getContactUs() {
+		$sql = "select * from contactus";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
+	public function updateContactUs($params, $_id_contactus) {
+		$this->db->trans_start();
+		$data = array(
+			'content_contactus' => $params['content_contactus']);
+		$this->db->where('_id_contactus', $_id_contactus);
+		$query = $this->db->update('contactus', $data);
+		$this->db->trans_complete();
+		if ($query) {
+			return TRUE;
+		} else {
+			return FALSE;
+		}
+	}
+
+	public function getAboutUs() {
+		$sql = "select * from aboutus";
+		$query = $this->db->query($sql);
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		} else {
+			return "";
+		}
+	}
+
+	public function updateAboutUs($params, $_id_aboutus) {
+		$this->db->trans_start();
+		$data = array(
+			'content_aboutus' => $params['content_aboutus']);
+		$this->db->where('_id_aboutus', $_id_aboutus);
+		$query = $this->db->update('aboutus', $data);
+		$this->db->trans_complete();
 		if ($query) {
 			return TRUE;
 		} else {

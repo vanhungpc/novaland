@@ -33,8 +33,8 @@ class Project extends CI_Controller {
 		// checks whether the user is logged in or not
 		$this->validateUserSession();
 		/*	$data['id_make'] = $this->Productmodel->getMake();
-		$data['id_style'] = $this->Productmodel->getStyle();
-		$data['id_engine_size'] = $this->Productmodel->getEngine_size();*/
+			$data['id_style'] = $this->Productmodel->getStyle();
+		*/
 		$data_category = $this->project->getAllCategory();
 		$data_county = $this->project->getAllCountyAdmin();
 
@@ -57,6 +57,7 @@ class Project extends CI_Controller {
 		$params['name_project'] = $this->input->post('name_project');
 		$params['address'] = $this->input->post('address');
 		$params['price'] = $this->input->post('price');
+		$params['unit'] = $this->input->post('unit');
 		$params['category'] = $this->input->post('category');
 		$params['county'] = $this->input->post('county');
 		$params['slider'] = $this->input->post('slider');
@@ -98,9 +99,9 @@ class Project extends CI_Controller {
 			redirect('project/addProject');
 		}
 		/*  } else {
-	$this->session->set_flashdata('error_msg', 'Please upload images in product');
-	redirect('product/addProduct');
-	}*/
+			$this->session->set_flashdata('error_msg', 'Please upload images in product');
+			redirect('product/addProduct');
+		*/
 	}
 
 	public function editProject($_id_project) {
@@ -127,6 +128,7 @@ class Project extends CI_Controller {
 		$params['name_project'] = $this->input->post('name_project');
 		$params['address'] = $this->input->post('address');
 		$params['price'] = $this->input->post('price');
+		$params['unit'] = $this->input->post('unit');
 		$params['category'] = $this->input->post('category');
 		$params['county'] = $this->input->post('county');
 		$params['slider'] = $this->input->post('slider');

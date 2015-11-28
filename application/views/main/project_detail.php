@@ -23,25 +23,25 @@
 							<div class="info-employer row">
 								<div class="row">
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<h5 class="color-h5"><?php echo $data_project['name_project']?></h5>
+										<h5 class="color-h5"><?php echo $data_project['name_project'] ?></h5>
 
 									</div>
 
 									<div class="col-sm-12 padding-row">
 										<div class="col-sm-12 padding-row" >
-											<span>Địa chỉ:</span> <label> <span class="hotlines"> <?php echo $data_project['address']?></span></label>
+											<span>Địa chỉ:</span> <label> <span class="hotlines"> <?php echo $data_project['address'] ?></span></label>
 										</div>
 										<div class="col-sm-12 padding-row">
-											<span>Giá bán: </span><label> <span> <?php echo $data_project['price']?>  $</span> </label>
+											<span>Giá bán: </span><label> <span> <?php echo $data_project['price'] ?>  <?php echo $data_project['unit'] ?></span> </label>
 										</div>
 									</div>
 
 									<div class="col-sm-12 padding-row">
-										<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $data_project['lat']?>, <?php echo $data_project['lng']?>)">View Map</button>
+										<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $data_project['lat'] ?>, <?php echo $data_project['lng'] ?>)">View Map</button>
 									</div>
 
 									<div class="col-sm-12 col-sm-12 padding-row">
-										<?php echo $data_project['description']?>
+										<?php echo $data_project['description'] ?>
 									</div>
 
 

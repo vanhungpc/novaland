@@ -18,18 +18,12 @@
 
 					<div class="card">
 							<div class="info-employer row">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-sx-12">
-                                            <h2 style="color:#014876">About us</h2>
-                                        </div>
-                                    </div>
+
                                        <div class="row">
                                         <div class="col-sm-12 col-sx-12">
                                                                        <div class="row">
                                         <div class="col-sm-12 col-sx-12">
-                                    Your plan is going to stay several years in Ho Chi Minh City (Saigon), Vietnam and need a nice property for you and your family. CITI HOUSE where you can find the best houses , villas ,  offices , serviced apartment ,  apartment for rent  with free of charge services from us so that you can live this experience in the best possible conditions.
-
-                                    We offer the residential property guide in Ho Chi Minh City with great information directory for expatriates living in or relocating to Vietnam especially in Ho Chi Minh City.
+                                   			<?php echo $aboutus['content_aboutus'] ?>
                                         </div>
                                     </div>
                                         </div>

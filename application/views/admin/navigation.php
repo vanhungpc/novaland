@@ -4,9 +4,9 @@ $function = $this->uri->segment(3);
 ?>
 <nav class="container">
     <select class="mobile-only row clearfix" onchange="window.open(this.options[this.selectedIndex].value, '_top')">
-        <option value="<?php echo site_url() . 'project';?>">Dashboard</option>
-        <option value="<?php echo site_url() . 'project';?>">Project</option>
-        <option value="<?php echo site_url() . 'project';?>">County</option>
+        <option value="<?php echo site_url() . 'project'; ?>">Dashboard</option>
+        <option value="<?php echo site_url() . 'project'; ?>">Project</option>
+        <option value="<?php echo site_url() . 'project'; ?>">County</option>
     </select>
 
     <ul class="sf-menu mobile-hide row clearfix">
@@ -17,14 +17,14 @@ if ($controller == 'project') {
 	echo 'class="active iconed"';
 }
 ?>>
-            <a href="<?php echo site_url() . 'project';?>"><span>Project</span></a>
+            <a href="<?php echo site_url() . 'project'; ?>"><span>Project</span></a>
         </li>
         <li <?php
 if ($controller == 'county') {
 	echo 'class="active iconed"';
 }
 ?>>
-            <a href="<?php echo site_url() . 'county';?>"><span>County</span></a>
+            <a href="<?php echo site_url() . 'county'; ?>"><span>County</span></a>
         </li>
 
         <li <?php
@@ -32,7 +32,7 @@ if ($controller == 'news') {
 	echo 'class="active iconed"';
 }
 ?>>
-            <a href="<?php echo site_url() . 'news';?>"><span>News</span></a>
+            <a href="<?php echo site_url() . 'news'; ?>"><span>News</span></a>
         </li>
 
         <li <?php
@@ -40,7 +40,23 @@ if ($controller == 'video') {
 	echo 'class="active iconed"';
 }
 ?>>
-            <a href="<?php echo site_url() . 'video';?>"><span>Video</span></a>
+            <a href="<?php echo site_url() . 'video'; ?>"><span>Video</span></a>
+        </li>
+
+               <li <?php
+if ($controller == 'contactus') {
+	echo 'class="active iconed"';
+}
+?>>
+            <a href="<?php echo site_url() . 'contactus'; ?>"><span>Contact Us</span></a>
+        </li>
+
+               <li <?php
+if ($controller == 'aboutus') {
+	echo 'class="active iconed"';
+}
+?>>
+            <a href="<?php echo site_url() . 'aboutus'; ?>"><span>About Us</span></a>
         </li>
 
 

@@ -63,8 +63,6 @@ class Home extends CI_Controller {
 		$data_video = $this->project->getAllVideo();
 
 		$data_pagination = $this->pagination->create_links();
-
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -119,8 +117,9 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/about', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
+		$aboutus = $this->project->getAboutUs();
+
+		$content = $this->load->view('main/about', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'aboutus' => $aboutus), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
@@ -175,7 +174,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -231,7 +229,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -287,7 +284,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -343,7 +339,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -400,7 +395,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
@@ -484,13 +478,25 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
-		$content = $this->load->view('main/contact', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video), TRUE);
+		$contactus = $this->project->getContactUs();
+
+		$content = $this->load->view('main/contact', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'contactus' => $contactus), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,
 			'content' => $content,
 			'footer' => $footer));
 
+	}
+	public function sendMail() {
+		$params['content_contactus'] = $this->input->post('txt_content');
+		$updatep = $this->project->updateContactUs($params, $_id_contactus);
+		if ($updatep) {
+			$this->session->set_flashdata('success_msg', 'Your contact us has been update successfully');
+			redirect('contactus');
+		} else {
+			$this->session->set_flashdata('error_msg', 'Please try again adding a news');
+			redirect('contactus');
+		}
 	}
 	public function seach_project() {
 
@@ -541,7 +547,6 @@ class Home extends CI_Controller {
 		$data_slider = $this->project->getSliderProject();
 		$data_video = $this->project->getAllVideo();
 		$data_pagination = $this->pagination->create_links();
-		$header = $this->load->view('main/header', array(), TRUE);
 		$content = $this->load->view('main/home', array('county' => $data, 'arr_news' => $data_news, 'data_project' => $data_project, 'data_slider' => $data_slider, 'data_video' => $data_video, 'pagination' => $data_pagination, 'page' => $data_page), TRUE);
 		$footer = $this->load->view('main/footer', array(), TRUE);
 		$this->load->view('main/layout', array('head' => $head, 'header' => $header, 'lang' => $lang,

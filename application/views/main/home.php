@@ -25,16 +25,16 @@
 
 		  		<?php foreach ($data_slider as $value) {?>
 	<div class="slide-item col-ms-12">
-			      <a href="<?php echo site_url('detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
-			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
+			      <a href="<?php echo site_url('detail_project/' . $value->_id_project); ?>" title="<?php echo $value->name_project ?>">
+			        <img src="<?php echo base_url('uploads') . '/' . $value->img_slider; ?>" alt="<?php echo $value->name_project ?>">
 			      </a>
 			      <div class="container-s">
 			        <div class="sub">
-			          <h2><?php echo $value->name_project?></h2>
+			          <h2><?php echo $value->name_project ?></h2>
 			          <div class="clear">
 			          </div>
 
-			          <div class="bn-desc"><span><?php echo $value->desc_slider?></span></div>
+			          <div class="bn-desc"><span><?php echo $value->desc_slider ?></span></div>
 
 			        </div>
 			      </div>
@@ -65,7 +65,7 @@
 ?>
 </h5>
 					</div>
-					<form id="form0" action="<?php echo site_url('home/seach_project/')?>"  method="post"  enctype="multipart/form-data">
+					<form id="form0" action="<?php echo site_url('home/seach_project/') ?>"  method="post"  enctype="multipart/form-data">
 					<div class="col-sm-5">
 							<div id="custom-search-input">
 							<div class="input-group col-sm-12">
@@ -108,24 +108,24 @@
 							<div class="info-employer row padding-2">
 								<div class="row padding-left-15 table">
 									<div class="col-sm-5 col-md-5 col-xs-5 no-padding table-cell" style="float:none; vertical-align:middle">
-										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
-										<img class="card-img img_height" src="<?php echo base_url('uploads') . '/' . $value->img_slider;?>" alt="<?php echo $value->name_project?>">
+										 <a href="<?php echo site_url('project/detail_project/' . $value->_id_project); ?>" title="<?php echo $value->name_project ?>">
+										<img class="card-img img_height" src="<?php echo base_url('uploads') . '/' . $value->img_slider; ?>" alt="<?php echo $value->name_project ?>">
 										</a>
 									</div>
 
 									<div class="col-sm-7 col-md-7 col-xs-7 no-padding table-cell" style=" float:none; padding-top:0; padding-bottom:0; position:static">
 										 	<div class="col-sm-12  col-md-12 text-left">
 										 	<ul class="liststyle">
-											<a href="<?php echo site_url('project/detail_project/' . $value->_id_project);?>" title="<?php echo $value->name_project?>">
+											<a href="<?php echo site_url('project/detail_project/' . $value->_id_project); ?>" title="<?php echo $value->name_project ?>">
 											<li>
-												<b class="text-b"><?php echo $value->name_project?></b>
+												<b class="text-b"><?php echo $value->name_project ?></b>
 											</li>
 											</a>
 											<li>
-												<span class="text-span"><?php echo $value->address?> </span>
+												<span class="text-span"><?php echo $value->address ?> </span>
 											</li>
 											<li>
-												<span class="text-span"> <?php echo $value->price?> USD</span>
+												<span class="text-span"> <?php echo $value->price ?> <?php echo $value->unit ?></span>
 											</li>
 											<li>
 
@@ -134,7 +134,7 @@
 
 										</div>
 										<div class="col-sm-12  col-md-12 text-right buttonBox" style="position: absolute;bottom: 13px; right: -2px;">
-											<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $value->lat?>, <?php echo $value->lng?>)">View Map</button>
+											<button type="button" class="btn btn-primary btn-md" onclick="showMap(<?php echo $value->lat ?>, <?php echo $value->lng ?>)">View Map</button>
 										</div>
 
 
@@ -172,7 +172,7 @@
 
 		<div class="row">
               <div class="col-md-12 text-center">
-            <?php echo $pagination;?>
+            <?php echo $pagination; ?>
         </div>
 
 		</div>

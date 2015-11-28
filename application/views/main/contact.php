@@ -8,7 +8,7 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/jquery-ui.js" type="text/javascript"></script>
     <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/themes/blitzer/jquery-ui.css"
         rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="<?php echo base_url()?>assets/main/css/contact.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/main/css/contact.css">
 <div class="content">
 
 	<div class='container Module Module-31'>
@@ -19,32 +19,20 @@
         <div class="col-sm-8 col-xs-12 col-md-push-4 col-sm-push-4">
             <div class="row form_contact">
                 <div class="col-sm-12 col-sx-12 "  >
+
                                     <div class="row">
                                         <div class="col-sm-12 col-sx-12">
-                                            <h2 style="color:#014876">Contact us</h2>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-sx-12">
-                                            Thank you very much for saving your time to visit our website.<br>
-                                            Citihouse has many house, villas, office, apartment for rent in HCMC.<br>
-                                            If you have any futher requirement, please be free to contact us at anytime.<br>
-                                            <h4 style="color: #ff0000">CITIHOUSE GROUP</h4>
-                                            Address: The 16th floor - Saigon Tower, 29 Le Duan Boulevard, District 1, HCM City, Vietnam.<br>
-                                            Email: citihousegroup@gmail.com<br>
-                                            Hotline: (84) 909 288 281 - (84) 905 263 773<br>
-                                            Tel: (84.8) 3520 7646 – Fax: (84.8) 3520 7604.<br>
-                                            Tax code: 0312901440
+                                            <?php echo $contactus['content_contactus'] ?>
                                         </div>
                                     </div>
                                     <div class="form">
-                                        <form id="form0" action="<?php echo site_url("home/contact")?>" method="post" enctype="multipart/form-data">
+                                        <form id="form0" action="<?php echo site_url("home/addcontact") ?>" method="post" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-sm-3 col-sx-3">
                                             <p style="padding-top:10px;">Your name:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
-                                            <input class="xlarge validate[required]" type="text" name="name" id="name" />
+                                            <input class="xlarge validate[required]" type="text" name="your_name" id="your_name" />
                                         </div>
                                     </div>
                                      <div class="row">
@@ -52,7 +40,7 @@
                                             <p style="padding-top:10px;">Phone number:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
-                                            <input class="xlarge validate[required]" type="text" name="phone" id="phone" />
+                                            <input class="xlarge validate[required]" type="text" name="your_name" id="your_name" />
                                         </div>
                                     </div>
                                      <div class="row">
@@ -68,7 +56,7 @@
                                             <p style="padding-top:10px;">Subject:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
-                                            <input class="xlarge validate[required]" type="text" name="subject" id="subject" />
+                                            <input class="xlarge validate[required]" type="text" name="title" id="title" />
                                         </div>
                                     </div>
                                       <div class="row">
@@ -76,7 +64,7 @@
                                             <p style="padding-top:10px;">Content message:</p>
                                         </div>
                                         <div class="col-sm-6 col-sx-6">
-                                            <textarea name="content" id="content"></textarea>
+                                            <textarea name="message" id="message"></textarea>
                                         </div>
                                     </div>
                                             <div class="row" style="margin-bottom:20px;margin-top: 20px;">

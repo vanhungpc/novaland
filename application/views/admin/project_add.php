@@ -1,9 +1,9 @@
- <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/css/demo.css" type="text/css" media="screen" />
+ <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/css/demo.css" type="text/css" media="screen" />
  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
-<script src="<?php echo base_url()?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/public/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/public/ckfinder/ckfinder.js"></script>
+<script src="<?php echo base_url() ?>/assets/admin/scripts/jquery.ui.addresspicker.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/public/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/public/ckfinder/ckfinder.js"></script>
  <script>
   $(function() {
     var addresspicker = $( "#addresspicker" ).addresspicker({
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col_12">
                 <ul class="breadcrumbs hor-list">
-                    <li><a href="<?php echo site_url('project');?>">Project</a></li>
+                    <li><a href="<?php echo site_url('project'); ?>">Project</a></li>
                     <li><a href="#">Project create</a></li>
                 </ul>
                 <h1>Project create</h1>
@@ -74,7 +74,7 @@
 $error_msg = $this->session->flashdata('error_msg');
 if (!empty($error_msg)) {
 	?>
-    <div class="notification undone"><?php echo $error_msg;?></div>
+    <div class="notification undone"><?php echo $error_msg; ?></div>
     <?php
 }
 ?>
@@ -87,7 +87,7 @@ if (!empty($error_msg)) {
                 <div class="col_12">
                     <div class="pre_2 col_8 last">
                         <div class="form">
-                            <form id="form0" action="<?php echo site_url('project/addProjectFormSubmission/')?>"  method="post"  enctype="multipart/form-data">
+                            <form id="form0" action="<?php echo site_url('project/addProjectFormSubmission/') ?>"  method="post"  enctype="multipart/form-data">
                                 <div class="clearfix">
                                     <label>Name Project</label>
                                     <div class="input">
@@ -138,12 +138,18 @@ if (!empty($error_msg)) {
                                         <input class="xlarge validate[required]" type="text" name="price" id="price" />
                                     </div>
                                 </div>
+                                <div class="clearfix">
+                                    <label>Unit</label>
+                                    <div class="input">
+                                        <input class="xlarge validate[required]" type="text" name="unit" id="unit" />
+                                    </div>
+                                </div>
                                  <div class="clearfix">
                                     <label>Category</label>
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="category" id="category">
                                             <?php foreach ($category as $value) {?>
-                                                  <option value="<?php echo $value->_id_category?>"><?php echo $value->name_category_eng?></option>
+                                                  <option value="<?php echo $value->_id_category ?>"><?php echo $value->name_category_eng ?></option>
                                            <?php }
 ?>
 
@@ -156,7 +162,7 @@ if (!empty($error_msg)) {
                                     <div class="input">
                                         <select class="xlarge validate[required]" name="county" id="county">
                                              <?php foreach ($county as $value) {?>
-                                                  <option value="<?php echo $value->_id_county?>"><?php echo $value->name_county?></option>
+                                                  <option value="<?php echo $value->_id_county ?>"><?php echo $value->name_county ?></option>
                                            <?php }
 ?>
 
@@ -212,8 +218,25 @@ if (!empty($error_msg)) {
     </div>
 </div>
 
-<script type="text/javascript"> $(function() {    var editor = CKEDITOR.replace('txt_content', { filebrowserBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html";?>', filebrowserImageBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Images";?>', filebrowserFlashBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Flash"?>', filebrowserUploadUrl : '<?php
-echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files"?>', filebrowserImageUploadUrl : '<?php
-echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images";?>', filebrowserFlashUploadUrl : '<?php
-echo base_url() . "ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash";?>', filebrowserWindowWidth : '480', filebrowserWindowHeight : '480' }); CKFinder.setupCKEditor( editor, "<?php
-echo base_url() . 'public/ckfinder/'?>" ); }) </script>
+<script type="text/javascript"> $(function() {    var editor = CKEDITOR.replace('txt_content', {filebrowserBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html"; ?>', filebrowserImageBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Images"; ?>', filebrowserFlashBrowseUrl : '<?php echo base_url() . "public/ckfinder/ckfinder.html?Type=Flash" ?>', filebrowserUploadUrl : '<?php
+echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files" ?>', filebrowserImageUploadUrl : '<?php
+echo base_url() . "public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images"; ?>', filebrowserFlashUploadUrl : '<?php
+echo base_url() . "ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"; ?>', filebrowserWindowWidth : '480', filebrowserWindowHeight : '480'
+
+
+ }); CKFinder.setupCKEditor( editor, "<?php
+echo base_url() . 'public/ckfinder/' ?>" ); })
+
+
+CKEDITOR.replace(txt_content, {toolbar: [
+    { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+    { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv',
+    '-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+    { name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+    { name: 'insert', items : [ 'Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe' ] },
+    '/',
+    { name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
+    { name: 'colors', items : [ 'TextColor','BGColor' ] },
+    { name: 'tools', items : [ 'Maximize', 'ShowBlocks','-','About' ] }
+    ]});
+</script>
